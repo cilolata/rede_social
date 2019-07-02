@@ -3,11 +3,36 @@
     margin: 0;
     padding: 0;
   }
-
-
 /* Regras Gerais Fim -- */
-
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
 /* -- Layout Início -- */
+
+main {
+ width: 100%;
+ margin-top: 50px;
+}
+
+main .texto {
+  margin: 150px 0 0 150px;
+  width:40%;
+}
+
+main .imagem-principal {
+  margin-top: 150px;
+  width: 40%;
+}
+
+#cadastrar {
+  margin: 105px 0 100px 0;
+  
+}
+
+ #cadastrar .imagem2 {
+   margin: 100px 0 0 0;
+ }
 
 
 
