@@ -19,7 +19,7 @@
 
                 <!--cabeçalho logo e nome--->
                 <a href="index.php" class="navbar-brand">
-                    <img src="img/light-bulb.png" style="width:15%" alt="imagem_logo" class="">
+                    <img src="img/light-bulb (4).png" alt="imagem_logo" class="d-inline-block">
                     Nome da Rede
                 </a>
                 <!--fim cabeçalho logo e nome-->
@@ -65,7 +65,7 @@
                         <div class="col-lg-4 texto">
                             <h1 class="display-5 display-sm-1">Conecte-se com pessoas que querem mudar o mundo</h1>
                             <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat obcaecati sint hic maiores est deleniti consectetur minima asperiores dolorum quas nulla consequatur, eligendi veritatis, culpa ea iure suscipit ducimus deserunt!</p>
-                            <a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a>
+                            <a class="btn btn-outline-success" href="#" role="button">Leia mais</a>
                         </div>
 
                         <div class=" imagem-principal col-lg-6 d-none d-lg-block">
@@ -82,7 +82,7 @@
 
         <!-- início section cadastrar-->
         <section id="cadastrar">
-            <div class="container-fluid row d-flex">
+            <div class="container-fluid row d-flex cadastrar-container">
                 
                 <div class="col-lg-6 d-none d-lg-block ">
                     <div class="d-flex justify-content-center ">
@@ -286,7 +286,7 @@
                             </span>
                         </div>
                         <div class="button">
-                            <button type="submit">Cadastrar</button>
+                            <button class="btn btn-success"type="submit">Cadastrar</button>
                             <form>
                         </div>
                 </div>
@@ -303,7 +303,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Título do card</h5>
                             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                            <a href="#" class="btn btn-primary">Visitar</a>
+                            <a href="#" class="btn btn-success">Visitar</a>
                         </div>
                     </div>
 
@@ -314,7 +314,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Título do card</h5>
                             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                            <a href="#" class="btn btn-primary">Visitar</a>
+                            <a href="#" class="btn btn-success">Visitar</a>
                         </div>
                     </div>
 
@@ -324,7 +324,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Título do card</h5>
                             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                            <a href="#" class="btn btn-primary">Visitar</a>
+                            <a href="#" class="btn btn-success">Visitar</a>
                         </div>
                     </div>
 
@@ -333,7 +333,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Título do card</h5>
                             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                            <a href="#" class="btn btn-primary">Visitar</a>
+                            <a href="#" class="btn btn-success">Visitar</a>
                         </div>
                     </div>
                 </div>
@@ -341,7 +341,7 @@
         </section>
         <!--fim section anuncios-->
     </main>
-    <!--iincio footer-->
+    <!--incio footer-->
     <footer>
         <div class="bg-light mt-5 ml-auto">
             <div class="container">

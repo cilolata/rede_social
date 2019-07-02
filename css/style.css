@@ -1,40 +1,47 @@
-/* -- Regras Gerais Início -- */
+/*  Regras Gerais Início 
+------------------------ */
 * {
     margin: 0;
     padding: 0;
   }
-/* Regras Gerais Fim -- */
+/* Regras Gerais Fim 
+-------------------- */
 html, body {
   height: 100%;
   overflow-x: hidden;
 }
-/* -- Layout Início -- */
+/* Layout Início 
+--------------------- */
 
 main {
  width: 100%;
  margin-top: 50px;
 }
 
+/* inicio section destaque
+----------------------------*/
 main .texto {
-  margin: 150px 0 0 150px;
+  margin: 150px 0 0 170px;
   width:40%;
 }
 
 main .imagem-principal {
-  margin-top: 150px;
+  margin: 150px 0 0 50px;
   width: 40%;
 }
 
+/*inicio section cadastrar
+----------------------------*/
 #cadastrar {
-  margin: 105px 0 100px 0;
-  
+  margin: 150px 100px 150px 0;  
 }
 
+#cadastrar .cadastrar-container {
+  margin: 100px 0 0 0;
+}
  #cadastrar .imagem2 {
    margin: 100px 0 0 0;
  }
-
-
 
 /* -- Layout Fim -- */
 
