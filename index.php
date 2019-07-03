@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--bootstrap css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -26,7 +26,7 @@
                 <!--fim cabeçalho logo e nome-->
 
                 <!--menu collapse-->
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#cadastro_navbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!--fim -menu collapse-->
