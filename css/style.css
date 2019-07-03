@@ -47,3 +47,8 @@ main .imagem-principal {
 
 /* -- footer Início -- */
  
+footer {
+  color: #007bff;;
+  cursor: pointer;
+}
+

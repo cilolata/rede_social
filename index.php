@@ -8,6 +8,7 @@
     <!--bootstrap css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b90a86aab4.js"></script>
     <title>Projeto Rede Social</title>
 </head>
 
@@ -343,21 +344,39 @@
     </main>
     <!--incio footer-->
     <footer>
-        <div class="bg-light mt-5 ml-auto">
+        <div class="bg-light mt-5 ml-auto mr-auto">
             <div class="container">
                 <div class="d-flex flew-row">
-                    <div class=" ml-5 col-6">
+                    <div class="col-12 col-md-3">
                         <ul class="list-unstyled">
                             <li><a href="">Home</a></li>
-                            <li><a href="">Contato</a></li>
-                            <li><a href="">Assss</a></li>
-                            <li><a href="">Addddd</a></li>
+                            <img src="img/light-bulb (4).png" alt="imagem_logo" class="d-inline-block">
                         </ul>
                     </div>
-                    <div class="d-flex flex-row align-items-end col-6">
-                        <div class="small">Icons made by <a href="https://www.flaticon.com/authors/mynamepong" title="mynamepong">mynamepong</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-                        <div class="small">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://br.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                    <div class="col-12 col-md-3">
+                        <ul class="list-unstyled">
+                            <li><a href="" role="button">Fale conosco</a></li>
+                            <li><a href=""><a href=""><i class="fas fa-mail-bulk fa-2x"></i></a></li>
+                            
+                        </ul>
                     </div>
+                    <div class="col-12 col-md-3">
+                        <ul class="list-unstyled">
+                            <li><a href="https://pt-br.facebook.com/" target="_blank">Facebook</a></li>
+                            <li><a href="https://pt-br.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.instagram.com/?hl=pt-br" target="_blank">Instagram</a></li>
+                           <li><a href="https://www.instagram.com/?hl=pt-br" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row align-items-end col-12">
+                    <div class="small">&copy; <a href="https://www.flaticon.com/authors/mynamepong" title="mynamepong">mynamepong</a> from <a href="https://www.flaticon.com/" title="Flaticon">Digital House</a>  <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">2019</a></div>
                 </div>
             </div>
         </div>
