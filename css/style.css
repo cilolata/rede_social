@@ -4,15 +4,15 @@
     margin: 0;
     padding: 0;
   }
-/* Regras Gerais Fim 
--------------------- */
-html, body {
-  height: 100%;
-  overflow-x: hidden;
-}
-/* Layout Início 
---------------------- */
+  html, body {
+    height: 100%;
+    overflow-x: hidden;
+  }
+  /* Regras Gerais Fim 
+  -------------------- */
 
+  /* Layout Início 
+--------------------- */
 main {
  width: 100%;
  margin-top: 50px;
