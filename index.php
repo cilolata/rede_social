@@ -349,7 +349,7 @@
                 <div class="d-flex flew-row">
                     <div class="col-12 col-md-3">
                         <ul class="list-unstyled">
-                            <li><a href="">Home</a></li>
+                            <li><a href="">Início</a></li>
                             <img src="img/light-bulb (4).png" alt="imagem_logo" class="d-inline-block">
                         </ul>
                     </div>
