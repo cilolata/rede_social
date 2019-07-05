@@ -21,27 +21,42 @@ main {
 /* inicio section destaque
 ----------------------------*/
 main .texto {
-  margin: 150px 0 0 170px;
-  width:40%;
+  margin: 150px auto 0 auto;
 }
 
 main .imagem-principal {
-  margin: 150px 0 0 50px;
-  width: 40%;
+  margin: 150px auto 0 auto;
 }
 
 /*inicio section cadastrar
 ----------------------------*/
 #cadastrar {
-  margin: 150px 100px 150px 0;  
+  margin: 150px auto 150px auto;  
 }
 
 #cadastrar .cadastrar-container {
   margin: 100px 0 0 0;
 }
  #cadastrar .imagem2 {
-   margin: 100px 0 0 0;
+   margin: auto;
  }
+ .form-group {
+   flex-wrap: wrap;
+   margin: 0 auto;
+ }
+ label, #btnSubmitLabel {
+   margin: 10px auto;
+ }
+ /*inicio section anuncios
+----------------------------*/
+.cardAnuncioCont {
+  padding: 0;
+}
+
+div.card {
+  margin: 5px;
+  padding: 0;
+}
 
 /* -- Layout Fim -- */
 
@@ -50,5 +65,17 @@ main .imagem-principal {
 footer {
   color: #007bff;;
   cursor: pointer;
+  background-color: #f8f9fa;
+  margin-top: 20px;
+  padding: 36px 20px 20px 20px;
+}
+.list-unstyled li {
+  text-align: center;
+}
+#logoFooter {
+  margin: 0 calc(50% - 16px);
+}
+#copyright {
+  margin: 10px auto;
 }
 
