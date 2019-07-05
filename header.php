@@ -21,9 +21,9 @@
                 <form class="navbar-form" role="login">
                     <div class="d-flex">
                         <div class="form-inline">
-                            <input class=" form-control rounded mr-1" type="text" name="email" id="emailTop" placeholder="Digite seu e-mail">
+                            <input class=" form-control rounded mr-lg-1" type="text" name="email" id="emailTop" placeholder="Digite seu e-mail">
                             <input class=" form-control rounded" type="password" name="password" id="passwordTop" placeholder="Digite sua senha">
-                            <button class="btn btn-outline-success ml-1" type="submit" class="btn btn-default">Login</button>
+                            <button class="btn btn-outline-success ml-lg-1" type="submit" class="btn btn-default">Login</button>
                         </div>
                 </form>
                 <!--fim formulario entrar-->

@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
   }
+
   html, body {
     height: 100%;
     overflow-x: hidden;
@@ -37,13 +38,16 @@ main .imagem-principal {
 #cadastrar .cadastrar-container {
   margin: 100px 0 0 0;
 }
+
  #cadastrar .imagem2 {
    margin: auto;
  }
+
  .form-group {
    flex-wrap: wrap;
    margin: 0 auto;
  }
+
  label, #btnSubmitLabel {
    margin: 10px auto;
  }
@@ -69,13 +73,20 @@ footer {
   margin-top: 20px;
   padding: 36px 20px 20px 20px;
 }
+
 .list-unstyled li {
   text-align: center;
 }
+
 #logoFooter {
   margin: 0 calc(50% - 16px);
 }
+
 #copyright {
   margin: 10px auto;
 }
+
+/* media queries
+-----------------*/
+
 
