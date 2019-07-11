@@ -5,9 +5,9 @@
             <div class="container">
 
                 <!--cabeçalho logo e nome--->
-                <a href="index.php" class="navbar-brand">
+                <a href="index.php" class="navbar-brand d-flex align-items-center">
                     <img src="img/light-bulb (4).png" alt="imagem_logo" class="d-inline-block">
-                    Nome da Rede
+                       <span>Nome da Rede</span>
                 </a>
                 <!--fim cabeçalho logo e nome-->
 
@@ -22,7 +22,7 @@
                     <div class="d-flex">
                         <div class="form-inline">
                             <input class=" form-control rounded mr-lg-1" type="text" name="email" id="emailTop" placeholder="Digite seu e-mail">
-                            <input class=" form-control rounded" type="password" name="password" id="passwordTop" placeholder="Digite sua senha">
+                            <input class=" form-control rounded mr-lg-1" type="password" name="password" id="passwordTop" placeholder="Digite sua senha">
                             <button class="btn btn-outline-success ml-lg-1" type="submit" class="btn btn-default">Login</button>
                         </div>
                 </form>

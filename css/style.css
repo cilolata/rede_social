@@ -19,8 +19,25 @@ main {
  margin-top: 50px;
 }
 
+/* início header 
+----------------------*/
+.navbar-brand {
+  font-family: 'Chivo', sans-serif;
+}
+
+.navbar-collapse {
+  margin: 0 0 0 30px;
+}
+
+.navbar-brand span {
+  color: #2E8B57;
+  padding: 0 0 0 5px;
+}
+
+
 /* inicio section destaque
 ----------------------------*/
+
 main .texto {
   margin: 150px auto 0 auto;
 }
@@ -32,11 +49,11 @@ main .imagem-principal {
 /*inicio section cadastrar
 ----------------------------*/
 #cadastrar {
-  margin: 150px auto 150px auto;  
+  margin: 125px auto 100px auto;  
 }
 
 #cadastrar .cadastrar-container {
-  margin: 100px 0 0 0;
+  margin: 125px 0 0 0;
 }
 
  #cadastrar .imagem2 {

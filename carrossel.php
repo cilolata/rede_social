@@ -1,5 +1,5 @@
 <!--começo section anuncios-->
-<section class="container">
+<section class="container d-none d-lg-block d-xl-block">
      <div class="row">
         <div class="col-12 col-sm-6 col-md-3 cardAnuncioCont">
             <div class="card d-block">
