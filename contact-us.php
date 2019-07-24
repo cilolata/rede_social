@@ -7,15 +7,16 @@
             <div class="row">
 
                 <div class="col-12 col-lg-6 contact">
-                    <div class="mt-5">
+                    <div>
                         <h1 class="display-5 display-sm-1">Fale conosco!</h1>
                         <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat obcaecati sint hic maiores est deleniti consectetur minima asperiores dolorum quas nulla consequatur, eligendi veritatis, culpa ea iure suscipit ducimus deserunt!</p>
                     </div>
                 </div>
 
+                <!-- inicio form fale conosco -->
                 <div class="col-12 col-lg-6 contact">
                     <form class="" action="" method="POST">
-                        <div class="form-group mt-5">
+                        <div class="form-group">
                             <div class="form-group d-flex">
                                 <label for="nome" class="col-sm-6 col-12">Nome:
                                     <input type="text" class="form-control" id="nome" name="nome" required>
@@ -29,15 +30,17 @@
                                 <textarea class="form-control" id="textArea" rows="5" placeholder="Deixe sua dúvida aqui..."></textarea>
                             </div>
                             <div class="button col-12" id="btnSubmitLabel">
-                                <button class="btn btn-success" type="submit">Cadastrar</button>
+                                <button class="btn btn-outline-success" type="submit">Enviar!</button>
                             </div>
                         </div>
                     </form>
                 </div>
+                <!-- fim form fale conosco -->
 
+                <!-- inicio faq -->
                 <div class="panel-group my-5" id="faqAccordion">
                     <h1>Perguntas mais frequentes:</h1>
-                    <div class="panel panel-default ">
+                    <div class="panel panel-default">
                         <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
                             <h4 class="panel-title">
                                 <a href="#" class="ing">Q: Question 01?</a>
@@ -101,6 +104,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- fim faq -->
             
                 </div>
             </div>
