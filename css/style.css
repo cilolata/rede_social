@@ -38,6 +38,10 @@ main {
 /* inicio section destaque
 ----------------------------*/
 
+#destaque {
+  height: 100%;
+}
+
 main .texto {
   margin: 150px auto 0 auto;
 }
@@ -78,6 +82,25 @@ div.card {
   margin: 5px;
   padding: 0;
 }
+
+/* inicio section contact-us -----*/
+#contact-us {
+  height: 100%;
+  margin-top: 150px;
+}
+
+#contact-us .contact {
+  margin: 150px auto 0 auto;
+}
+
+#faqAccordion{
+  margin: 150px auto 0 auto;
+}
+
+#contact-us #textArea {
+  resize: none;
+}
+
 
 /* -- Layout Fim -- */
 
