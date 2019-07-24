@@ -86,15 +86,14 @@ div.card {
 /* inicio section contact-us -----*/
 #contact-us {
   height: 100%;
-  margin-top: 150px;
 }
 
 #contact-us .contact {
-  margin: 150px auto 0 auto;
+  margin: 0 auto;
 }
 
 #faqAccordion{
-  margin: 150px auto 0 auto;
+  margin: 0 auto;
 }
 
 #contact-us #textArea {
