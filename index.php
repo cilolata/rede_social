@@ -10,7 +10,7 @@
                         <div class="col-12 col-lg-6 texto">
                             <h1 class="display-5 display-sm-1">Conecte-se com pessoas que querem mudar o mundo</h1>
                             <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat obcaecati sint hic maiores est deleniti consectetur minima asperiores dolorum quas nulla consequatur, eligendi veritatis, culpa ea iure suscipit ducimus deserunt!</p>
-                            <a class="btn btn-outline-success" href="#" role="button">Leia mais</a>
+                            <a class="btn btn-outline-success" href="about_us.php" role="button">Leia mais</a>
                         </div>
 
                         <div class="imagem-principal col-6 d-none d-lg-block">

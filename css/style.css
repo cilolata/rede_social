@@ -94,9 +94,16 @@ footer {
 .list-unstyled li {
   text-align: center;
 }
+.list-unstyled ul{
+  text-align: center;
+}
 
 #logoFooter {
   margin: 0 calc(50% - 16px);
+}
+
+.fa-2x {
+    font-size: 1em;
 }
 
 #copyright {
