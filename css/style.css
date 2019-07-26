@@ -132,6 +132,17 @@ footer {
   margin: 10px auto;
 }
 
+
+/* begin profile page
+-----------------------*/
+
+body span a:hover {
+  color: green;
+}
+
+/* end profile page
+-----------------------*/
+
 /* media queries
 -----------------*/
 
