@@ -26,13 +26,14 @@
             </div>
             </div>
             </div>
-            </div>
 
-                <div class="d-flex align-items-center">
+            <div class="row">
+                <div class="d-flex flex-row justify-content mr-2">
                 <div class="imagem-principal col-12 col-lg-6 mr-2">
                 <img src="https://www.consulram.com/galeriassubsecciones/macro_galeria_subseccion_5.jpg" style="width:50%;"alt="justify-content-center" target="_blank"></a>
                 </div>
-                </div>
+            </div>
+            </div>
                 
 
 </main>

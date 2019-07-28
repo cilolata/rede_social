@@ -12,7 +12,7 @@
   /* Regras Gerais Fim 
   -------------------- */
 
-  /* Layout Início 
+  /* Layout Início Index
 --------------------- */
 main {
  width: 100%;
@@ -141,8 +141,18 @@ body span a:hover {
   color: green;
 }
 
+
+main.container {
+}
+
 /* end profile page
 -----------------------*/
+
+
+
+/* begin about us page
+-----------------------*/
+
 
 /* media queries
 -----------------*/
