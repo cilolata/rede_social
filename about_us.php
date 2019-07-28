@@ -5,7 +5,8 @@
     <section id="contact-us">
         <article class="container">
             <div class="row">
-            <div class="col-12 col-lg-6 about_us">
+            <div class="d-flex flex-row justify-content mr-2">
+            <div class="col-12 col-lg-6 mr-2 about_us">
             <h1 class="mt-5">About Us</h1>
                     <p class="text-justify">Somos uma Ong brasileira dedicada à conservação da natureza. A nossa proposta
                     se baseia em juntar pessoas com um mesmo propósito: o de limpar lugares públicos, tais como praças, parques
@@ -25,12 +26,15 @@
             </div>
             </div>
             </div>
-
-            <div class="imagem-principal col-12 d-none d-lg-block">
-                <div class="d-flex align-items-center">
-                    <img src="https://www.consulram.com/galeriassubsecciones/macro_galeria_subseccion_5.jpg" style="width:50%;"alt="justify-content-center">
-                </div>
             </div>
+
+                <div class="d-flex align-items-center">
+                <div class="imagem-principal col-12 col-lg-6 mr-2">
+                <img src="https://www.consulram.com/galeriassubsecciones/macro_galeria_subseccion_5.jpg" style="width:50%;"alt="justify-content-center" target="_blank"></a>
+                </div>
+                </div>
+                
+
 </main>
 
 
