@@ -1,6 +1,9 @@
+<?php 
+
+session_start();
+?>
 
 <?php require_once("head.php");?>
-
 <body>
     
     <!--inicio cabeçalho-->
