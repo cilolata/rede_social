@@ -38,7 +38,7 @@
                 <!-- fim form fale conosco -->
 
                 <!-- inicio faq -->
-                <div class="panel-group my-5" id="faqAccordion">
+                <div class="panel-group my-5 col-12" id="faqAccordion">
                     <h1>Perguntas mais frequentes:</h1>
                     <div class="panel panel-default">
                         <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
