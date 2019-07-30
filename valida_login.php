@@ -12,7 +12,8 @@ $user_autenticado = false;
 
 $usuarios = array(   
 array('email' => 'cilolata@gmail.com', 'password' => 'maria111'),
-array('email' => 'teste@gmail.com', 'password' => '123')
+array('email' => 'teste@gmail.com', 'password' => '123'),
+array('email' => 'burguipsi@hotmail.com', 'password' => '123')
 );
 
 
