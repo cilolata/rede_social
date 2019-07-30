@@ -5,34 +5,32 @@
     padding: 0;
   }
 
-  html, body {
-    height: 100%;
-    overflow-x: hidden;
+html, body {
+  height: 100%;
+  overflow-x: hidden;
   }
-  /* Regras Gerais Fim 
-  -------------------- */
 
-  /* Layout Início Index
---------------------- */
 main {
- width: 100%;
- margin-top: 50px;
+  width: 100%;
+  margin-top: 200px;
 }
+
+/* Regras Gerais Fim 
+-------------------- */
 
 /* início header 
-----------------------*/
+------------------------*/
 .navbar-brand {
   font-family: 'Chivo', sans-serif;
-}
-
-.navbar-collapse {
-  margin: 0 0 0 30px;
 }
 
 .navbar-brand span {
   color: #2E8B57;
   padding: 0 0 0 5px;
 }
+
+/* fim header 
+-------------------*/
 
 
 /* inicio section destaque
@@ -42,13 +40,8 @@ main {
   height: 100%;
 }
 
-main .texto {
-  margin: 150px auto 0 auto;
-}
-
-main .imagem-principal {
-  margin: 150px auto 0 auto;
-}
+/* fim section destaque
+----------------------*/
 
 /*inicio section cadastrar
 ----------------------------*/
@@ -60,18 +53,22 @@ main .imagem-principal {
   margin: 125px 0 0 0;
 }
 
- #cadastrar .imagem2 {
-   margin: auto;
- }
+#cadastrar .imagem2 {
+  margin: auto;
+}
 
- .form-group {
-   flex-wrap: wrap;
-   margin: 0 auto;
- }
+.form-group {
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
 
- label, #btnSubmitLabel {
-   margin: 10px auto;
- }
+label, #btnSubmitLabel {
+  margin: 10px auto;
+}
+
+ /* fim section cadastrar 
+ -------------------- */
+
  /*inicio section anuncios
 ----------------------------*/
 .cardAnuncioCont {
@@ -83,7 +80,8 @@ div.card {
   padding: 0;
 }
 
-/* inicio section contact-us -----*/
+/* inicio section contact-us 
+-----*/
 #contact-us {
   height: 100%;
 }
@@ -99,16 +97,17 @@ div.card {
 #contact-us #textArea {
   resize: none;
 }
+/* -- fim contact-us
+---------------------*/
 
-/* -- Layout Fim -- */
-
-/* -- footer Início -- */
+/* -- footer início 
+------------------ */
  
 footer {
   color: #007bff;;
   cursor: pointer;
   background-color: #f8f9fa;
-  margin-top: 20px;
+  margin-top: 50px;
   padding: 36px 20px 20px 20px;
 }
 
@@ -130,26 +129,22 @@ footer {
 #copyright {
   margin: 10px auto;
 }
+/* fim footer
+------------------*/
 
 
-/* begin profile page
+/* inicio profile page
 -----------------------*/
 
 body span a:hover {
   color: green;
 }
 
-
-main.container {
-}
-
-/* end profile page
+/* fim profile page
 -----------------------*/
 
 
 
-/* begin about us page
------------------------*/
 
 
 /* media queries
