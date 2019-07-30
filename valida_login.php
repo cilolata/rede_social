@@ -2,10 +2,6 @@
 
 session_start();
 
-//metodo de captura de dados
-$_POST['email'];
-$_POST['password'];
-
 
 // autenticação de login e senha
 $user_autenticado = false;
@@ -22,8 +18,10 @@ foreach($usuarios as $user){
        $user_autenticado = true;
     }
         }if($user_autenticado){
+            $_SESSION['autenticado'] = 'sim';
             header('Location:home.php');
         }else{
+            $_SESSION['autenticado'] = 'nao';
             header('Location:index.php');
         }
 

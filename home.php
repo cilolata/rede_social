@@ -1,6 +1,8 @@
 <?php 
 
 session_start();
+
+
 ?>
 
 <?php require_once("head.php");?>
@@ -28,6 +30,7 @@ session_start();
                         <span class="mr-3"><a class="text-success" href="">Comunidades</a></span>
                         <span class="mr-3"><a class="text-success" href=""> Mensagens</a></span>
                         <span class="mr-3"><a class="text-success" href="">Perfil</a></span>
+                        <span class="mr-3"><a href="logoff.php" class="text-success" href="">Sair</a></span>
                         <!--botao cadastrar-->
                         <img class="ml-3" style="width:50px;" src="img/perfil.png" alt="Imagem de exemplo genérica">
                     </div>

@@ -9,18 +9,21 @@
     height: 100%;
     overflow-x: hidden;
   }
+
+  main {
+   width: 100%;
+   margin-top: 200px;
+  }
   /* Regras Gerais Fim 
   -------------------- */
 
+
   /* Layout Início Index
---------------------- */
-main {
- width: 100%;
- margin-top: 50px;
-}
+-------------------------*/
+
 
 /* início header 
-----------------------*/
+------------------------*/
 .navbar-brand {
   font-family: 'Chivo', sans-serif;
 }
@@ -40,14 +43,6 @@ main {
 
 #destaque {
   height: 100%;
-}
-
-main .texto {
-  margin: 150px auto 0 auto;
-}
-
-main .imagem-principal {
-  margin: 150px auto 0 auto;
 }
 
 /*inicio section cadastrar
@@ -72,6 +67,7 @@ main .imagem-principal {
  label, #btnSubmitLabel {
    margin: 10px auto;
  }
+
  /*inicio section anuncios
 ----------------------------*/
 .cardAnuncioCont {
@@ -99,10 +95,9 @@ div.card {
 #contact-us #textArea {
   resize: none;
 }
+/* -- fim index
+---------------------*/
 
-
-
-/* -- Layout Fim -- */
 
 /* -- footer Início -- */
  
@@ -132,26 +127,22 @@ footer {
 #copyright {
   margin: 10px auto;
 }
+/* fim footer
+------------------*/
 
 
-/* begin profile page
+/* inicio profile page
 -----------------------*/
 
 body span a:hover {
   color: green;
 }
 
-
-main.container {
-}
-
-/* end profile page
+/* fim profile page
 -----------------------*/
 
 
 
-/* begin about us page
------------------------*/
 
 
 /* media queries
