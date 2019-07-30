@@ -13,24 +13,22 @@
                 <!--fim cabeçalho logo e nome-->
 
                 <!--menu collapse-->
-                <div class="dropdown d-xl-none d-lg-none">
-                    <button class="btn btn-outline-success dropdown-toggle" data-toggle="dropdown" type="button"> Sign up </button>
-                    <div class="dropdown-menu">
+                <div class="d-xl-none d-lg-none">
 
-                    
-                        <form class="px-4 py-3" role="login" method="POST" action="">
-                            <div class="form-group m-1">
-                                <input class="form-control rounded" type="text" name="email" class="emailTop" placeholder="Digite seu e-mail">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#signup">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="signup">
+                        <form role="login" method="POST" action="">
+                            <div class="form-group m-2">
+                                 <input class="form-control rounded" type="text" name="email" class="emailTop" placeholder="Digite seu e-mail">
                             </div>
-                            <div class="form-group m-1">
+                            <div class="form-group m-2">
                                 <input class="form-control rounded" type="password" name="password" class="passwordTop" placeholder="Digite sua senha">
                             </div>
-                            <button class="btn btn-outline-success m-1" type="submit" class="btn btn-default">Login</button>
+                            <button class="btn btn-outline-success m-2" type="submit" class="btn btn-default">Login</button>
                         </form>
-                        <div class="dropdown-divider">
-                            <a class="dropdown-item" href="form-cadastro.php">Novo por aqui? Cadastre-se!</a>
-                            <a class="dropdown-item" href="#"> Esqueceu a senha?</a>
-                        </div>
                     </div>
                 </div>
                 <!--fim -menu collapse-->
