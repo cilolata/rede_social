@@ -6,9 +6,8 @@ session_start();
 
 ?>
 
-<!--inicio cabeçalho-->
 <header>
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light shadow-sm p-3 mb-5">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light shadow-sm p-3 mb-5">
         <div class="container">
 
             <!--cabeçalho logo e nome--->
@@ -20,23 +19,29 @@ session_start();
 
             <!--menu collapse-->
 
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="nav-principal">
+                <ul class="navbar-nav list-unstyle ml-auto">
+                    <li class="nav-item"><a href="#" class="nav-link text-success">Comunidades</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-success">Mensagens</a></li>
+                    <li class="nav-item"><a href="home.php" class="nav-link text-success">Voltar</a></li>
+                    <li class="nav-item"><a href="logoff.php" class="nav-link text-success">Sair</a></li>
+                </ul>
+            </div>
             <!--fim -menu collapse-->
 
             <!--inicio menu cabeçalho-->
+
             <div class="media">
-                <div class="d-none d-lg-block d-xl-block">
-                    <span class="mr-3"><a class="text-success" href="">Comunidades</a></span>
-                    <span class="mr-3"><a class="text-success" href=""> Mensagens</a></span>
-                    <span class="mr-3"><a href="home.php" class="text-success" href="">Voltar</a></span>
-                    <span class="mr-3"><a href="logoff.php" class="text-success" href="">Sair</a></span>
-                    <!--botao cadastrar-->
-                    <img class="ml-3" style="width:50px;" src="img/perfil.png" alt="Imagem de exemplo genérica">
-                </div>
+                <img class="ml-3 rounded-circle" style="width:50px;" src="img/perfil.png" alt="Imagem de exemplo genérica">
             </div>
         </div>
         <!--fim menu cabeçalho-->
+    </nav>
 </header>
-<!--inicio main-->
 <main class="container">
 
 
@@ -45,7 +50,7 @@ session_start();
     <div class="row">
 
         <aside class="col-lg-2 col-sm-12">
-            <img src="img/perfil.png" style="width:100px;">
+            <img src="img/perfil.png" class="rounded-circle"style="width:100px;">
         </aside>
         <form class="col-lg-10 col-sm-12">
             <div class="form-group">
@@ -77,5 +82,14 @@ session_start();
         </form>
     </div>
 </section>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
 
 <?php require_once("footer.php"); ?>
