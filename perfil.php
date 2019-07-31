@@ -41,17 +41,16 @@ session_start();
 
 
 </main>
-    <section class="container">
+<section class="container">
     <div class="row">
 
-    <aside class="col-lg-2 col-sm-12">
-        <img src="img/perfil.png" style="width:100px;">
-    </aside>
+        <aside class="col-lg-2 col-sm-12">
+            <img src="img/perfil.png" style="width:100px;">
+        </aside>
         <form class="col-lg-10 col-sm-12">
             <div class="form-group">
                 <label for="">Nome</label>
-                <input type="text" class="form-control" id="" aria-describedby=""
-                    placeholder="Digite seu nome">
+                <input type="text" class="form-control" id="" aria-describedby="" placeholder="Digite seu nome">
             </div>
             <div class="form-group">
                 <label for="">Sobrenome</label>
@@ -73,10 +72,10 @@ session_start();
                 <label for="">Interesses</label>
                 <input type="text" class="form-control" id="" placeholder="Digite o seus Interesses">
             </div>
-            
+
             <button type="submit" class="btn btn-success  mt-2">Submit</button>
         </form>
     </div>
-    </section>
+</section>
 
 <?php require_once("footer.php"); ?>
