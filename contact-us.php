@@ -3,7 +3,7 @@
 
 <main>
     <section id="contact-us">
-        <div class="container">
+        <article class="container">
             <div class="row">
 
                 <div class="col-12 col-lg-6 contact">
@@ -124,7 +124,7 @@
 
                 </div>
             </div>
-        </div>
+        </article>
     </section>
 
 </main>

@@ -15,6 +15,14 @@ main {
   margin-top: 200px;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Tipografia 
+--------------------*/
+
 /* Regras Gerais Fim 
 -------------------- */
 
@@ -99,6 +107,252 @@ div.card {
 }
 /* -- fim contact-us
 ---------------------*/
+
+/* início about ut 
+----------------------*/
+
+#about-us article p {
+  margin-top: 20px;
+}
+
+#about-us article img {
+  width: 50%;
+}
+
+/* início event 
+-----------------*/
+#event {
+  height: 100%;
+  width: 100%;
+  margin-top: 9%;
+}
+
+.side-bar {
+  float: left;
+  background:#f8f9fa;
+  padding: 2.5rem;
+  height: 1000px;
+  width: 280px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.side-bar .user-info {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.side-bar .user-info .img-cropper {
+  display: inline-block;
+  background: red;
+  width: 63px;
+  height: 63px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.side-bar .user-info .img-cropper img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.side-bar .user-info .extra-info {
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  transform: translateY(-50%);
+  margin-left: 20px;
+}
+
+.side-bar .user-info .extra-info h5 {
+  color: rgb(104, 105, 120);
+  margin-bottom: 8px;
+}
+
+.side-bar .user-info .extra-info h6 {
+  color: rgb(200, 204, 215);
+  font-size: 12px;
+}
+
+.side-bar .category-wrapper {
+  margin-top: -4.5px;
+}
+
+.side-bar .category-wrapper ul {
+  list-style: none;
+}
+
+.content {
+  height: 100%;
+  width: auto;
+  white-space: nowrap;
+}
+.content .task-box {
+  display: inline-block;
+  margin-left: 50px;
+  border-radius: 5px;
+  background: #fff;
+  height: 100%;
+  width:100%;
+}
+
+.content .first.task-box {
+  white-space: initial;
+}
+
+.content .first.task-box .top-image-area {
+  margin: 0 auto;
+  height: 30.7%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+
+}
+
+.content .first.task-box .top-image-area img {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.content .first.task-box .top-image-area button {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  padding: 8px 30px;
+}
+
+.content .first.task-box .wrap-content {
+  padding: 42px 35px;
+  margin: 0 auto;
+}
+
+.content .first.task-box .wrap-content hr {
+  margin: 2em 0 1em 0;
+}
+
+
+.content .first.task-box .wrap-content .first {
+  text-align: left;
+
+}
+
+.content .first.task-box .wrap-content .first .inner {
+  padding-right: 20px;
+}
+
+
+.content .first.task-box .wrap-content .first h3{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.content .first.task-box .wrap-content .first p {
+  font-size: 13px;
+  margin: 0 auto;
+  color: rgb(155, 157, 172);
+  line-height: 19px;
+}
+
+.content .first.task-box .wrap-content .second {
+  margin-bottom: -8px;
+}
+
+.content .first.task-box .wrap-content .second hr {
+  margin-top: 21px;
+}
+
+
+.content .first.task-box .wrap-content .second .wrap {
+  display: block;
+  line-height: 30px;
+  margin-bottom: 3px;
+}
+
+.content .first.task-box .wrap-content .second .wrap h5 {
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 10px;
+  width: 80%;
+  color: rgb(155, 157, 172);
+}
+
+.content .first.task-box .wrap-content .second .wrap .fa {
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  width: 6%;
+  color: rgb(155, 157, 172);
+}
+
+
+.content .first.task-box .wrap-content .third {
+  display: block;
+  position: relative;
+  margin-top: 42px;
+
+}
+
+.content .first.task-box .wrap-content .third .img-cropper {
+  display: inline-block;
+  background: black;
+  width: 58px;
+  height: 58px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid rgba(224, 224, 224, .9);
+}
+
+.content .first.task-box .wrap-content .third .img-cropper img {
+  display: inline-block;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.content .first.task-box .wrap-content .third .user {
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  transform: translateY(-50%);
+  margin-left: 20px;
+}
+
+.content .first.task-box .wrap-content .third .user h5{
+  font-size: 12px;
+  color: rgb(155, 157, 172);
+  line-height: 20px;
+}
+.content .first.task-box .wrap-content .third .user h5:nth-child(2){
+  color: rgba(155, 157, 172, .7);
+  font-weight: 400;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(237, 238, 241);
+  border-bottom: 1px solid rgb(237, 238, 241);
+  margin: 1.5em 0;
+  padding: 0;
+}
+
+.search-area {
+  display: inline-block;
+  width: auto;
+  background: #F2F3F8;
+  padding: 35px 55px;
+}
 
 /* -- footer início 
 ------------------ */
