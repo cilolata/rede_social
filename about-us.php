@@ -14,7 +14,8 @@
                 criminologia e sociologia urbana publicado em 1996, sobre crime e estratégias para o conter ou eliminar
                 dos ambientes urbanos. O livro é baseado num artigo com o título "Broken Windows" de James Q. Wilson e
                 George L. Kelling, que surgiu em março de 1982 no The Atlantic Monthly.</p>
-            <p class="text-justify">O título provém dos seguintes exemplos: "Considere um edifício com algumas janelas
+
+                 <p class="text-justify">O título provém dos seguintes exemplos: "Considere um edifício com algumas janelas
                 quebradas. Se as janelas não forem reparadas, a tendência é que vândalos quebrem mais janelas. Após
                 algum tempo, poderão entrar no edifício e, se ele estiver desocupado, torna-se uma "ocupação" ou até
                 incendeiam o edifício, ou, Considere uma calçada ou passeio no qual algum lixo está acumulado. Ao longo

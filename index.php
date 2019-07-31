@@ -28,7 +28,7 @@
 
             <div class="col-lg-6 d-none d-lg-block">
                 <div class="d-flex justify-content-center ">
-                    <img class="imagem2" src="img/connection.png" style="width:50%" alt="imagem-conexão"
+                    <img class="imagem2 w-50" src="img/connection.png" alt="imagem-conexão"
                         class="img_form aling-self-center">
                 </div>
             </div>

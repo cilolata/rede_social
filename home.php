@@ -8,7 +8,7 @@ session_start();
 <?php require_once("head.php"); ?>
 
 <header>
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light shadow-sm p-3 mb-5">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light shadow-sm p-3 mb-5">
         <div class="container">
 
             <!--cabeçalho logo e nome--->
@@ -20,21 +20,28 @@ session_start();
 
             <!--menu collapse-->
 
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="nav-principal">
+                <ul class="navbar-nav list-unstyle ml-auto">
+                    <li class="nav-item"><a href="#" class="nav-link text-success">Comunidades</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-success">Mensagens</a></li>
+                    <li class="nav-item"><a href="perfil.php" class="nav-link text-success">Perfil</a></li>
+                    <li class="nav-item"><a href="logoff.php" class="nav-link text-success">Sair</a></li>
+                </ul>
+            </div>
             <!--fim -menu collapse-->
 
             <!--inicio menu cabeçalho-->
+
             <div class="media">
-                <div class="d-none d-lg-block d-xl-block">
-                    <span class="mr-3"><a class="text-success" href="">Comunidades</a></span>
-                    <span class="mr-3"><a class="text-success" href=""> Mensagens</a></span>
-                    <span class="mr-3"><a class="text-success" href="perfil.php">Perfil</a></span>
-                    <span class="mr-3"><a href="logoff.php" class="text-success" href="">Sair</a></span>
-                    <!--botao cadastrar-->
-                    <img class="ml-3" style="width:50px;" src="img/perfil.png" alt="Imagem de exemplo genérica">
-                </div>
+                <img class="ml-3" style="width:50px;" src="img/perfil.png" alt="Imagem de exemplo genérica">
             </div>
         </div>
         <!--fim menu cabeçalho-->
+    </nav>
 </header>
 <!--inicio main-->
 <main class="container" id="main-profile">
@@ -47,8 +54,7 @@ session_start();
         <div class="d-flex mt-4">
             <div class="input-group d-flex justify-content-center">
                 <input type="text" class="input-group-text bg-white" style="width:500px;" id="" placeholder="Pesquisar">
-                <button type="button" class="btn btn-link"><img src="img/search.png" style="width:40px;" class="ml-2"
-                        alt=""></button>
+                <button type="button" class="btn btn-link"><img src="img/search.png" style="width:40px;" class="ml-2" alt=""></button>
             </div>
         </div>
     </section>
