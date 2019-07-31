@@ -36,7 +36,7 @@ session_start();
             <!--inicio menu cabeçalho-->
 
             <div class="media">
-                <img class="ml-3" style="width:50px;" src="img/perfil.png" alt="Imagem de exemplo genérica">
+                <img class="ml-3 rounded-circle" style="width:50px;" src="img/perfil.png" alt="Imagem de exemplo genérica">
             </div>
         </div>
         <!--fim menu cabeçalho-->
@@ -50,7 +50,7 @@ session_start();
     <div class="row">
 
         <aside class="col-lg-2 col-sm-12">
-            <img src="img/perfil.png" style="width:100px;">
+            <img src="img/perfil.png" class="rounded-circle"style="width:100px;">
         </aside>
         <form class="col-lg-10 col-sm-12">
             <div class="form-group">

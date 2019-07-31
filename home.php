@@ -37,7 +37,7 @@ session_start();
             <!--inicio menu cabeçalho-->
 
             <div class="media">
-                <img class="ml-3" style="width:50px;" src="img/perfil.png" alt="Imagem de exemplo genérica">
+                <img class="ml-3 rounded-circle" style="width:50px;" src="img/perfil.png" alt="Imagem de exemplo genérica">
             </div>
         </div>
         <!--fim menu cabeçalho-->
