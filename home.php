@@ -72,7 +72,7 @@ session_start();
 
 
     <!--inicio minhas comunidades-->
-    <section class="minhas_comunidades mt-5">
+    <section class="minhas_comunidades mt-5 pt-4">
         <h5 class="text-success"> Minhas Comunidades</h5>
         <div class="row">
             <div class="col-12 col-sm-6 col-md-3 cardAnuncioCont">

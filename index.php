@@ -4,7 +4,7 @@
 
 <main class="container">
     <!-- inicio section destaque-->
-    <section id=" destaque">
+    <section id=" destaque" class="p-4">
         <article class="row">
             <div class="col-12 col-lg-6">
                 <h1 class="display-5 display-sm-1">Conecte-se com pessoas que querem mudar o mundo</h1>
@@ -16,7 +16,7 @@
 
             <div class="imagem-principal col-6 d-none d-lg-block">
                 <div class="d-flex justify-content-center">
-                    <img src="img/save.png" class="w-75 ml-5" alt="imagem mãos segurando a terra">
+                    <img src="img/save.png" class="w-50 ml-5" alt="imagem mãos segurando a terra">
                 </div>
         </article>
     </section>
@@ -27,7 +27,7 @@
         <article class="d-flex align-items-center cadastrar-container">
             <div class="col-lg-6 d-none d-lg-block">
                 <div class="justify-content-center">
-                    <img class="imagem2 w-75 mt-4" src="img/connection.png" alt="imagem-conexão" class="img_form aling-self-center">
+                    <img class="imagem2 w-50" src="img/connection.png" alt="imagem-conexão" class="img_form aling-self-center">
                 </div>
             </div>
             <div class="col-lg-6 col-12">
