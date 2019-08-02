@@ -1,5 +1,42 @@
 <?php require_once("head.php"); ?>
-<?php require_once("header.php"); ?>
+
+<header>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light shadow-sm p-3 mb-5">
+        <div class="container">
+
+            <!--cabeçalho logo e nome--->
+            <a href="home.php" class="navbar-brand d-flex align-items-center">
+                <img src="img/light-bulb (4).png" alt="imagem_logo" class="d-inline-block">
+                <span>Nome da Rede</span>
+            </a>
+            <!--fim cabeçalho logo e nome-->
+
+            <!--menu collapse-->
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="nav-principal">
+                <ul class="navbar-nav list-unstyle ml-auto">
+                    <li class="nav-item"><a href="#" class="nav-link text-success">Comunidades</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-success">Mensagens</a></li>
+					<li class="nav-item"><a href="perfil.php" class="nav-link text-success">Perfil</a></li>
+                    <li class="nav-item"><a href="home.php" class="nav-link text-success">Home</a></li>
+                    <li class="nav-item"><a href="logoff.php" class="nav-link text-success">Sair</a></li>
+                </ul>
+            </div>
+            <!--fim -menu collapse-->
+
+            <!--inicio menu cabeçalho-->
+
+            <div class="media">
+                <img class="ml-3 rounded-circle" style="width:50px;" src="img/perfil.png" alt="Imagem de exemplo genérica">
+            </div>
+        </div>
+        <!--fim menu cabeçalho-->
+    </nav>
+</header>
 
 
 <main id="event" class="container">
@@ -8,7 +45,7 @@
         <article class="box side-bar">
             <div class="user-info">
                 <div class="img-cropper">
-                    <img src="img/perfil.png" alt="user-image">
+                    <img src="img/perfil.png" alt="user-image" class="h-100">
                 </div>
                 <div class="extra-info">
                     <h5> Nome do usuário </h5>

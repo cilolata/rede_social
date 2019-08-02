@@ -16,7 +16,7 @@
 
             <div class="imagem-principal col-6 d-none d-lg-block">
                 <div class="d-flex justify-content-center">
-                    <img src="img/save.png" class="w-50" alt="imagem mãos segurando a terra">
+                    <img src="img/save.png" class="w-75 ml-5" alt="imagem mãos segurando a terra">
                 </div>
         </article>
     </section>
@@ -25,16 +25,14 @@
     <!-- início section cadastrar-->
     <section id="cadastrar">
         <article class="d-flex align-items-center cadastrar-container">
-
             <div class="col-lg-6 d-none d-lg-block">
                 <div class="justify-content-center">
-                    <img class="imagem2" src="img/connection.png" style="width:60%" alt="imagem-conexão"
-                        class="img_form aling-self-center">
+                    <img class="imagem2 w-75 mt-4" src="img/connection.png" alt="imagem-conexão" class="img_form aling-self-center">
                 </div>
             </div>
             <div class="col-lg-6 col-12">
-                <h3>Junte-se à nós!</h3>
-                <p>Cadastre-se</p>
+                <h3 class="ml-3">Junte-se à nós!</h3>
+                <p class="ml-3">Cadastre-se</p>
                 <form class="" action="cadastro.php" method="POST">
                     <div class="form-group d-flex">
                         <label purpose="float" for="nome" class="col-sm-6 col-12">Nome:
@@ -51,6 +49,7 @@
                         <label for="password" class="col-sm-6 col-12">Senha:
                             <input type="password" class="form-control" id="password" name="password" required>
                         </label>
+                        <button type="submit" class="btn btn-success mt-2 ml-3">Submit</button>
                     </div>
             </div>
         </article>
@@ -58,7 +57,7 @@
     <!-- fim section cadastrar -->
 
     <!--começo section anuncios-->
-    <section class="d-none d-lg-block d-xl-block">
+    <section class="d-none d-lg-block d-xl-block mt-5">
         <article class="row">
             <div class="col-12 col-sm-6 col-md-3 cardAnuncioCont">
                 <div class="card d-block">
@@ -206,12 +205,9 @@
 <?php require_once("footer.php"); ?>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>

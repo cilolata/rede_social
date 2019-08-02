@@ -11,7 +11,7 @@ session_start();
         <div class="container">
 
             <!--cabeçalho logo e nome--->
-            <a href="index.php" class="navbar-brand d-flex align-items-center">
+            <a href="home.php" class="navbar-brand d-flex align-items-center">
                 <img src="img/light-bulb (4).png" alt="imagem_logo" class="d-inline-block">
                 <span>Nome da Rede</span>
             </a>
@@ -27,6 +27,7 @@ session_start();
                 <ul class="navbar-nav list-unstyle ml-auto">
                     <li class="nav-item"><a href="#" class="nav-link text-success">Comunidades</a></li>
                     <li class="nav-item"><a href="#" class="nav-link text-success">Mensagens</a></li>
+                    <li class="nav-item"><a href="event.php" class="nav-link text-success">Eventos</a></li>
                     <li class="nav-item"><a href="home.php" class="nav-link text-success">Voltar</a></li>
                     <li class="nav-item"><a href="logoff.php" class="nav-link text-success">Sair</a></li>
                 </ul>

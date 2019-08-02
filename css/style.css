@@ -1,18 +1,20 @@
+
 /*  Regras Gerais Início 
 ------------------------ */
+
 * {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
 
 html, body {
   height: 100%;
   overflow-x: hidden;
-  }
+}
 
 main {
   width: 100%;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 a {
@@ -20,14 +22,10 @@ a {
   color: #000000;
 }
 
-/* Tipografia 
---------------------*/
 
-/* Regras Gerais Fim 
--------------------- */
+/* início header pag index 
+-------------------------*/
 
-/* início header 
-------------------------*/
 .navbar-brand {
   font-family: 'Chivo', sans-serif;
 }
@@ -37,22 +35,11 @@ a {
   padding: 0 0 0 5px;
 }
 
-/* fim header 
--------------------*/
 
 
-/* inicio section destaque
-----------------------------*/
+/*inicio section cadastrar pag index
+-----------------------------------*/
 
-#destaque {
-  height: 100%;
-}
-
-/* fim section destaque
-----------------------*/
-
-/*inicio section cadastrar
-----------------------------*/
 #cadastrar {
   margin: 125px auto 100px auto;  
 }
@@ -74,11 +61,10 @@ label, #btnSubmitLabel {
   margin: 10px auto;
 }
 
- /* fim section cadastrar 
- -------------------- */
 
- /*inicio section anuncios
-----------------------------*/
+ /*inicio section anuncios pg index
+----------------------------------*/
+
 .cardAnuncioCont {
   padding: 0;
 }
@@ -88,8 +74,10 @@ div.card {
   padding: 0;
 }
 
-/* inicio section contact-us 
------*/
+
+/* inicio section pagina contact-us 
+---------------------------------*/
+
 #contact-us {
   height: 100%;
 }
@@ -105,11 +93,10 @@ div.card {
 #contact-us #textArea {
   resize: none;
 }
-/* -- fim contact-us
----------------------*/
 
-/* início about ut 
-----------------------*/
+
+/* início pagina about-us 
+-----------------------*/
 
 #about-us article p {
   margin-top: 20px;
@@ -119,8 +106,10 @@ div.card {
   width: 50%;
 }
 
-/* início event 
------------------*/
+
+/* início pagina event 
+---------------------*/
+
 #event {
   height: 100%;
   width: 100%;
@@ -155,8 +144,7 @@ div.card {
 .side-bar .user-info .img-cropper img {
   display: inline;
   margin: 0 auto;
-  height: 100%;
-  width: auto;
+  
 }
 
 .side-bar .user-info .extra-info {
@@ -327,12 +315,13 @@ div.card {
   margin-left: 20px;
 }
 
-.content .first.task-box .wrap-content .third .user h5{
+.content .first.task-box .wrap-content .third .user h5 {
   font-size: 12px;
   color: rgb(155, 157, 172);
   line-height: 20px;
 }
-.content .first.task-box .wrap-content .third .user h5:nth-child(2){
+
+.content .first.task-box .wrap-content .third .user h5:nth-child(2) {
   color: rgba(155, 157, 172, .7);
   font-weight: 400;
 }
@@ -354,7 +343,16 @@ hr {
   padding: 35px 55px;
 }
 
-/* -- footer início 
+/* section pesquisar pagina home
+------------------------------*/
+
+#main-home .pesquisar-home .div-input-home .home-pesquisar {
+  width: 600px; 
+  border-radius: 30px;
+}
+
+
+/* --footer início 
 ------------------ */
  
 footer {
@@ -387,15 +385,8 @@ footer {
 ------------------*/
 
 
-/* inicio profile page
------------------------*/
 
-body span a:hover {
-  color: green;
-}
 
-/* fim profile page
------------------------*/
 
 
 
