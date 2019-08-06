@@ -5,11 +5,10 @@
     <section class="row" id="about-us">
         <h1 class="col-12">Sobre nós</h1>
         <article class="col-12 col-md-6">
-            <p class="text-justify"> Somos uma Rede Social brasileira dedicada à ações que as pessoas quiserem realizar
-                na comunidadd. A nossa proposta se baseia em juntar pessoas com um mesmo propósito: o de limpar lugares
-                públicos, tais como praças, parques lugares que podem ser reaproveitados pela comunidade, se não fossem
-                expostos a tantos entulhos, lixos, despejados por empresas e mesmo por indivíduos. </p>
-            <p class="text-justify"> Para tanto nos baseamos numa teoria: A Teoria das Janelas quebradas. <strong>Fixing Broken Windows: Restoring Order and
+            <p class="text-justify"> Somos uma Rede Social brasileira dedicada a juntar pessoas com os mesmos propósitos - criar ações em pról da sociedade. 
+            A nossa proposta se baseia em juntar pessoas com um mesmo propósito: o de limpar lugares. </p>
+            <p class="text-justify"> Para tanto, nos baseamos numa teoria: A Teoria das Janelas quebradas. 
+            <strong>Fixing Broken Windows: Restoring Order and
                 Reducing Crime in Our Communities</strong> de George L. Kelling e Catherine Coles é um livro de
                 criminologia e sociologia urbana publicado em 1996, sobre crime e estratégias para o conter ou eliminar
                 dos ambientes urbanos. O livro é baseado num artigo com o título "Broken Windows" de James Q. Wilson e

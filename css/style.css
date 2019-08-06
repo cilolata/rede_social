@@ -5,7 +5,15 @@
 * {
   margin: 0;
   padding: 0;
+
 }
+
+input:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+  border-color: rgba(136, 134, 134, 0.7);
+  
+
+ }
 
 html, body {
   height: 100%;
@@ -21,6 +29,8 @@ a {
   text-decoration: none;
   color: #000000;
 }
+
+
 
 
 /* início header pag index 
