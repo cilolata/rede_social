@@ -51,28 +51,27 @@ session_start();
 
     <!--inicio section pesquisar-home-->
     <section class="pesquisar-home p-5">
-        <h4 class=" paragrafo-pesquisar text-center text-capitalize font-weight-light ">Ache um grupo ou
-            atividade e
-            junte-se para transformar a sua comunidade</h4>
-        <div class="input-group d-flex justify-content-center d-flex mt-4 div-input-home">
-            <input type="text" class=" home-pesquisar input-group-text bg-white shadow-sm ml-5" id="" placeholder="Pesquisar">
+        <h4 class="paragrafo-pesquisar text-center text-capitalize font-weight-light ">Ache um grupo ou
+            atividade e junte-se para transformar a sua comunidade</h4>
+        <div class="input-group d-flex justify-content-center mt-4 div-input-home">
+            <input type="text" class="home-pesquisar input-group-text bg-white shadow-sm" id="" placeholder="Pesquisar">
             <button type="button" class="btn btn-link">
                 <img src="img/search.png" class="ml-1 w-50" alt="">
             </button>
         </div>
     </section>
     <!--fim section pesquisar-->
-    <section class="nichos mt-5 p-5 d-flex justify-content-around ">
-    <img src="img/arvore.png" alt="">
-    <img src="img/doacao-de-sangue.png" alt="">
-    <img src="img/cereais.png" alt="">
-    <img src="img/cao.png" alt="">
-    <img src="img/friendship.png" alt="">
+    <section class="nichos mt-1 p-5 d-flex justify-content-around flex-wrap">
+        <img class="mt-3" src="img/arvore.png" alt="">
+        <img class="mt-3" src="img/doacao-de-sangue.png" alt="">
+        <img class="mt-3" src="img/cereais.png" alt="">
+        <img class="mt-3" src="img/cao.png" alt="">
+        <img class="mt-3" src="img/friendship.png" alt="">
     </section>
 
 
     <!--inicio minhas comunidades-->
-    <section class="minhas_comunidades mt-5 pt-4">
+    <section class="minhas_comunidades mt-5 pt-4 d-none d-lg-block d-xl-block">
         <h5 class="text-success"> Minhas Comunidades</h5>
         <div class="row">
             <div class="col-12 col-sm-6 col-md-3 cardAnuncioCont">
@@ -120,6 +119,99 @@ session_start();
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- inicio carousel -->
+    <section class="d-xl-none d-lg-none">
+        <article>
+            <h5 class="text-success"> Minhas Comunidades</h5>
+            <div class="d-flex flex-row">
+                <!--Carousel Wrapper-->
+                <div id="myCarousel" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                        <li data-target="#multi-item-example" data-slide-to="1"></li>
+                        <li data-target="#multi-item-example" data-slide-to="2"></li>
+                    </ol>
+                    <!--/.Indicators-->
+
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+
+                        <!--First slide-->
+                        <div class="carousel-item active">
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card 1</h4>
+                                        <p class="card-text">Um exemplo de texto rápido para construir o título do card
+                                            e fazer preencher o conteúdo do card.</p>
+                                        <a href="#" class="btn btn-success">Visitar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.First slide-->
+
+                        <!--Second slide-->
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card 2</h4>
+                                        <p class="card-text">Um exemplo de texto rápido para construir o título do card
+                                            e fazer preencher o conteúdo do card.</p>
+                                        <a href="#" class="btn btn-success">Visitar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Second slide-->
+
+                        <!--Third slide-->
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card 3</h4>
+                                        <p class="card-text">Um exemplo de texto rápido para construir o título do card
+                                            e fazer preencher o conteúdo do card.</p>
+                                        <a href="#" class="btn btn-success">Visitar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Third slide-->
+
+                        <!--Fourth slide-->
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card 4</h4>
+                                        <p class="card-text">Um exemplo de texto rápido para construir o título do card
+                                            e fazer preencher o conteúdo do card.</p>
+                                        <a href="#" class="btn btn-success">Visitar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Fourth slide-->
+
+                    </div>
+                    <!--/.Slides-->
+
+                </div>
+                <!--/.Carousel Wrapper-->
+
+            </div>
+        </article>
     </section>
 
 </main>
