@@ -62,11 +62,11 @@ session_start();
     </section>
     <!--fim section pesquisar-->
     <section class="nichos mt-1 p-5 d-flex justify-content-around flex-wrap">
-        <img class="mt-3" src="img/arvore.png" alt="">
-        <img class="mt-3" src="img/doacao-de-sangue.png" alt="">
-        <img class="mt-3" src="img/cereais.png" alt="">
-        <img class="mt-3" src="img/cao.png" alt="">
-        <img class="mt-3" src="img/friendship.png" alt="">
+        <img class="mt-3" src="img/arvore.png" alt="ecologia" title="ecologia">
+        <img class="mt-3" src="img/doacao-de-sangue.png" alt="saúde" title="saúde">
+        <img class="mt-3" src="img/cereais.png" alt="alimentação" title="alimentação">
+        <img class="mt-3" src="img/cao.png" alt="animais" title="animais">
+        <img class="mt-3" src="img/friendship.png" alt="cidadania" title="cidadania">
     </section>
 
 
