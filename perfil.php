@@ -65,10 +65,46 @@ session_start();
             <div class="form-group">
                 <label for="1">País</label>
                 <input type="text" class="form-control" id="" placeholder="Digite o seu País">
+                    <select name=”país”>
+                        <option value=”Argentina”>Argentina</option>
+                        <option value=”Brasil”>Brasil</option>
+                        <option value=”Colombia”>Colômbia</option>
+                    </select>
             </div>
             <div class="form-group">
                 <label for="1">Estado</label>
                 <input type="text" class="form-control" id="" placeholder="Digite o seu Estado">
+                    <select id="estado" name="estado">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </select>
+
             </div>
             <div class="form-group">
                 <label for="">Cidade</label>
@@ -77,6 +113,13 @@ session_start();
             <div class="form-group">
                 <label for="">Interesses</label>
                 <input type="text" class="form-control" id="" placeholder="Digite o seus Interesses">
+                <select name=”país”>
+                        <option value=”Animais”>Animais</option>
+                        <option value=”Cidadania”>Cidadania</option>
+                        <option value=”Colombia”>Educação</option>
+                        <option value=”Animais”>Esportes</option>
+                        <option value=”Animais”>Meio-Ambiente</option>
+                    </select>
             </div>
 
             <button type="submit" class="btn btn-success  mt-2">Submit</button>

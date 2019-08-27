@@ -9,9 +9,7 @@
                 <div class="col-12 col-lg-6 contact">
                     <div>
                         <h1 class="display-5 display-sm-1">Fale conosco!</h1>
-                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
-                            obcaecati sint hic maiores est deleniti consectetur minima asperiores dolorum quas nulla
-                            consequatur, eligendi veritatis, culpa ea iure suscipit ducimus deserunt!</p>
+                        <p class="text-justify">A ideia deste site é conectar pessoas, em suas comunidades, que tenham interesses comuns em promover melhorias no entorno destas. Assim, temos algumas propostas listadas, tais como: cuidar de animais, de limpezas de praças, se envolver com propostas educacionais, culturais, artísticas ou esportivas em sua comunidade. </p>
                     </div>
                 </div>
 
