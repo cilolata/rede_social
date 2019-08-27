@@ -12,7 +12,6 @@ input:focus {
   outline: -webkit-focus-ring-color auto 0px;
   border-color: rgba(136, 134, 134, 0.7);
   
-
  }
 
 html, body {
@@ -35,9 +34,6 @@ a:visited {
   text-decoration: none;
 }
 
-
-
-
 /* início header pag index 
 -------------------------*/
 
@@ -49,7 +45,6 @@ a:visited {
   color: #2E8B57;
   padding: 0 0 0 5px;
 }
-
 
 
 /*inicio section cadastrar pag index
