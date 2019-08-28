@@ -28,7 +28,7 @@
                                 <input class="form-control rounded" type="password" name="password" class="passwordTop"
                                     placeholder="Digite sua senha">
                             </div>
-                            <button class="btn btn-outline-success m-2" type="submit"
+                            <button class="btn btn-success m-2" type="submit"
                                 class="btn btn-default">Login</button>
                         </form>
                     </div>

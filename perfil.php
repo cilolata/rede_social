@@ -62,9 +62,10 @@ session_start();
                 <label for="">Sobrenome</label>
                 <input type="text" class="form-control" id="" placeholder="Digite seu Sobrenome">
             </div>
+        
+    
             <div class="form-group">
                 <label for="1">País</label>
-                <input type="text" class="form-control" id="" placeholder="Digite o seu País">
                     <select name=”país”>
                         <option value=”Argentina”>Argentina</option>
                         <option value=”Brasil”>Brasil</option>
@@ -73,7 +74,6 @@ session_start();
             </div>
             <div class="form-group">
                 <label for="1">Estado</label>
-                <input type="text" class="form-control" id="" placeholder="Digite o seu Estado">
                     <select id="estado" name="estado">
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
@@ -112,18 +112,16 @@ session_start();
             </div>
             <div class="form-group">
                 <label for="">Interesses</label>
-                <input type="text" class="form-control" id="" placeholder="Digite o seus Interesses">
-                <select name=”país”>
+                    <select name=”país”>
                         <option value=”Animais”>Animais</option>
                         <option value=”Cidadania”>Cidadania</option>
-                        <option value=”Colombia”>Educação</option>
-                        <option value=”Animais”>Esportes</option>
-                        <option value=”Animais”>Meio-Ambiente</option>
+                        <option value=”Educação”>Educação</option>
+                        <option value="Esportes">Esportes</option>
+                        <option value=”Ecologia”>Ecologia</option>
                     </select>
             </div>
 
-            <button type="submit" class="btn btn-success  mt-2">Submit</button>
-        </form>
+            </form>
     </div>
 </section>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

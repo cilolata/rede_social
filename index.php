@@ -11,7 +11,7 @@
                 <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat obcaecati sint
                     hic maiores est deleniti consectetur minima asperiores dolorum quas nulla consequatur, eligendi
                     veritatis, culpa ea iure suscipit ducimus deserunt!</p>
-                <a class="btn btn-outline-success" href="about-us.php" role="button">Leia mais</a>
+                <a class="btn btn-success" href="about-us.php" role="button">Leia mais</a>
             </div>
 
             <div class="imagem-principal col-6 d-none d-lg-block">
