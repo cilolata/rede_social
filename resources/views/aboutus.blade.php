@@ -1,9 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('title', 'Rede Social - Sobre Nós')
 
 @section('content')
-    <main class="container">
+    <main class="container mt-5 p-5">
         <section class="row" id="about-us">
             <h1 class="col-12">Sobre nós</h1>
             <article class="col-12 col-md-6">
@@ -19,10 +19,10 @@
             <article class="col-12 col-md-6 d-flex justify-content-center">
                 <img src="img/2525878.jpg" alt="lâmpada com folha" class="w-75 ml-5">
             </article>
-            <article class=" col-md-6 d-flex justify-content-center">
+            <article class=" col-md-6 d-flex justify-content-center mt-5">
                 <img src="img/2144509.jpg" alt="pessoas se ajudando" class="w-75 d-none d-md-block">
             </article>
-            <article class="col-12 col-md-6 mt-5">
+            <article class="col-12 col-md-6 mt-5 pt-3">
                 <p class="text-justify"> O título provém dos seguintes exemplos: "Considere um edifício com algumas janelas
                     quebradas. Se as janelas não forem reparadas, a tendência é que vândalos quebrem mais janelas. Após
                     algum tempo, poderão entrar no edifício e, se ele estiver desocupado, torna-se uma "ocupação" ou até

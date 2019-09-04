@@ -5,7 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-
+  font-family: 'Hind Madurai', sans-serif;
 }
 
 input:focus {
@@ -31,6 +31,11 @@ a.btn.btn-success {
   color: #fff;
 }
 
+.btn{
+  border-radius: 20px;
+  width: 100px;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -49,15 +54,19 @@ a.btn.btn-success {
 }
 
 
+
 /*inicio index
 -----------------------------------*/
 
 #destaque {
   height: 100vh;
+ 
+  
 }
 
 #cadastrar {
   height: 100vh;
+ 
 }
 
 #cadastrar .imagem2 {
@@ -77,12 +86,16 @@ label, #btnSubmitLabel {
  /*inicio section anuncios pg index
 ----------------------------------*/
 
+.div-card-anuncios{
+  height: 100vh;  
+}
+
 .cardAnuncioCont {
   padding: 0;
 }
 
 div.card {
-  margin: 5px;
+  margin: 30px;
   padding: 0;
 }
 
@@ -171,12 +184,17 @@ div.card {
   border-radius: 30px;
 }
 
+/*pagina profile
+---------------*/
+.img-profile {
+  width:100px;
+}
+
 
 /* --footer início 
 ------------------ */
  
 footer {
-  color: #007bff;;
   cursor: pointer;
   background-color: #f8f9fa;
   margin-top: 50px;
@@ -207,3 +225,18 @@ footer {
 
 /* media queries
 -----------------*/
+
+@media (max-width: 767.98px) { 
+
+  #main-home .div-input-home .home-pesquisar{
+    margin-top: 100px;
+  }
+
+  .pesquisar-home{
+    padding-bottom: 0;
+  }
+  .nichos{
+    margin: 0;
+    padding: 0;
+  }
+ }

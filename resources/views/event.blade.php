@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('title', 'Rede Social')
 
@@ -8,7 +8,7 @@
         <!-- inicio section event-->
     
         <section class="row event">
-            <article class="event-body col-8 mr-5">
+            <article class="event-body col-lg-8 col-12 mr-5 ">
     
                 <div class="event-about">
                     <div class="top-image-area">

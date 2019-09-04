@@ -1,8 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('title', 'Mais eventos')
 
 @section('content')
+
     <main id="search-events" class="container">
         <section class="row">
             <h1 class="mr-auto">Eventos</h1>

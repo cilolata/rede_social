@@ -1,97 +1,101 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('title', 'Rede Social - Seu Perfil')
 
 @section('content')
-    <main class="container">
+<main class="container mt-5 p-5">
+    <section class="d-flex row">
+        <aside class="col-lg-2 col-sm-12">
+            <img src="https://i.pinimg.com/originals/b9/58/5a/b9585a9d1b20060f0d7e83c72eaa159f.jpg" class="rounded-circle img-profile">
+        </aside>
+        <form class ="col-lg-10 col-sm-12">
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                    <label for="validationDefault01">Primeiro nome</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="Nome" value="Mark" required>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="validationDefault02">Sobrenome</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Sobrenome" value="Otto" required>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="validationDefaultUsername">Usuário</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                      </div>
+                      <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Usuário" aria-describedby="inputGroupPrepend2" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationDefault03">Cidade</label>
+                    <input type="text" class="form-control" id="validationDefault03" placeholder="Cidade" required>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationDefault04">Estado</label>
+                    <input type="text" class="form-control" id="validationDefault04" placeholder="Estado" required>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationDefault05">CEP</label>
+                    <input type="text" class="form-control" id="validationDefault05" placeholder="CEP" required>
+                  </div>
+                </div>
+                <div class="form-group mt-4">
+                    <p>Interesses</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Ecologia
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Saúde
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Alimentação
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Animais
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Comunidade
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group mt-5">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                          <label class="form-check-label" for="invalidCheck2">
+                            Concordo com os termos e condições
+                          </label>
+                        </div>
+                      </div>
+                <button class="btn btn-success mt-4" type="submit">Enviar</button>
+                </div>
+         </form>
+    </section>  
+</main>
 
-        <section class="row">
-            <div>
-    
-                <aside class="col-lg-2 col-sm-12">
-                    <img src="img/perfil.png" class="rounded-circle"style="width:100px;">
-                </aside>
-                <form class="col-lg-10 col-sm-12">
-                    <div class="form-group">
-                        <label for="">Nome</label>
-                        <input type="text" class="form-control" id="" aria-describedby="" placeholder="Digite seu nome">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Sobrenome</label>
-                        <input type="text" class="form-control" id="" placeholder="Digite seu Sobrenome">
-                    </div>
-                
-            
-                    <div class="form-group">
-                        <label for="1">País</label>
-                            <select name=”país”>
-                                <option value=”Argentina”>Argentina</option>
-                                <option value=”Brasil”>Brasil</option>
-                                <option value=”Colombia”>Colômbia</option>
-                            </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="1">Estado</label>
-                            <select id="estado" name="estado">
-                                <option value="AC">Acre</option>
-                                <option value="AL">Alagoas</option>
-                                <option value="AP">Amapá</option>
-                                <option value="AM">Amazonas</option>
-                                <option value="BA">Bahia</option>
-                                <option value="CE">Ceará</option>
-                                <option value="DF">Distrito Federal</option>
-                                <option value="ES">Espírito Santo</option>
-                                <option value="GO">Goiás</option>
-                                <option value="MA">Maranhão</option>
-                                <option value="MT">Mato Grosso</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                                <option value="MG">Minas Gerais</option>
-                                <option value="PA">Pará</option>
-                                <option value="PB">Paraíba</option>
-                                <option value="PR">Paraná</option>
-                                <option value="PE">Pernambuco</option>
-                                <option value="PI">Piauí</option>
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="RN">Rio Grande do Norte</option>
-                                <option value="RS">Rio Grande do Sul</option>
-                                <option value="RO">Rondônia</option>
-                                <option value="RR">Roraima</option>
-                                <option value="SC">Santa Catarina</option>
-                                <option value="SP">São Paulo</option>
-                                <option value="SE">Sergipe</option>
-                                <option value="TO">Tocantins</option>
-                                <option value="EX">Estrangeiro</option>
-                            </select>
-    
-                    </div>
-                    <div class="form-group">
-                        <label for="">Cidade</label>
-                        <input type="text" class="form-control" id="" placeholder="Digite a sua Cidade">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Interesses</label>
-                            <select name=”país”>
-                                <option value=”Animais”>Animais</option>
-                                <option value=”Cidadania”>Cidadania</option>
-                                <option value=”Educação”>Educação</option>
-                                <option value="Esportes">Esportes</option>
-                                <option value=”Ecologia”>Ecologia</option>
-                            </select>
-                    </div>
-    
-                    </form>
-            </div>
-        </section>
-    
-    </main>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
 @endsection

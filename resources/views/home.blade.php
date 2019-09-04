@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('title', 'Rede Social - Home')
 
@@ -7,10 +7,10 @@
     
         <!--inicio section pesquisar-home-->
         <section class="pesquisar-home p-5">
-            <h4 class="paragrafo-pesquisar text-center text-capitalize font-weight-light ">Ache um grupo ou
+            <h4 class="paragrafo-pesquisar text-center text-capitalize font-weight-light p-5 mt-5 d-none d-lg-block">Ache um grupo ou
                 atividade e junte-se para transformar a sua comunidade</h4>
             <div class="input-group d-flex justify-content-center mt-4 div-input-home">
-                <input type="text" class="home-pesquisar input-group-text bg-white shadow-sm" id="" placeholder="Pesquisar">
+                <input type="text" class="home-pesquisar input-group-text bg-white shadow-sm" id="" placeholder="Pesquisar atividades">
                 <button type="button" class="btn btn-link">
                     <img src="img/search.png" class="ml-1 w-50" alt="">
                 </button>
@@ -18,14 +18,13 @@
         </section>
         <!--fim section pesquisar-->
         <section class="nichos mt-1 p-5 d-flex justify-content-around flex-wrap">
-            <img class="mt-3" src="img/arvore.png" alt="ecologia" title="ecologia">
-            <img class="mt-3" src="img/doacao-de-sangue.png" alt="saúde" title="saúde">
-            <img class="mt-3" src="img/cereais.png" alt="alimentação" title="alimentação">
-            <img class="mt-3" src="img/cao.png" alt="animais" title="animais">
-            <img class="mt-3" src="img/friendship.png" alt="cidadania" title="cidadania">
+            <img class="mt-3 d-none d-lg-block" src="img/arvore.png" alt="ecologia" title="ecologia">
+            <img class="mt-3 d-none d-lg-block" src="img/doacao-de-sangue.png" alt="saúde" title="saúde">
+            <img class="mt-3 d-none d-lg-block" src="img/cereais.png" alt="alimentação" title="alimentação">
+            <img class="mt-3 d-none d-lg-block" src="img/cao.png" alt="animais" title="animais">
+            <img class="mt-3 d-none d-lg-block" src="img/friendship.png" alt="cidadania" title="cidadania">
         </section>
-    
-    
+        
         <!--inicio minhas comunidades-->
         <section class="minhas_comunidades mt-5 pt-4 d-none d-lg-block d-xl-block">
             <h5 class="text-success"> Minhas Comunidades</h5>
