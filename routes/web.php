@@ -15,19 +15,29 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/aboutus', function () {
+    return view('aboutus');
+});
+
 //Index
-Route::get('/index', 'IndexController@index');
+Route::get('/index', function () {
+    return view('index');
+});
+
+Route::get('/home', function () {
+    return view('home');
+});
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/aboutus', 'AboutController@aboutus');
 
 Route::get('/contact', 'ContactController@contact');
 
-Route::get('/event', 'EventController@event');
+// listando todos eventos
+Route::get('/events', 'EventsController@index');
 
-Route::get('/profile', 'ProfileController@profile');
+// listando evento específico a partir do ID - no futuro alterar para event/{id} para 
+// capturar as infos do evento
+Route::get('/event', 'EventsController@search');
 
-Route::get('/search', 'SearchController@search');
+Route::get('/profile/{id}', 'ProfileController@profile');

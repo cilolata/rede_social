@@ -16,12 +16,12 @@ input:focus {
 
 html, body {
   overflow-x: hidden;
+  background-color: #fff;
 }
 
 main {
   width: 100%;
 }
-
 
 a:visited {
   text-decoration: none;
@@ -37,7 +37,7 @@ a.btn.btn-success {
 }
 
 .navbar {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 
@@ -59,13 +59,13 @@ a.btn.btn-success {
 -----------------------------------*/
 
 #destaque {
-  height: 100vh;
+  height: 80vh;
  
   
 }
 
 #cadastrar {
-  height: 100vh;
+  height: 70vh;
  
 }
 
@@ -87,7 +87,7 @@ label, #btnSubmitLabel {
 ----------------------------------*/
 
 .div-card-anuncios{
-  height: 100vh;  
+  height: 70vh;  
 }
 
 .cardAnuncioCont {

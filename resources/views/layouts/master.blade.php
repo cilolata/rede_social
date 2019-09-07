@@ -7,10 +7,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!--bootstrap css-->
         <script src="https://kit.fontawesome.com/b90a86aab4.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" type="image/png" sizes="60x60" href="img/light-bulb (4).png">
+        <link rel="stylesheet" href="{{url("css/app.css")}}">
+        <link rel="stylesheet" href="{{url("css/style.css")}}">
         <link href="https://fonts.googleapis.com/css?family=Chivo:700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=ABeeZee|Comfortaa|Hind+Madurai|Inconsolata|Open+Sans|Red+Hat+Text|Varela+Round&display=swap" rel="stylesheet">  
         @section('title', 'Rede Social')
@@ -18,13 +16,13 @@
     </head>
 
     <body>
-        <header id="app">
+        <header id="app" class="mb-5">
             <nav class="navbar fixed-top navbar-expand-md navbar-light shadow-sm">
                 <div class="container">
-
+                    
                     <!--cabeçalho logo e nome--->
-                    <a href="index" class="navbar-brand d-flex align-items-center">
-                        <img src="img/light-bulb (4).png" alt="imagem_logo" class="d-inline-block">
+                    <a href="/index" class="navbar-brand d-flex align-items-center">
+                        <img src="{{url("img/light-bulb.png")}}" alt="imagem_logo" class="d-inline-block">
                         <span>Nome da Rede</span>
                     </a>
                     <!--fim cabeçalho logo e nome-->
@@ -57,7 +55,7 @@
                                 <button type="submit" class="btn btn-success mt-3">Entrar</button>
                             </form>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#cadastrar">Novo por aqui? Cadastre-se</a>
+                            <a class="dropdown-item" href="{{ route('register') }}">Novo por aqui? Cadastre-se</a>
                             <a class="dropdown-item" href="#">Esqueceu sua senha?</a>
                         </div>
 
@@ -88,7 +86,7 @@
         </header>
         <!--fim cabeçalho-->
 
-        <main>
+        <main >
             @yield('content')
         </main>
         <footer class="container-fluid">

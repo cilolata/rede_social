@@ -3,7 +3,7 @@
 @section('title', 'Rede Social')
 
 @section('content')
-    <main>
+    <main class="container mt-5 p-5">
         <section id="contact-us">
             <article class="container">
                 <div class="row">

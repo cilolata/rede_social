@@ -25,7 +25,7 @@
     <!-- fim section destaque-->
 
     <!-- início section cadastrar-->
-    <section id="cadastrar" class="d-flex align-items-center">
+   <section id="cadastrar" class="d-flex align-items-center">
         <article class="d-flex align-items-center cadastrar-container">
             <div class="col-lg-6 d-none d-lg-block">
                 <div class="justify-content-center">
@@ -33,7 +33,8 @@
                         class="img_form aling-self-center">
                 </div>
             </div>
-            <div class="col-lg-6 col-12 w-50">
+          
+          <!--  <div class="col-lg-6 col-12 w-50">
                 <h3 class="ml-2">Junte-se à nós!</h3>
                 <p class="ml-2">Cadastre-se</p>
                 <form class="" action="cadastro.php" method="POST">
@@ -55,9 +56,12 @@
                         <button type="submit" class="btn btn-success mt-2 ml-3">Submit</button>
                     </div>
             </div>
-        </article>
+        </article> -->
+        <!-- fim section cadastrar -->
+        
+        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto iste recusandae sequi consequuntur excepturi atque voluptates obcaecati nulla quaerat, ipsum rem cum explicabo! Saepe illo eius, quis corporis error.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto iste recusandae sequi consequuntur excepturi atque voluptates obcaecati nulla quaerat, ipsum rem cum explicabo! Saepe illo eius, quis corporis error.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto iste recusandae sequi consequuntur excepturi atque voluptates obcaecati nulla quaerat, ipsum rem cum explicabo! Saepe illo eius, quis corporis error.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto iste recusandae sequi consequuntur excepturi atque voluptates obcaecati nulla quaerat, ipsum rem cum explicabo! Saepe illo eius, quis corporis error</p>
     </section>
-    <!-- fim section cadastrar -->
+   
 
     <!--começo section anuncios-->
     <section class="d-none d-lg-block d-xl-block div-card-anuncios">

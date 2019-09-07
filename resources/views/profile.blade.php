@@ -6,17 +6,17 @@
 <main class="container mt-5 p-5">
     <section class="d-flex row">
         <aside class="col-lg-2 col-sm-12">
-            <img src="https://i.pinimg.com/originals/b9/58/5a/b9585a9d1b20060f0d7e83c72eaa159f.jpg" class="rounded-circle img-profile">
+            <img src="https://i.pinimg.com/originals/b9/58/5a/b9585a9d1b20060f0d7e83c72eaa159f.jpg" class="rounded-circle img-profile w-75">
         </aside>
         <form class ="col-lg-10 col-sm-12">
                 <div class="form-row">
                   <div class="col-md-4 mb-3">
-                    <label for="validationDefault01">Primeiro nome</label>
-                    <input type="text" class="form-control" id="validationDefault01" placeholder="Nome" value="Mark" required>
+                    <label for="validationDefault01">Nome</label>
+                  <input type="text" class="form-control" id="validationDefault01" placeholder="Nome" value="{{$usuario->name}}" required>
                   </div>
                   <div class="col-md-4 mb-3">
                     <label for="validationDefault02">Sobrenome</label>
-                    <input type="text" class="form-control" id="validationDefault02" placeholder="Sobrenome" value="Otto" required>
+                  <input type="text" class="form-control" id="validationDefault02" placeholder="Sobrenome" value="{{$usuario->sobrenome}}" required>
                   </div>
                   <div class="col-md-4 mb-3">
                     <label for="validationDefaultUsername">Usuário</label>
@@ -31,9 +31,9 @@
                 <div class="form-row">
                   <div class="col-md-6 mb-3">
                     <label for="validationDefault03">Cidade</label>
-                    <input type="text" class="form-control" id="validationDefault03" placeholder="Cidade" required>
+                  <input type="text" class="form-control" id="validationDefault03" placeholder="Cidade" value="{{$usuario->cidade}}" required>
                   </div>
-                  <div class="col-md-3 mb-3">
+                 <div class="col-md-3 mb-3">
                     <label for="validationDefault04">Estado</label>
                     <input type="text" class="form-control" id="validationDefault04" placeholder="Estado" required>
                   </div>
