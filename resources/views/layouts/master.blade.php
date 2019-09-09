@@ -30,7 +30,7 @@
                     <!--inicio formulario entrar-->
                     @guest
                     <div class="dropdown">
-                        <button class="btn btn-sm btn-outline-success dropdown-toggle rounded-5 " type="button" id="dropdownMenu2"
+                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle rounded-5 " type="button" id="dropdownMenu2"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Entrar
                         </button>
@@ -52,7 +52,7 @@
                                        Lembrar-me
                                     </label>
                                 </div>
-                                <button type="submit" class="btn btn-success mt-3">Entrar</button>
+                                <button type="submit" class="btn btn-outline-secondary mt-3">Entrar</button>
                             </form>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="{{ route('register') }}">Novo por aqui? Cadastre-se</a>

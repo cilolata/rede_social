@@ -44,12 +44,8 @@ a.btn.btn-success {
 /* início header pag index 
 -------------------------*/
 
-.navbar-brand {
-  font-family: 'Chivo', sans-serif;
-}
 
 .navbar-brand span {
-  color: #2E8B57;
   padding: 0 0 0 5px;
 }
 
@@ -57,37 +53,17 @@ a.btn.btn-success {
 
 /*inicio index
 -----------------------------------*/
-
 #destaque {
-  height: 80vh;
- 
-  
+  height: 100vh;
 }
 
-#cadastrar {
-  height: 70vh;
- 
-}
-
-#cadastrar .imagem2 {
-  margin: auto;
-}
-
-.form-group {
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-
-label, #btnSubmitLabel {
-  margin: 10px auto;
-}
 
 
  /*inicio section anuncios pg index
 ----------------------------------*/
 
 .div-card-anuncios{
-  height: 70vh;  
+  height: 60vh;  
 }
 
 .cardAnuncioCont {
@@ -180,7 +156,7 @@ div.card {
 ------------------------------*/
 
 #main-home .pesquisar-home .div-input-home .home-pesquisar {
-  width: 600px; 
+  width: 500px; 
   border-radius: 30px;
 }
 

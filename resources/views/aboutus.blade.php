@@ -17,7 +17,7 @@
                     George L. Kelling, que surgiu em março de 1982 no The Atlantic Monthly.</p>
             </article>
             <article class="col-12 col-md-6 d-flex justify-content-center">
-                <img src="img/2525878.jpg" alt="lâmpada com folha" class="w-75 ml-5">
+                <img src="img/volunteer.jpg" alt="mão com coração" class="w-75 ml-5">
             </article>
             <article class=" col-md-6 d-flex justify-content-center mt-5">
                 <img src="img/2144509.jpg" alt="pessoas se ajudando" class="w-75 d-none d-md-block">

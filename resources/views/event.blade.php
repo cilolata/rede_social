@@ -46,7 +46,7 @@
                                 <p>Organizador(a)</p>
                             </div>
                             <div class="d-flex justify-content-end">
-                                <button class="btn btn-outline-success">
+                                <button class="btn btn-outline-secondary">
                                     Participar!
                                 </button>
                             </div>

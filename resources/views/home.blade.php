@@ -12,7 +12,7 @@
             <div class="input-group d-flex justify-content-center mt-4 div-input-home">
                 <input type="text" class="home-pesquisar input-group-text bg-white shadow-sm" id="" placeholder="Pesquisar atividades">
                 <button type="button" class="btn btn-link">
-                    <img src="img/search.png" class="ml-1 w-50" alt="">
+                    <img src="img/search.png" class="w-50" alt="">
                 </button>
             </div>
         </section>
@@ -27,7 +27,7 @@
         
         <!--inicio minhas comunidades-->
         <section class="minhas_comunidades mt-5 pt-4 d-none d-lg-block d-xl-block">
-            <h5 class="text-success"> Minhas Comunidades</h5>
+            <h5> Minhas Comunidades</h5>
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-3 cardAnuncioCont">
                     <div class="card d-block">
@@ -36,7 +36,7 @@
                             <h5 class="card-title">Título do card</h5>
                             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
                                 preencher o conteúdo do card.</p>
-                            <a href="#" class="btn btn-success">Visitar</a>
+                            <a href="#" class="btn btn-outline-secondary">Visitar</a>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                             <h5 class="card-title">Título do card</h5>
                             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
                                 preencher o conteúdo do card.</p>
-                            <a href="#" class="btn btn-success">Visitar</a>
+                            <a href="#" class="btn btn-outline-secondary">Visitar</a>
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                             <h5 class="card-title">Título do card</h5>
                             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
                                 preencher o conteúdo do card.</p>
-                            <a href="#" class="btn btn-success">Visitar</a>
+                            <a href="#" class="btn btn-outline-secondary">Visitar</a>
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                             <h5 class="card-title">Título do card</h5>
                             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
                                 preencher o conteúdo do card.</p>
-                            <a href="#" class="btn btn-success">Visitar</a>
+                            <a href="#" class="btn btn-outline-secondary">Visitar</a>
                         </div>
                     </div>
                 </div>
