@@ -24,9 +24,7 @@ Route::get('/index', function () {
     return view('index');
 });
 
-Route::get('/home', function () {
-    return view('home');
-});
+Route::get('/contact', 'ContactController@contact');
 
 Route::get('/criandoEvento', function () {
     return view('criandoEvento');
@@ -34,15 +32,20 @@ Route::get('/criandoEvento', function () {
 
 Auth::routes();
 
+Route::middleware(['auth'])->group(function(){
 
-Route::get('/contact', 'ContactController@contact');
+    //Home usuário logado
+    Route::get('/home', function () {
+        return view('home');
+    });
 
-// listando todos eventos
-Route::get('/events', 'EventsController@index');
+    // listando todos eventos
+    Route::get('/events', 'EventsController@index');
 
-// listando evento específico a partir do ID - no futuro alterar para event/{id} para 
-// capturar as infos do evento
-Route::get('/event', 'EventsController@search');
+    // listando evento específico a partir do ID - no futuro alterar para event/{id} para 
+    // capturar as infos do evento
+    Route::get('/event', 'EventsController@search');
 
-Route::get('/profile/{id}', 'ProfileController@profile');
+    Route::get('/profile/{id}', 'ProfileController@profile');
 
+});
