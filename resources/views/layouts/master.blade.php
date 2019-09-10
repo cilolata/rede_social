@@ -11,8 +11,8 @@
         <link rel="stylesheet" href="{{url("css/style.css")}}">
         <link href="https://fonts.googleapis.com/css?family=Chivo:700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=ABeeZee|Comfortaa|Hind+Madurai|Inconsolata|Open+Sans|Red+Hat+Text|Varela+Round&display=swap" rel="stylesheet">  
-        @section('title', 'Rede Social')
-        <title>@yield('title')</title>
+        @section('title', 'Together')
+        <title>@yield('Together')</title>
     </head>
 
     <body>
@@ -23,7 +23,7 @@
                     <!--cabeçalho logo e nome--->
                     <a href="/index" class="navbar-brand d-flex align-items-center">
                         <img src="{{url("img/light-bulb.png")}}" alt="imagem_logo" class="d-inline-block">
-                        <span>Nome da Rede</span>
+                        <span>Together</span>
                     </a>
                     <!--fim cabeçalho logo e nome-->
 

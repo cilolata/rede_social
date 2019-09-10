@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Rede Social')
+@section('title', 'Together - Contato')
 
 @section('content')
     <main class="container mt-5 p-5">

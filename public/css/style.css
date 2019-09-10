@@ -155,9 +155,11 @@ div.card {
 /* section pesquisar pagina home
 ------------------------------*/
 
-#main-home .pesquisar-home .div-input-home .home-pesquisar {
-  width: 500px; 
-  border-radius: 30px;
+.home-pesquisar {
+  width: 500px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #fff;
 }
 
 /*pagina profile

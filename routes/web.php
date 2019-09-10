@@ -28,6 +28,10 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/criandoEvento', function () {
+    return view('criandoEvento');
+});
+
 Auth::routes();
 
 
@@ -41,3 +45,4 @@ Route::get('/events', 'EventsController@index');
 Route::get('/event', 'EventsController@search');
 
 Route::get('/profile/{id}', 'ProfileController@profile');
+

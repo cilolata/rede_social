@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Rede Social - Home')
+@section('title', 'Together - Home')
 
 @section('content')
     <main class="container" id="main-home">
@@ -9,11 +9,20 @@
         <section class="pesquisar-home p-5">
             <h4 class="paragrafo-pesquisar text-center text-capitalize font-weight-light p-5 mt-5 d-none d-lg-block">Ache um grupo ou
                 atividade e junte-se para transformar a sua comunidade</h4>
-            <div class="input-group d-flex justify-content-center mt-4 div-input-home">
-                <input type="text" class="home-pesquisar input-group-text bg-white shadow-sm" id="" placeholder="Pesquisar atividades">
-                <button type="button" class="btn btn-link">
+            <div class="input-group mt-4 div-input-home">
+                    <div class="input-group mb-3 d-flex justify-content-center">
+                            <input type="text" class=" home-pesquisar input-group-text shadow-sm" placeholder="Pesquisar" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <button class="btn border-right border-bottom border-top bg-white shadow-sm " type="button">
+                                  <i class="fa fa-search"></i>
+                              </button>
+                            </div>
+                          </div>
+              <!--   <input type="text" class="home-pesquisar input-group-text bg-white shadow-sm" id="" placeholder="Pesquisar atividades">
+                        </div>
+               <button type="button" class="btn btn-link">
                     <img src="img/search.png" class="w-50" alt="">
-                </button>
+                </button> -->
             </div>
         </section>
         <!--fim section pesquisar-->

@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Rede Social')
+@section('title', 'Together')
 
 @section('content')
 
