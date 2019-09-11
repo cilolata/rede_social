@@ -68,7 +68,7 @@
                         <!--cabeçalho logo e nome--->
                         <a href="/home" class="navbar-brand d-flex align-items-center">
                         <img src="{{url("img/light-bulb.png")}}" alt="imagem_logo" class="d-inline-block">
-                        <span>Nome da Rede</span>
+                        <span>Together</span>
                         </a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
                     <span class="navbar-toggler-icon"></span>
