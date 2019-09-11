@@ -53,9 +53,7 @@
                         </a>
                         <div class="dropdown header-paginas-internas" id="nav-principal">
                             <div class="navbar-nav list-unstyle ml-auto ">
-                                <!--<button class="btn btn-outline-light btn-sm dropdown-toggle border-0 nav navbar-nav" type="button"
-                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">-->
+                            
                                     <img  src="img/profile.jpeg" class="rounded-circle img-profile" height="25" width="25" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false" alt="">
                                 <div class="navbar-text d-none d-lg-block">
