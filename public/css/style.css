@@ -186,8 +186,17 @@ footer {
   text-align: center;
 }
 
+
 #logoFooter {
   margin: 0 calc(50% - 16px);
+}
+
+.img_footer{
+  width: 30px;
+}
+
+.img_footer_mail{
+  width: 34px;
 }
 
 .fa-2x {
