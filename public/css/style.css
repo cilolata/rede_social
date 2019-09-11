@@ -156,17 +156,40 @@ div.card {
 ------------------------------*/
 
 .home-pesquisar {
-  width: 500px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
   background-color: #fff;
+  position: relative;
+  width: 500px;
+ 
+  
 }
+
+.input-pesquisar{
+  border-radius: 20px;
+  text-align: center;
+}
+
+.icon-pesquisar {
+  position: absolute;
+  background: #fff;
+  right: 40px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: none;
+
+  /*
+  right: 20px;
+  border: 2px;
+  width: 1px;
+  margin-top: 15px;
+*/
+}
+
 
 /*pagina profile
 ---------------*/
-.img-profile {
-  width:100px;
-}
+
 
 
 /* --footer início 

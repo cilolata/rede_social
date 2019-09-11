@@ -18,9 +18,12 @@ class EventsController extends Controller
         return view('search');
     }
 
-    public function search(){
+    /*public function search(){
         return view('event');
     }
+
+    */
+
 
     /**
      * Show the form for creating a new resource.

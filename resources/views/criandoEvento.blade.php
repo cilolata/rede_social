@@ -1,4 +1,6 @@
 @extends('layouts.master')
+@extends('layouts.cabecalho')
+@extends('layouts.footer')
 
 @section('title', 'Together - Evento')
 
@@ -43,7 +45,7 @@
                 <div class="form-group d-flex flex-column">
 
                     <label for="inputData">Data</label>
-                    <input type="date" class="form-control col-2" id="data">
+                    <input type="date" class="form-control col-lg-3 col-sm-12" id="data">
                 </div>
                
                 <div class="row mt-3 ml-1">

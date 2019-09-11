@@ -16,6 +16,7 @@ class UsersTableSeeder extends Seeder
             "name" => "Abirosvaldo",
             "sobrenome"=>"Lolata",
             "email" => "abirosvaldo@gmail.com",
+            "imagem" => "https://i.pinimg.com/originals/b9/58/5a/b9585a9d1b20060f0d7e83c72eaa159f.jpg",
             "cidade"=>"são paulo",
             "password" => bcrypt("123456")
         ]);

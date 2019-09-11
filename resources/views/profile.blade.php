@@ -1,8 +1,10 @@
 @extends('layouts.master')
-
+@extends('layouts.cabecalho')
+@extends('layouts.footer')
 @section('title', 'Together - Seu Perfil')
 
 @section('content')
+
 <main class="container mt-5 p-5">
   <section class="d-flex row">
     <aside class="col-lg-2 col-sm-12">

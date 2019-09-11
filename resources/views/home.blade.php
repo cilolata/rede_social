@@ -1,4 +1,6 @@
 @extends('layouts.master')
+@extends('layouts.cabecalho')
+@extends('layouts.footer')
 
 @section('title', 'Together - Home')
 
@@ -7,19 +9,14 @@
 
     <!--inicio section pesquisar-home-->
     <section class="pesquisar-home p-5">
-        <h4 class="paragrafo-pesquisar text-center text-capitalize font-weight-light p-5 mt-5 d-none d-lg-block">Ache um
-            grupo ou
-            atividade e junte-se para transformar a sua comunidade</h4>
-        <div class="input-group mt-4 div-input-home">
-            <div class="input-group mb-3 d-flex justify-content-center">
-                <input type="text" class=" home-pesquisar input-group-text shadow-sm" placeholder="Pesquisar"
-                    aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="btn border-right border-bottom border-top bg-white shadow-sm " type="button">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-            </div>
+        <div class="row d-flex justify-content-center">
+            <h4 class="paragrafo-pesquisar text-center text-capitalize font-weight-light p-5 mt-5 d-none d-lg-block">Ache um
+                grupo ou
+                atividade e junte-se para transformar a sua comunidade</h4>
+                <form class="home-pesquisar form-group">
+                    <input type="text" class="form-control input-pesquisar tex-align-center shadow-sm" aria-label="pesquisar-area" placeholder="Pesquisar Eventos">
+                    <button type="submit" class="icon-pesquisar"><i class="fas fa-search"></i></button>
+                </form>
         </div>
     </section>
     <!--fim section pesquisar-->
@@ -84,95 +81,96 @@
 
     <!-- inicio carousel -->
     <section class="d-xl-none d-lg-none">
-        <article>
-            <h5 class="text-success"> Minhas Comunidades</h5>
-            <div class="d-flex flex-row">
-                <!--Carousel Wrapper-->
-                <div id="myCarousel" class="carousel slide carousel-multi-item" data-ride="carousel">
 
-                    <!--Indicators-->
-                    <ol class="carousel-indicators">
-                        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                        <li data-target="#multi-item-example" data-slide-to="1"></li>
-                        <li data-target="#multi-item-example" data-slide-to="2"></li>
-                    </ol>
-                    <!--/.Indicators-->
+    <article>
+        <h5 class="text-success"> Minhas Comunidades</h5>
+        <div class="d-flex flex-row">
+            <!--Carousel Wrapper-->
+            <div id="myCarousel" class="carousel slide carousel-multi-item" data-ride="carousel">
 
-                    <!--Slides-->
-                    <div class="carousel-inner" role="listbox">
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                    <li data-target="#multi-item-example" data-slide-to="1"></li>
+                    <li data-target="#multi-item-example" data-slide-to="2"></li>
+                </ol>
+                <!--/.Indicators-->
 
-                        <!--First slide-->
-                        <div class="carousel-item active">
-                            <div class="col-md-4">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Card 1</h4>
-                                        <p class="card-text">Um exemplo de texto rápido para construir o título do card
-                                            e fazer preencher o conteúdo do card.</p>
-                                        <a href="#" class="btn btn-success">Visitar</a>
-                                    </div>
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+
+                    <!--First slide-->
+                    <div class="carousel-item active">
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card 1</h4>
+                                    <p class="card-text">Um exemplo de texto rápido para construir o título do card
+                                        e fazer preencher o conteúdo do card.</p>
+                                    <a href="#" class="btn btn-success">Visitar</a>
                                 </div>
                             </div>
                         </div>
-                        <!--/.First slide-->
-
-                        <!--Second slide-->
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Card 2</h4>
-                                        <p class="card-text">Um exemplo de texto rápido para construir o título do card
-                                            e fazer preencher o conteúdo do card.</p>
-                                        <a href="#" class="btn btn-success">Visitar</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Second slide-->
-
-                        <!--Third slide-->
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Card 3</h4>
-                                        <p class="card-text">Um exemplo de texto rápido para construir o título do card
-                                            e fazer preencher o conteúdo do card.</p>
-                                        <a href="#" class="btn btn-success">Visitar</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Third slide-->
-
-                        <!--Fourth slide-->
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Card 4</h4>
-                                        <p class="card-text">Um exemplo de texto rápido para construir o título do card
-                                            e fazer preencher o conteúdo do card.</p>
-                                        <a href="#" class="btn btn-success">Visitar</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Fourth slide-->
-
                     </div>
-                    <!--/.Slides-->
+                    <!--/.First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card 2</h4>
+                                    <p class="card-text">Um exemplo de texto rápido para construir o título do card
+                                        e fazer preencher o conteúdo do card.</p>
+                                    <a href="#" class="btn btn-success">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Second slide-->
+
+                    <!--Third slide-->
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card 3</h4>
+                                    <p class="card-text">Um exemplo de texto rápido para construir o título do card
+                                        e fazer preencher o conteúdo do card.</p>
+                                    <a href="#" class="btn btn-success">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Third slide-->
+
+                    <!--Fourth slide-->
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card 4</h4>
+                                    <p class="card-text">Um exemplo de texto rápido para construir o título do card
+                                        e fazer preencher o conteúdo do card.</p>
+                                    <a href="#" class="btn btn-success">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Fourth slide-->
 
                 </div>
-                <!--/.Carousel Wrapper-->
+                <!--/.Slides-->
 
             </div>
-        </article>
+            <!--/.Carousel Wrapper-->
+
+        </div>
+    </article>
     </section>
 
 </main>

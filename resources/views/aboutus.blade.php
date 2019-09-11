@@ -1,4 +1,6 @@
 @extends('layouts.master')
+@extends('layouts.cabecalho')
+@extends('layouts.footer')
 
 @section('title', 'Together - Sobre Nós')
 

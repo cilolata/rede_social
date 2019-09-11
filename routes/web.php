@@ -40,11 +40,13 @@ Route::middleware(['auth'])->group(function(){
     });
 
     // listando todos eventos
-    Route::get('/events', 'EventsController@index');
+    Route::get('/search', 'EventsController@index');
 
     // listando evento específico a partir do ID - no futuro alterar para event/{id} para 
     // capturar as infos do evento
-    Route::get('/event', 'EventsController@search');
+    Route::get('/event', function(){
+        return view("event");
+    });
 
     Route::get('/profile/{id}', 'ProfileController@profile');
 
