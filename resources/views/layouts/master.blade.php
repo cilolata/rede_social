@@ -14,6 +14,7 @@
         <link
             href="https://fonts.googleapis.com/css?family=ABeeZee|Comfortaa|Hind+Madurai|Inconsolata|Open+Sans|Red+Hat+Text|Varela+Round&display=swap"
             rel="stylesheet">
+            
         @section('title', 'Together')
         <title>@yield('Together')</title>
     </head>
@@ -23,7 +24,8 @@
         <main>
             @yield('content')
         </main>
-       @yield("footer")
-    </body>     
+        @yield("footer")
+    </body>
+   
 
 </html>

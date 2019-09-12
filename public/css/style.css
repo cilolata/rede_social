@@ -17,6 +17,7 @@ input:focus {
 html, body {
   overflow-x: hidden;
   background-color: #fff;
+  height: 100%;
 }
 
 main {
@@ -176,14 +177,7 @@ div.card {
   width: 20px;
   height: 20px;
   background: transparent;
-  border: none;
-
-  /*
-  right: 20px;
-  border: 2px;
-  width: 1px;
-  margin-top: 15px;
-*/
+  border: none; 
 }
 
 
@@ -200,6 +194,7 @@ footer {
   background-color: #f8f9fa;
   margin-top: 50px;
   padding: 36px 20px 20px 20px;
+  height: 25%;
 }
 
 .list-unstyled li {

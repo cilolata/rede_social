@@ -20,7 +20,7 @@
         </div>
     </section>
     <!--fim section pesquisar-->
-    <section class="nichos mt-1 p-5 d-flex justify-content-around flex-wrap">
+    <section class="nichos mt-1 p-5 d-lg-flex d-none justify-content-around flex-wrap">
         <img class="mt-3 d-none d-lg-block" src="img/arvore.png" alt="ecologia" title="ecologia">
         <img class="mt-3 d-none d-lg-block" src="img/doacao-de-sangue.png" alt="saúde" title="saúde">
         <img class="mt-3 d-none d-lg-block" src="img/cereais.png" alt="alimentação" title="alimentação">
