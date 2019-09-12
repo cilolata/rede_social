@@ -8,9 +8,9 @@
 
 <main id="search-events" class="container">
     <section class="row">
-        <h1 class="mr-auto mt-5">Eventos</h1>
+        <h2 class="mr-auto mt-5 ml-4">Eventos</h2>
         <article class="mr-1">
-            <div class="input-group mt-5">
+            <div class="input-group mt-5 mr-5">
                 <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
                     <option selected>Categorias</option>
                     <option value="1">Ecologia</option>

@@ -3,10 +3,10 @@
 @extends('layouts.footer')
 
 @section('title', 'Together')
-
 @section('content')
 
 <main class="container">
+
   <!-- inicio section destaque-->
   <section id="destaque" class="p-4 d-flex align-items-center">
     <article class="row">
@@ -58,7 +58,7 @@
           <a href="#" class="card-link">Outro link</a>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card d-none d-lg-block" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Título do card</h5>
           <h6 class="card-subtitle mb-2 text-muted">Subtitulo do card</h6>
@@ -68,7 +68,7 @@
           <a href="#" class="card-link">Outro link</a>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card d-none d-lg-block" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Título do card</h5>
           <h6 class="card-subtitle mb-2 text-muted">Subtitulo do card</h6>

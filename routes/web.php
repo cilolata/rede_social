@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+//About us
 Route::get('/aboutus', function () {
     return view('aboutus');
 });
@@ -24,8 +21,10 @@ Route::get('/index', function () {
     return view('index');
 });
 
+//Contact Us
 Route::get('/contact', 'ContactController@contact');
 
+//Criando eventos
 Route::get('/criandoEvento', function () {
     return view('criandoEvento');
 });
@@ -48,6 +47,7 @@ Route::middleware(['auth'])->group(function(){
         return view("event");
     });
 
+    //Profile - completar o cadastro
     Route::get('/profile/{id}', 'ProfileController@profile');
 
 });
