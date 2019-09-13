@@ -17,12 +17,15 @@ class Eventos extends Migration
             $table->bigIncrements('id');
             $table->datetime('dataEvento');
             $table->string('imagem');
+            $table->string('titulo');
+            $table->string('endereco');
+            $table->string('cidade');
+            $table->string('estado');
+            $table->string('inicioEvento');
+            $table->string('fimEvento');
             $table->unsignedBigInteger('fk_categorias');
             $table->unsignedBigInteger('fk_users');
             $table->timestamps();
-            
-            
-            
             $table->foreign('fk_categorias')->references('id')->on('categorias');
             $table->foreign('fk_users')->references('id')->on('users');
         });
