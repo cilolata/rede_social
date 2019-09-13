@@ -31,13 +31,14 @@ Route::get('/criandoEvento', function () {
 
 Auth::routes();
 
+//Home usuário logado
+Route::get('/home', function () {
+    return view('home');
+});
 Route::middleware(['auth'])->group(function(){
-
-    //Home usuário logado
-    Route::get('/home', function () {
-        return view('home');
-    });
-
+    
+    
+    Route::get('/profile/{id}', 'ProfileController@profile');
     // listando todos eventos
     Route::get('/search', 'EventsController@index');
 
@@ -48,6 +49,5 @@ Route::middleware(['auth'])->group(function(){
     });
 
     //Profile - completar o cadastro
-    Route::get('/profile/{id}', 'ProfileController@profile');
 
 });
