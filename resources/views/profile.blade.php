@@ -18,11 +18,11 @@
           <input type="text" class="form-control" id="validationDefault01" placeholder="Nome" value="{{$usuario->name}}"
             required>
         </div>
-        <div class="col-md-4 mb-3">
+        {{-- <div class="col-md-4 mb-3">
           <label for="validationDefault02">Sobrenome</label>
           <input type="text" class="form-control" id="validationDefault02" placeholder="Sobrenome"
             value="{{$usuario->sobrenome}}" required>
-        </div>
+        </div> --}}
         <div class="col-md-4 mb-3">
           <label for="validationDefaultUsername">Usuário</label>
           <div class="input-group">
@@ -35,6 +35,19 @@
         </div>
       </div>
       <div class="form-row">
+      <div class="col-md-3 mb-3">
+        <div class="col-auto">
+          <label for="CEP">CEP</label>
+          <div class="input-group mb-2">
+            <input type="text" class="form-control" id="CEP" maxlength="9" placeholder="CEP" required name="CEP">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
         <div class="col-md-6 mb-3">
           <label for="validationDefault03">Cidade</label>
           <input type="text" class="form-control" id="cidade" placeholder="Cidade" name="cidade"
@@ -44,10 +57,7 @@
           <label for="validationDefault04">Estado</label>
           <input type="text" class="form-control" id="UF" placeholder="Estado" required name="UF">
         </div>
-        <div class="col-md-3 mb-3">
-          <label for="validationDefault05">CEP</label>
-          <input type="text" class="form-control" id="CEP" placeholder="CEP" required name="CEP">
-        </div>
+       
       </div>
       <div class="form-group mt-4">
         <p>Interesses</p>
