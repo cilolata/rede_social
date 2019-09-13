@@ -37,16 +37,16 @@
       <div class="form-row">
         <div class="col-md-6 mb-3">
           <label for="validationDefault03">Cidade</label>
-          <input type="text" class="form-control" id="cidade" placeholder="Cidade"
+          <input type="text" class="form-control" id="cidade" placeholder="Cidade" name="cidade"
             value="{{$usuario->cidade}}" required>
         </div>
         <div class="col-md-3 mb-3">
           <label for="validationDefault04">Estado</label>
-          <input type="text" class="form-control" id="UF" placeholder="Estado" required>
+          <input type="text" class="form-control" id="UF" placeholder="Estado" required name="UF">
         </div>
         <div class="col-md-3 mb-3">
           <label for="validationDefault05">CEP</label>
-          <input type="text" class="form-control" id="CEP" placeholder="CEP" required>
+          <input type="text" class="form-control" id="CEP" placeholder="CEP" required name="CEP">
         </div>
       </div>
       <div class="form-group mt-4">
@@ -95,6 +95,7 @@
     </form>
   </section>
 </main>
+@endsection
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -105,4 +106,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
-@endsection
+<script src="{{url("js/main.js")}}"></script>

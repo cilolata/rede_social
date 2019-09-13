@@ -22,25 +22,43 @@
                     <form class="px-4 py-3" method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="form-group">
-                            <label for="exampleDropdownFormEmail1">Email</label>
-                            <input type="email" class="form-control" id="exampleDropdownFormEmail1"
-                                placeholder="email@example.com">
+                            <label for="email">{{ __('EMail') }}</label>
+                            <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                            @error('email')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                         </div>
                         <div class="form-group">
-                            <label for="exampleDropdownFormPassword1">Senha</label>
-                            <input type="password" class="form-control" id="exampleDropdownFormPassword1"
-                                placeholder="Password">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Senha') }}</label>
+                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                         </div>
                         <div class="form-check mt-3">
-                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                            <label class="form-check-label" for="dropdownCheck">Lembrar-me</label>
+                            <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                                    <label class="form-check-label" for="remember">
+                                        {{ __('Lembrar senha') }}
+                                    </label>
                         </div>
-                        <button type="submit" class="btn btn-outline-secondary mt-3">Entrar</button>
+                        <button type="submit" class="btn btn-outline-secondary">
+                            {{ __('Login') }}
+                        </button>
                     </form>
 
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="{{ route('register') }}">Novo por aqui? Cadastre-se</a>
-                    <a class="dropdown-item" href=" # ">Esqueceu sua senha?</a>
+                    @if (Route::has('password.request'))
+                    <a class="dropdown-item" href="{{ route('password.request') }}">
+                        {{ __('Esqueceu sua senha?') }}
+                    </a>
+                @endif
                 </div>
 
                 @else

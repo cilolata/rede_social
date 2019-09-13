@@ -10,10 +10,12 @@
         <link rel="stylesheet" href="{{url("css/app.css")}}">
         <link rel="stylesheet" href="{{url("css/style.css")}}">
         <link rel="icon" type="image/png" sizes="60x60" href="img/light-bulb.png">
-        <link href="https://fonts.googleapis.com/css?family=Chivo:700&display=swap" rel="stylesheet">
-        <link
-            href="https://fonts.googleapis.com/css?family=ABeeZee|Comfortaa|Hind+Madurai|Inconsolata|Open+Sans|Red+Hat+Text|Varela+Round&display=swap"
-            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Chivo:700&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css?family=ABeeZee|Comfortaa|Hind+Madurai|Inconsolata|Open+Sans|Red+Hat+Text|Varela+Round&display=swap" rel="stylesheet">
+
+          <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+            
         @section('title', 'Together')
         <title>@yield('Together')</title>
         <script src="assets/js/main.js" defer></script>
@@ -24,7 +26,8 @@
         <main>
             @yield('content')
         </main>
-       @yield("footer")
-    </body>     
+        @yield("footer")
+    </body>
+   
 
 </html>
