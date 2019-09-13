@@ -37,16 +37,16 @@
       <div class="form-row">
         <div class="col-md-6 mb-3">
           <label for="validationDefault03">Cidade</label>
-          <input type="text" class="form-control" id="validationDefault03" placeholder="Cidade"
+          <input type="text" class="form-control" id="cidade" placeholder="Cidade"
             value="{{$usuario->cidade}}" required>
         </div>
         <div class="col-md-3 mb-3">
           <label for="validationDefault04">Estado</label>
-          <input type="text" class="form-control" id="validationDefault04" placeholder="Estado" required>
+          <input type="text" class="form-control" id="UF" placeholder="Estado" required>
         </div>
         <div class="col-md-3 mb-3">
           <label for="validationDefault05">CEP</label>
-          <input type="text" class="form-control" id="validationDefault05" placeholder="CEP" required>
+          <input type="text" class="form-control" id="CEP" placeholder="CEP" required>
         </div>
       </div>
       <div class="form-group mt-4">

@@ -30,7 +30,7 @@
   <!-- fim section destaque-->
 
   <!-- início section carrossel-->
-  <section>
+  <section id="carrossel-index">
     <div id="carousel1" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">

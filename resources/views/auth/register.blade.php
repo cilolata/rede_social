@@ -1,4 +1,6 @@
 @extends('layouts.master')
+@extends('layouts.cabecalho')
+@extends('layouts.footer')
 
 @section('content')
 <div class="container mt-5">

@@ -62,6 +62,10 @@ a.btn.btn-success {
  /*inicio section anuncios pg index
 ----------------------------------*/
 
+#carrossel-index {
+  height: 100vh;
+}
+
 .div-card-anuncios{
   height: 60vh;  
 }

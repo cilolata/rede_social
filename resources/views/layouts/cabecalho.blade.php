@@ -42,8 +42,8 @@
                     <a class="dropdown-item" href="{{ route('register') }}">Novo por aqui? Cadastre-se</a>
                     <a class="dropdown-item" href=" # ">Esqueceu sua senha?</a>
                 </div>
-                @else
 
+                @else
                 <!--cabeçalho--->
                 <nav class="navbar fixed-top navbar-expand-md navbar-light shadow-sm">
                     <div class="container">

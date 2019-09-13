@@ -16,6 +16,7 @@
             rel="stylesheet">
         @section('title', 'Together')
         <title>@yield('Together')</title>
+        <script src="assets/js/main.js" defer></script>
     </head>
 
     <body>
