@@ -1,25 +1,25 @@
  
  @section('footer')
      
- <!--footer inicio-->
- <footer class="container-fluid">
+    <!--footer inicio-->
+    <footer class="container-fluid">
         <div class="col-12">
             <ul class="list-unstyled">
                 
                 <div class="d-flex flex-row justify-content-center">
                     <li class="mr-2">
                         <a href="{{url('/contact')}}">
-                            <img src="img/email.png" class="img_footer_mail" alt="logo_email">
+                            <img src="{{url('img/email.png')}}" class="img_footer_mail" alt="logo_email">
                         </a>
                     </li>
                     <li class="mr-2">
                         <a href="https:facebook.com" target="_blank">
-                            <img src="img/facebook.png" class="img_footer" alt="logo_facebook">
+                            <img src="{{url('img/facebook.png')}}" class="img_footer" alt="logo_facebook">
                         </a>
                     </li>
                     <li class="mr-2">
                         <a href="https://www.instagram.com" target="_blank">
-                            <img src="img/instagram.png" class="img_footer" alt="logo_instagram">
+                            <img src="{{url('img/instagram.png')}}" class="img_footer" alt="logo_instagram">
                         </a>
                     </li>
                 </div>
@@ -29,6 +29,7 @@
             <div id="copyright" class="small col-12 text-center">Direitos Reservados <a
                 href="https://www.flaticon.com/" title="Together">Together</a>&copy; 2019</div>
             </div>
-        </footer>
-        <!--fim footer-->
+        </div>
+    </footer>
+    <!--fim footer-->
 @endsection
