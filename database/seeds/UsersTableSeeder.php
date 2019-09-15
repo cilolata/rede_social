@@ -12,14 +12,14 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        // User::create([
-        //     "name" => "Abirosvaldo",
+        User::create([
+            "name" => "Abirosvaldo",
 
-        //     "email" => "abirosvaldo@gmail.com",
-        //     "imagem" => "https://i.pinimg.com/originals/b9/58/5a/b9585a9d1b20060f0d7e83c72eaa159f.jpg",
-        //     "cidade"=>"são paulo",
-        //     "password" => bcrypt("123456")
-        // ]);
+            "email" => "abirosvaldo@gmail.com",
+            "imagem" => "https:.pinimg.com/originals/b9/58/5a/b9585a9d1b20060f0d7e83c72eaa159f.jpg",
+            "cidade"=>"são paulo",
+            "password" => bcrypt("123456")
+        ]);
 
         // User::create([
         //     "name" => "Teste",

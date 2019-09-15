@@ -37,16 +37,14 @@ Route::get('/home', function () {
 });
 Route::middleware(['auth'])->group(function(){
     
-    
+    // listando profile a partir do ID
     Route::get('/profile/{id}', 'ProfileController@profile');
+
     // listando todos eventos
     Route::get('/search', 'EventsController@index');
 
-    // listando evento específico a partir do ID - no futuro alterar para event/{id} para 
-    // capturar as infos do evento
-    Route::get('/event', function(){
-        return view("event");
-    });
+    // listando evento específico a partir do ID
+    Route::get('/event/{id}', 'EventsController@eventos');
 
     //Profile - completar o cadastro
 

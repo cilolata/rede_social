@@ -29,7 +29,7 @@
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroupPrepend2">@</span>
             </div>
-            <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Usuário"
+            <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Usuário" 
               aria-describedby="inputGroupPrepend2" required>
           </div>
         </div>
@@ -39,7 +39,7 @@
         <div class="col-auto">
           <label for="CEP">CEP</label>
           <div class="input-group mb-2">
-            <input type="text" class="form-control" id="CEP" maxlength="9" placeholder="CEP" required name="CEP">
+            <input type="text" class="form-control" id="CEP" maxlength="9" placeholder="CEP" required name="CEP" value="{{$usuario->cep}}>
             <div class="input-group-prepend">
               <div class="input-group-text">
                 <i class="fa fa-search"></i>
@@ -55,7 +55,7 @@
         </div>
         <div class="col-md-3 mb-3">
           <label for="validationDefault04">Estado</label>
-          <input type="text" class="form-control" id="UF" placeholder="Estado" required name="UF">
+          <input type="text" class="form-control" id="UF" placeholder="Estado" required name="UF" value="{{$usuario->estado}}>
         </div>
        
       </div>

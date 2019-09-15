@@ -4,10 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Events;
+use App\Eventos;
 
 class EventsController extends Controller
 {
+    public function eventos($id){
+        $eventos = Eventos::find($id);
+        return view('event')->with('eventos', $eventos);
+    }
+
     /**
      * Display a listing of the resource.
      *

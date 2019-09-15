@@ -19,23 +19,23 @@
                     <div class="content">
                         <div class="first">
                             <div class="inner">
-                                <h3 class="mt-3">Título do evento</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quia. Quibusdam nesciunt sequi corrupti odio cum, ipsa neque harum. Quasi ullam nesciunt consequatur repudiandae quis est nam blanditiis, dolorem suscipit?</p>
+                                <h3 class="mt-3">{{ $eventos->titulo }}</h3>
+                                <p>{{ $eventos->descricao }}</p>
                             </div>
                             <hr>
                         </div>
                         <div class="event-info">
                             <div class="wrap">
                                 <i class="fa fa-clock-o d-inline-flex mr-1"></i>
-                                <h5 class="d-inline-flex">Sexta, 17 de Agosto | 08:00 AM - 04:00 PM </h5>
+                                <h5 class="d-inline-flex">{{ $eventos->dataEvento }}</h5>
                             </div>
                             <div class="wrap">
                                 <i class="fa fa-map-marker d-inline-flex mr-1"></i>
-                                <h5 class="d-inline-flex">São Paulo, SP, Brasil</h5>
+                                <h5 class="d-inline-flex">{{ $eventos->cidade }}</h5>
                             </div>
                             <div class="wrap">
                                 <i class="fa fa-globe d-inline-flex mr-1"></i>
-                                <h5 class="d-inline-flex">Tipo de Evento</h5>
+                                <h5 class="d-inline-flex">{{ $eventos->categorias }}</h5>
                             </div>
                             <hr>
                         </div>
@@ -44,7 +44,7 @@
                                 <img class="ml-3 rounded-circle" style="width:100px;" src="https://i.pinimg.com/originals/b9/58/5a/b9585a9d1b20060f0d7e83c72eaa159f.jpg" alt="user-image">
                             </div>
                             <div class="user">
-                                <a href="#">Nome do usuário</a>
+                                <a href="#">{{ $eventos->fk_users }}</a>
                                 <p>Organizador(a)</p>
                             </div>
                             <div class="d-flex justify-content-end">

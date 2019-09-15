@@ -18,6 +18,8 @@ class Eventos extends Migration
             $table->datetime('dataEvento');
             $table->string('imagem');
             $table->string('titulo');
+            $table->string('descricao');
+            $table->string('cep');
             $table->string('endereco');
             $table->string('cidade');
             $table->string('estado');
