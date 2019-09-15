@@ -9,8 +9,7 @@
         <section class="row" id="about-us">
             <h1 class="col-12">Sobre nós</h1>
             <article class="col-12 col-md-6">
-                <p class="text-justify"> Somos uma Rede Social brasileira dedicada a juntar pessoas com os mesmos propósitos - criar ações em pról da sociedade. 
-                A nossa proposta se baseia em juntar pessoas com um mesmo propósito: o de limpar lugares. </p>
+                <p class="text-justify"> Somos uma Rede Social brasileira dedicada a juntar pessoas com os mesmos propósitos - criar ações em pról da sociedade. </p>
                 <p class="text-justify"> Para tanto, nos baseamos numa teoria: A Teoria das Janelas quebradas. 
                 <strong>Fixing Broken Windows: Restoring Order and
                     Reducing Crime in Our Communities</strong> de George L. Kelling e Catherine Coles é um livro de
@@ -34,7 +33,7 @@
                 <p class="text-justify"> Uma estratégia de êxito para prevenir o vandalismo, dizem os autores do estudo, é resolver os
                     problemas quando eles são pequenos. Reparar as janelas quebradas em pouco tempo, dizem os autores, e
                     ver-se-á que os vândalos terão menos probabilidade de estragar mais. Limpar os passeios e a tendência
-                    será de o lixo não acumular.</p>
+                    será de o lixo não acumular. Assim como outras ações sociais: cuidar de praças, animais, incentivar projetos esportivos e/ou artísticos na comunidade.</p>
             </article>
         </section>
     </main>

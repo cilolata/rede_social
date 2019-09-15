@@ -18,11 +18,11 @@
           <input type="text" class="form-control" id="validationDefault01" placeholder="Nome" value="{{$usuario->name}}"
             required>
         </div>
-        {{-- <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-3">
           <label for="validationDefault02">Sobrenome</label>
           <input type="text" class="form-control" id="validationDefault02" placeholder="Sobrenome"
             value="{{$usuario->sobrenome}}" required>
-        </div> --}}
+        </div>
         <div class="col-md-4 mb-3">
           <label for="validationDefaultUsername">Usuário</label>
           <div class="input-group">
