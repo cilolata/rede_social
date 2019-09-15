@@ -34,7 +34,7 @@
     <div id="carousel1" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="img/13801.jpg" alt="Primeiro Slide">
+          <img class="d-block w-100 img1  " src="img/13801.jpg" alt="Primeiro Slide">
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="img/64967.jpg" alt="Segundo Slide">
@@ -45,7 +45,7 @@
   <!-- fim carrossel-->
 
   <!--inicio cards eventos -->
-  <section class="container mt-5 div-card-anuncios">
+  <section class="container mt-5 div-card-anuncios d-none d-lg-block d-xl-block">
     <h3>Alguns dos nossos eventos</h3>
     <div class="row d-flex justify-content-around">
       <div class="card" style="width: 18rem;">
@@ -58,7 +58,7 @@
           <a href="#" class="card-link">Outro link</a>
         </div>
       </div>
-      <div class="card d-none d-lg-block" style="width: 18rem;">
+      <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Título do card</h5>
           <h6 class="card-subtitle mb-2 text-muted">Subtitulo do card</h6>
@@ -68,7 +68,7 @@
           <a href="#" class="card-link">Outro link</a>
         </div>
       </div>
-      <div class="card d-none d-lg-block" style="width: 18rem;">
+      <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Título do card</h5>
           <h6 class="card-subtitle mb-2 text-muted">Subtitulo do card</h6>
@@ -79,7 +79,8 @@
         </div>
       </div>
       <!--fim cards eventos-->
-  </section>
+
+      
 </main>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
