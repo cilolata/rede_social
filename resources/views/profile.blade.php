@@ -38,22 +38,20 @@
 
       </div>
       <div class="form-row">
-<<<<<<< HEAD
         <div class="col-md-3 mb-3">
           <div class="col-auto">
             <label for="CEP">CEP</label>
             <div class="input-group mb-2">
               <input type="text" class="form-control" id="CEP" maxlength="9" placeholder="CEP" required name="CEP"
-                value="{{$usuario->cep}}>
+                value="{{$usuario->cep}}">
             <div class=" input-group-prepend">
-=======
+
       <div class="col-md-3 mb-3">
         <div class="col-auto">
           <label for="CEP">CEP</label>
           <div class="input-group mb-2">
             <input type="text" class="form-control" id="CEP" maxlength="9" placeholder="CEP" required name="CEP" value="{{$usuario->cep}}">
             <div class="input-group-prepend">
->>>>>>> a3318383d3291c83becb748148c9ac0409fe0544
               <div class="input-group-text">
                 <i class="fa fa-search"></i>
               </div>
@@ -61,7 +59,6 @@
           </div>
         </div>
       </div>
-<<<<<<< HEAD
       <div class="col-md-6 mb-3">
         <label for="validationDefault03">Cidade</label>
         <input type="text" class="form-control" id="cidade" placeholder="Cidade" name="cidade"
@@ -69,8 +66,7 @@
       </div>
       <div class="col-md-3 mb-3">
         <label for="validationDefault04">Estado</label>
-        <input type="text" class="form-control" id="UF" placeholder="Estado" required name="UF" value="{{$usuario->estado}}>
-=======
+        <input type="text" class="form-control" id="UF" placeholder="Estado" required name="UF" value="{{$usuario->estado}}">
         <div class="col-md-6 mb-3">
           <label for="validationDefault03">Cidade</label>
           <input type="text" class="form-control" id="cidade" placeholder="Cidade" name="cidade"
@@ -79,9 +75,7 @@
         <div class="col-md-3 mb-3">
           <label for="validationDefault04">Estado</label>
           <input type="text" class="form-control" id="estado" placeholder="Estado" required name="estado" value="{{$usuario->estado}}">
->>>>>>> a3318383d3291c83becb748148c9ac0409fe0544
-        </div>
-       
+        </div> 
       </div>
       <div class= " form-group mt-4">
         <p>Interesses</p>
