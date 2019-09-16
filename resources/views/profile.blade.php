@@ -22,7 +22,6 @@
 
         <div class="col-md-4 mb-3">
           <label for="validationDefault02">Sobrenome</label>
-<<<<<<< HEAD
           <input type="text" class="form-control" id="validationDefault02" placeholder="Sobrenome"
             value="{{$usuario->sobrenome}}" required>
         </div>
@@ -35,9 +34,6 @@
             <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Usuário"
               aria-describedby="inputGroupPrepend2" required>
           </div>
-=======
-          <input type="text" class="form-control" id="validationDefault02" placeholder="Sobrenome" value="{{$usuario->sobrenome}}" required>
->>>>>>> a3318383d3291c83becb748148c9ac0409fe0544
         </div>
 
       </div>
