@@ -30,7 +30,7 @@
                                         @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Senha') }}</label>
+                                    <label for="password">{{ __('Senha') }}</label>
                                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                         @error('password')
