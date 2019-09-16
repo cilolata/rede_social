@@ -21,7 +21,7 @@
                             <form class="px-4 py-3" method="POST" action="{{ route('login') }}">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="email">{{ __('EMail') }}</label>
+                                    <label for="email">{{ __('Email') }}</label>
                                     <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                                         @error('email')
                                             <span class="invalid-feedback" role="alert">
