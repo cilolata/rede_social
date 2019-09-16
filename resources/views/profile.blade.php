@@ -29,18 +29,19 @@
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroupPrepend2">@</span>
             </div>
-            <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Usuário" 
+            <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Usuário"
               aria-describedby="inputGroupPrepend2" required>
           </div>
         </div>
       </div>
       <div class="form-row">
-      <div class="col-md-3 mb-3">
-        <div class="col-auto">
-          <label for="CEP">CEP</label>
-          <div class="input-group mb-2">
-            <input type="text" class="form-control" id="CEP" maxlength="9" placeholder="CEP" required name="CEP" value="{{$usuario->cep}}>
-            <div class="input-group-prepend">
+        <div class="col-md-3 mb-3">
+          <div class="col-auto">
+            <label for="CEP">CEP</label>
+            <div class="input-group mb-2">
+              <input type="text" class="form-control" id="CEP" maxlength="9" placeholder="CEP" required name="CEP"
+                value="{{$usuario->cep}}>
+            <div class=" input-group-prepend">
               <div class="input-group-text">
                 <i class="fa fa-search"></i>
               </div>
@@ -48,18 +49,18 @@
           </div>
         </div>
       </div>
-        <div class="col-md-6 mb-3">
-          <label for="validationDefault03">Cidade</label>
-          <input type="text" class="form-control" id="cidade" placeholder="Cidade" name="cidade"
-            value="{{$usuario->cidade}}" required>
-        </div>
-        <div class="col-md-3 mb-3">
-          <label for="validationDefault04">Estado</label>
-          <input type="text" class="form-control" id="UF" placeholder="Estado" required name="UF" value="{{$usuario->estado}}>
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault03">Cidade</label>
+        <input type="text" class="form-control" id="cidade" placeholder="Cidade" name="cidade"
+          value="{{$usuario->cidade}}" required>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationDefault04">Estado</label>
+        <input type="text" class="form-control" id="UF" placeholder="Estado" required name="UF" value="{{$usuario->estado}}>
         </div>
        
       </div>
-      <div class="form-group mt-4">
+      <div class= " form-group mt-4">
         <p>Interesses</p>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -105,7 +106,6 @@
     </form>
   </section>
 </main>
-@endsection
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -117,3 +117,4 @@
   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
 <script src="{{url("js/main.js")}}"></script>
+@endsection

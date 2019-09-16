@@ -67,11 +67,8 @@
         <button class="btn btn-outline-secondary mt-4" type="submit">Criar</button>
     </form>
 
-
-
-
-
-
-
-
 </main>
+
+
+
+@endsection
