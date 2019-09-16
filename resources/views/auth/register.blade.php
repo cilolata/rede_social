@@ -42,6 +42,20 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="imagem" class="col-md-4 col-form-label text-md-right">{{ __('Imagem') }} </label>
+
+                            <div class="col-md-6">
+                                <input type="file" id="imagem" name="imagem" class="form-control @error('imagem') is-invalid @enderror" name="imagem" value="{{ old('imagem') }}" required autocomplete="imagem" autofocus>
+
+                                @error('imagem')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="CEP" class="col-md-4 col-form-label text-md-right">{{ __('CEP') }}</label>
 
                             <div class="col-md-6">
