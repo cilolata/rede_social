@@ -71,8 +71,8 @@
                     </a>
                     <div class="dropdown header-paginas-internas" id="nav-principal">
                         <div class="navbar-nav list-unstyle ml-auto ">
-                            <img  src="https://i.pinimg.com/originals/b9/58/5a/b9585a9d1b20060f0d7e83c72eaa159f.jpg" class="rounded-circle img-profile" height="25" width="25" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" alt="">
-                            <div class="navbar-text d-none d-lg-block">
+                            <img  src="https://i.pinimg.com/originals/b9/58/5a/b9585a9d1b20060f0d7e83c72eaa159f.jpg" class="rounded-circle img-profile" height="40" width="40" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" alt="imagem do usuario">
+                            <div class="navbar-text d-none d-lg-block ml-1">
                                 {{ Auth::user()->name}}
                                 <span class="caret"></span>
                             </div>

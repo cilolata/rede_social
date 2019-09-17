@@ -80,6 +80,14 @@ class RegisterController extends Controller
         ]);
 
         dd($data);
+
+        function deletarUsuario($id) {
+            $user = User::find($id);
+    
+            $user->delete();
+    
+            return redirect('/index');
+        }
     }
 }
 

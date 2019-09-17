@@ -31,11 +31,12 @@ Route::get('/criandoEvento', function () {
 
 Auth::routes();
 
-//Home usuário logado
-Route::get('/home', function () {
-    return view('home');
-});
 Route::middleware(['auth'])->group(function(){
+
+    //Home usuário logado
+    Route::get('/home', function () {
+        return view('home');
+    });
     
     // listando profile a partir do ID
     Route::get('/profile/{id}', 'ProfileController@profile');
