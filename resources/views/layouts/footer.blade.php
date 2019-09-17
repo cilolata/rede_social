@@ -1,5 +1,7 @@
  
+ 
  @section('footer')
+
      
     <!--footer inicio-->
     <footer class="container-fluid">

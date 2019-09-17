@@ -58,6 +58,11 @@ a.btn.btn-success {
   height: 100vh;
 }
 
+#destaque2 {
+  height: 70vh;
+  box-sizing: border-box;
+}
+
 
 
  /*inicio section anuncios pg index
