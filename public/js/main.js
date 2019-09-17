@@ -1,7 +1,7 @@
 (function () {
     const CEP = document.querySelector("#CEP")
     const cidade = document.querySelector("#cidade")
-    const UF = document.querySelector("#UF")
+    const UF = document.querySelector("#estado")
 
     CEP.oninput = () => {
         if (CEP.value === "" || CEP.value.length < 9) {
