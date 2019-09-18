@@ -24,11 +24,13 @@ Route::get('/index', function () {
 //Contact Us
 Route::get('/contact', 'ContactController@contact');
 
-//Criando eventos
-Route::get('/criandoEvento', function () {
-    return view('criandoEvento');
-});
+// Criando eventos
+// Route::get('/criandoEvento', function () {
+//     return view('criandoEvento');
+// });
 
+Route::get('/criandoEvento', 'EventsController@adicionandoEvento');
+Route::post('/criandoEvento', 'EventsController@salvandoEvento');
 Auth::routes();
 
 Route::middleware(['auth'])->group(function(){

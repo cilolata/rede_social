@@ -19,14 +19,14 @@ class Eventos extends Migration
             $table->string('imagem');
             $table->string('titulo');
             $table->string('descricao');
-            $table->string('cep');
+            $table->string('cep')->nullable();
             $table->string('endereco');
             $table->string('cidade');
             $table->string('estado');
             $table->string('inicioEvento');
             $table->string('fimEvento');
-            $table->unsignedBigInteger('fk_categorias');
-            $table->unsignedBigInteger('fk_users');
+            $table->unsignedBigInteger('fk_categorias')->nullable();
+            $table->unsignedBigInteger('fk_users')->nullable();
             $table->timestamps();
             $table->foreign('fk_categorias')->references('id')->on('categorias');
             $table->foreign('fk_users')->references('id')->on('users');
