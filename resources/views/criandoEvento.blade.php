@@ -14,6 +14,15 @@
 
         @csrf
         {{ method_field('POST') }}
+
+        <div class="form-group">
+            <label for="name">Organizador(a)</label>
+            <div class="input-group">
+                <input type="text" class="col-md-6 form-control" id="name" placeholder="Nome" value="{{$usuario->name}}">
+                <input type="text" class="col-md-6 form-control" id="sobrenome" placeholder="Nome" value="{{$usuario->sobrenome}}">
+            </div>
+        </div>
+        
         <div class="form-group">
             <label for="">Foto do evento</label>
             <input name="imagem" type="file" class="form-control-file" id="FotoEvento">
@@ -23,24 +32,32 @@
             <input name="titulo" class="form-control" type="text" placeholder="Digite um nome para o seu evento">
         </div>
 
+        <div class="form-group">
+            <label for="CEP">CEP</label>
+            <input type="text" class="form-control" id="CEP" maxlength="9" placeholder=" Digite o CEP do evento" required name="CEP">
+        </div>
+
 
         <div class="form-group">
             <label for="inputEndereco">Endereço</label>
-            <input name="endereco" type="text" class="form-control" id="inputEndereco" placeholder="Digite o endereço do evento">
+            <input name="endereco" type="text" class="form-control" id="endereco" placeholder="Digite o endereço do evento">
         </div>
 
         <div class="form-group ">
             <label for="inputCidade">Cidade</label>
-            <input name="cidade" type="text" class="form-control" id="inputCidade" placeholder="Digite a cidade do evento">
+            <input name="cidade" type="text" class="form-control" id="cidade" placeholder="Digite a cidade do evento">
         </div>
         <div class="form-group ">
             <label for="inputEstado">Estado</label>
-            <input name="estado" type="text" class="form-control" id="inputEstado" placeholder="Digite o estado do evento">
+            <input name="estado" type="text" class="form-control" id="estado" placeholder="Digite o estado do evento">
         </div>
         <div class="form-group ">
             <label for="">Escolha uma categoria</label>
-            <select name="categoria" class="form-control form-control-sm">
-                <option>Escolha uma categoria</option>
+            <select class="form-control form-control-sm" name="categorias" id="categorias">
+                <option value="">-- Selecione a categoria --</option>
+                @foreach ($categorias as $categoria)
+                    <option value="{{$categoria->id}}">{{$categoria->descricao}}</option>   
+                @endforeach
             </select>
         </div>
         <div class="form-group">

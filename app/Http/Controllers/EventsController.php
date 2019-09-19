@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Eventos;
 use App\User;
 use App\Categorias;
+use Illuminate\Support\Facades\Auth;
 
 class EventsController extends Controller
 {
@@ -22,16 +23,14 @@ class EventsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return view('search');
-    }
+    
 
-    /*public function search(){
-        return view('event');
+    public function search(){
+        $categorias = Categorias::all();
+        $eventos = Eventos::orderBy('id', 'ASC')->get();
+        
+        return view('search', compact('eventos', 'categorias'));
     }
-
-    */
 
 
     /**
@@ -45,10 +44,11 @@ class EventsController extends Controller
     }
 
     public function adicionandoEvento(){
+        $usuario = Auth::user();
         $usuarios = User::all();
         $categorias = Categorias::all();
 
-        return view('criandoEvento', compact('usuarios','categorias'));
+        return view('criandoEvento', compact('usuario','usuarios','categorias'));
     }
     
     public function salvandoEvento(Request $request){
@@ -90,7 +90,7 @@ class EventsController extends Controller
             "estado"=> $request->input("estado"),
             "inicioEvento"=> $request->input("inicioEvento"),
             "fimEvento"=> $request->input("fimEvento"),
-            "fk_categoria"=> $request->input("categoria"),
+            "fk_categorias"=> $request->input("categorias"),
             "fk_users"=> $request->input("users"),
             "imagem" => $caminhoRelativo,
         ]);

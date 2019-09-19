@@ -43,7 +43,7 @@
             <div class="col-md-3 mb-2">
               <label for="CEP">CEP</label>
               <input type="text" class="form-control" id="CEP" maxlength="9" placeholder="CEP" required name="CEP"
-                value="{{$usuario->cep}}">
+                value="{{$usuario->CEP}}">
             </div>
 
             <div class="col-md-3 mb-2">

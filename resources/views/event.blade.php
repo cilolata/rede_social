@@ -14,7 +14,7 @@
     
                 <div class="event-about">
                     <div class="top-image-area">
-                        <img class="img-fluid event-image" src="https://source.unsplash.com/random/760x520" alt="random-image">
+                        <img class="img-fluid event-image" src="{{$eventos->imagem}}" alt="random-image">
                     </div>
                     <div class="content">
                         <div class="first">

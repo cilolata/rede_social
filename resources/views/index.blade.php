@@ -70,6 +70,7 @@
   <section class="minhas_comunidades mt-5 d-none d-lg-block d-xl-block container">
     <h5 class="mt-5">Eventos</h5>
     <div class="row">
+      
       <div class="col-12 col-sm-6 col-md-3 cardAnuncioCont">
         <div class="card d-block">
           <img class="card-img-top" src="img\imagem1.jpg" alt="Imagem de capa do card">
@@ -81,6 +82,7 @@
           </div>
         </div>
       </div>
+      
       <div class="col-12 col-sm-6 col-md-3 cardAnuncioCont">
         <div class="card d-block">
           <img class="card-img-top" src="img\imagem1.jpg" alt="Imagem de capa do card">
