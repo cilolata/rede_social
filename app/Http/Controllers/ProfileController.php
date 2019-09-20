@@ -16,9 +16,7 @@ class ProfileController extends Controller
     public function alterarUsuario(Request $request, $id) {
         $usuario = User::find($id);
 
-       
-
-
+    
         $request->validate([
             'name' => $data['name'],
             'sobrenome' => $data['sobrenome'],
@@ -31,7 +29,8 @@ class ProfileController extends Controller
         ]);
 
         $usuario->save();
+        $usuario = $usuario->id;
 
-        return redirect('/profile/{id}');
+        return redirect('/profile/'.$usuario);
     }
 }

@@ -14,7 +14,7 @@
     
                 <div class="event-about">
                     <div class="top-image-area">
-                    <img class="img-fluid event-image" src="{{ url($eventos->imagem)}}" alt="random-image">
+                    <img class="img-fluid event-image w-100" src="{{ url($eventos->imagem)}}" alt="random-image">
                     </div>
                     <div class="content">
                         <div class="first">
@@ -34,8 +34,8 @@
                                 <h5 class="d-inline-flex">{{ $eventos->cidade }}</h5>
                             </div>
                             <div class="wrap">
-                                <i class="fa fa-globe d-inline-flex mr-1"></i>
-                                <h5 class="d-inline-flex">{{ $eventos->categorias }}</h5>
+                                <i class="fa fa-globe d-inline-flex mr-1"></i>                                    
+                                <h5 class="d-inline-flex">{{$eventos->fk_categorias}}</h5>
                             </div>
                             <hr>
                         </div>
