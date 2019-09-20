@@ -16,6 +16,9 @@ class ProfileController extends Controller
     public function alterarUsuario(Request $request, $id) {
         $usuario = User::find($id);
 
+       
+
+
         $request->validate([
             'name' => $data['name'],
             'sobrenome' => $data['sobrenome'],

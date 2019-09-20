@@ -24,7 +24,7 @@ class EventsController extends Controller
      * @return \Illuminate\Http\Response
      */
     
-    /*
+    
     public function search(){
         $categorias = Categorias::all();
         $eventos = Eventos::orderBy('id', 'ASC')->get();
@@ -32,7 +32,7 @@ class EventsController extends Controller
         return view('search', compact('eventos', 'categorias'));
     }
 
-*/
+
     /**
      * Show the form for creating a new resource.
      *
