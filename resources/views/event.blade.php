@@ -14,7 +14,7 @@
     
                 <div class="event-about">
                     <div class="top-image-area">
-                        <img class="img-fluid event-image" src="{{$eventos->imagem}}" alt="random-image">
+                    <img class="img-fluid event-image" src="{{ url($eventos->imagem)}}" alt="random-image">
                     </div>
                     <div class="content">
                         <div class="first">
@@ -41,7 +41,7 @@
                         </div>
                         <div class="event-organizer">
                             <div class="img-cropper">
-                                <img class="ml-3 rounded-circle" style="width:100px;" src="https://i.pinimg.com/originals/b9/58/5a/b9585a9d1b20060f0d7e83c72eaa159f.jpg" alt="user-image">
+                            <img class="ml-3 rounded-circle" style="width:100px;" src="" alt="user-image">
                             </div>
                             <div class="user">
                                 <a href="#">{{ $eventos->fk_users }}</a>

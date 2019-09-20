@@ -52,6 +52,7 @@ Route::middleware(['auth'])->group(function(){
     // criando eventos
     Route::get('/criandoEvento', 'EventsController@adicionandoEvento');
     Route::post('/criandoEvento', 'EventsController@salvandoEvento');
+    
 
     //Profile - completar o cadastro
 

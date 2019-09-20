@@ -10,8 +10,7 @@
 
     <h2 class="mt-5 pt-5">Informações necessárias</h2>
     <h3>Insira as seguintes informações para criar seu evento.</h3>
-    <form class="mt-5" method="post" enctype="multipart/form-data">
-
+    <form class="mt-5" method="post" action="/criandoEvento" enctype="multipart/form-data">
         @csrf
         {{ method_field('POST') }}
 

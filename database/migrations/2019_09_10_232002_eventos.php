@@ -16,10 +16,10 @@ class Eventos extends Migration
         Schema::create('eventos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->datetime('dataEvento');
-            $table->string('imagem');
+            $table->string('imagem')->nullable();
             $table->string('titulo');
             $table->string('descricao');
-            $table->string('cep')->nullable();
+            $table->string('CEP')->nullable();
             $table->string('endereco');
             $table->string('cidade');
             $table->string('estado');

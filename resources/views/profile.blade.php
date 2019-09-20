@@ -14,7 +14,7 @@
 
       <div class="form-row">
         <aside class="col-lg-2 col-sm-12">
-          <img  src="https://i.pinimg.com/originals/b9/58/5a/b9585a9d1b20060f0d7e83c72eaa159f.jpg"
+        <img  src="{{auth()->user()->imagem}}"
             class="img-perfil rounded-circle img-profile">
           <input type="file" class="mt-3" id="imagem" name="imagem"
             class="form-control @error('imagem') is-invalid @enderror" name="imagem" value="{{ old('imagem') }}"

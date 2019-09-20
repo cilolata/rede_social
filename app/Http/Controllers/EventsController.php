@@ -13,7 +13,7 @@ class EventsController extends Controller
 {
     public function eventos($id){
         $eventos = Eventos::find($id);
-        // dd($eventos);
+       // dd($eventos);
         return view('event')->with('eventos', $eventos);
 
     }
@@ -24,7 +24,7 @@ class EventsController extends Controller
      * @return \Illuminate\Http\Response
      */
     
-
+    /*
     public function search(){
         $categorias = Categorias::all();
         $eventos = Eventos::orderBy('id', 'ASC')->get();
@@ -32,7 +32,7 @@ class EventsController extends Controller
         return view('search', compact('eventos', 'categorias'));
     }
 
-
+*/
     /**
      * Show the form for creating a new resource.
      *
@@ -53,7 +53,15 @@ class EventsController extends Controller
     
     public function salvandoEvento(Request $request){
         $request->validate([
-            "titulo" => "required|max:50"
+            "dataEvento"=> 'required',
+            "titulo" => "required",
+            "descricao" => 'required',
+            "endereco"=> 'required',
+            "cidade"=> 'required',
+            "estado"=> 'required',
+            "inicioEvento"=> 'required',
+            "fimEvento"=> 'required'
+
             ]);
 
         // salvando caminho da imagem e armazenando-a no projeto
@@ -82,8 +90,9 @@ class EventsController extends Controller
         $arquivo->move($caminhoAbsoluto, $nomeArquivo);
 
         $eventos = Eventos::create([
-            "titulo" => $request->input("titulo"),
             "dataEvento"=> $request->input("dataEvento"),
+            "imagem" =>$caminhoRelativo,
+            "titulo" => $request->input("titulo"),
             "descricao" => $request->input("descricao"),
             "endereco"=> $request->input("endereco"),
             "cidade"=> $request->input("cidade"),
@@ -92,14 +101,13 @@ class EventsController extends Controller
             "fimEvento"=> $request->input("fimEvento"),
             "fk_categorias"=> $request->input("categorias"),
             "fk_users"=> $request->input("users"),
-            "imagem" => $caminhoRelativo,
         ]);
 
 
-        $eventos->save();
+        $eventos->save();        
+        $evento = $eventos->id;
 
-
-        return redirect('/search');
+        return redirect('/event/'.$evento);
     }
 
 
