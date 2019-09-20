@@ -18,7 +18,7 @@
         <div class="form-group">
             <label for="name">Organizador(a)</label>
             <div class="input-group">
-                <input type="text" class="col-md-6 form-control" id="name" placeholder="Nome" value="{{$usuario->name}}">
+                <input type="text" class="col-md-6 form-control mr-3 " id="name" placeholder="Nome" value="{{$usuario->name}}">
                 <input type="text" class="col-md-6 form-control" id="sobrenome" placeholder="Nome" value="{{$usuario->sobrenome}}">
             </div>
         </div>

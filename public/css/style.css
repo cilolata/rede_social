@@ -98,6 +98,7 @@ a.btn.btn-success {
   background-attachment: fixed;
   background-image: url(../img/animais-destaque.jpg);
 }
+
  /*inicio section eventos pg index
 ----------------------------------*/
 
@@ -156,10 +157,6 @@ a.btn.btn-success {
   font-size: 1em;
 }
 
-#event .top-image-area img {
-  
-}
-
 #event .side-bar {
   background-color: #f8f9fa;
   padding: 10px;
@@ -189,8 +186,7 @@ a.btn.btn-success {
   background-color: #fff;
   position: relative;
   width: 500px;
- 
-  
+   
 }
 
 .input-pesquisar{
@@ -211,6 +207,9 @@ a.btn.btn-success {
 
 /*pagina profile
 ---------------*/
+.img-perfil{
+  width: 70%;
+}
 
 /* --footer início 
 ------------------ */
@@ -259,15 +258,34 @@ footer {
 
 @media (max-width: 767.98px) { 
 
+  /* pagina-home*/
   #main-home .div-input-home .home-pesquisar{
     margin-top: 100px;
   }
 
   .pesquisar-home{
     padding-bottom: 0;
+    margin-top:100px;
+  }
+
+ 
+ /* pagina eventos/search*/
+  .meus-eventos{
+    margin-top:50px;
   }
   .nichos{
     margin: 0;
     padding: 0;
+  }
+
+  /* pagina profile*/
+
+  .img-perfil{
+    width: 50%;
+  }
+
+   /* footer*/
+   footer{
+    height: 30vh;
   }
  }
