@@ -23,7 +23,12 @@ class EventsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    
+    public function home(){
+        $categorias = Categorias::all();
+        $eventos = Eventos::orderBy('id', 'ASC')->get();
+        
+        return view('home', compact('eventos', 'categorias'));
+    }
     
     public function search(){
         $categorias = Categorias::all();
@@ -60,7 +65,8 @@ class EventsController extends Controller
             "cidade"=> 'required',
             "estado"=> 'required',
             "inicioEvento"=> 'required',
-            "fimEvento"=> 'required'
+            "fimEvento"=> 'required',
+            "user_id" => "required"
 
             ]);
 
@@ -99,8 +105,9 @@ class EventsController extends Controller
             "estado"=> $request->input("estado"),
             "inicioEvento"=> $request->input("inicioEvento"),
             "fimEvento"=> $request->input("fimEvento"),
-            "fk_categorias"=> $request->input("categorias"),
-            "fk_users"=> $request->input("users"),
+            "fk_categorias"=> $request->input("categoria_descricao"),
+            "fk_users"=> $request->input("user_id")
+            
         ]);
 
 

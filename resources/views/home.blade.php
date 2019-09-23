@@ -30,16 +30,24 @@
     </section>
 
     <!--inicio meus eventos-->
-    <h4>Meus Eventos</h4>
-    <div class="card meus-eventos mt-3" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+    <section class="container mt-5  ">
+
+        <h4 class="ml-5">Meus Eventos</h4>
+        <div class="row d-flex justify-content-around">
+            @foreach ($eventos as $evento) 
+                            
+            <div class="card meus-eventos mt-3 ml-5" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{$evento->titulo}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{$evento->fk_users}}</h6>
+                    <p class="card-text">{{$evento->descricao}}</p>
+                    <a href="event/{{$evento->id}}" class="card-link">Acesse</a>
+                    </div>
+                </div>
+            @endforeach
+    
         </div>
-      </div>
+    </section>
 
 </main>
 @endsection

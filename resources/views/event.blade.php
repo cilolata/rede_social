@@ -28,6 +28,13 @@
                             <div class="wrap">
                                 <i class="fa fa-clock-o d-inline-flex mr-1"></i>
                                 <h5 class="d-inline-flex">{{ $eventos->dataEvento }}</h5>
+                                <div>
+                                    <h5 class="d-inline-flex">Horário de início: {{ $eventos->inicioEvento }}</h5>
+                                </div>
+                                <div>
+                                    <h5 class="d-inline-flex">Horário de término: {{ $eventos->fimEvento }}</h5>
+                                </div>
+
                             </div>
                             <div class="wrap">
                                 <i class="fa fa-map-marker d-inline-flex mr-1"></i>
@@ -45,7 +52,7 @@
                             </div>
                             <div class="user">
                                 <a href="#">{{ $eventos->fk_users }}</a>
-                                <p>Organizador(a)</p>
+                                <p>{{$eventos->fk_users}}</p>
                             </div>
                             <div class="d-flex justify-content-end">
                                 <button class="btn btn-outline-secondary">

@@ -39,6 +39,8 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/home', function () {
         return view('home');
     });
+
+    Route::get('/home', 'EventsController@home');
     
     // listando profile a partir do ID
     Route::get('/profile/{id}', 'ProfileController@profile');

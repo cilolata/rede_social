@@ -8,7 +8,7 @@
 
     <main id="search-events" class="container">
         <section class="row">
-            <h2 class="mr-auto mt-5 ml-4">Eventos</h2>
+            <h2 class="mr-auto mt-5 pb-2 ml-2">Eventos</h2>
             <article class="mr-1">
                 <div class="input-group mt-5 mr-5">
                     <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
@@ -24,8 +24,8 @@
             <article>
                 <div class="card-columns">
                     @foreach($eventos as $evento)
-                    <div class="card">
-                        <img src="{{$evento->imagem}}" class="card-img-top" alt="...">
+                    <div class="card w-75 card-search">
+                        <img src="{{$evento->imagem}}" class="card-img-top w-100" alt="imagem-evento">
                         <div class="card-body">
                             <h5 class="card-title">{{$evento->titulo}}</h5>
                             <p class="card-text">{{$evento->descricao}}</p>

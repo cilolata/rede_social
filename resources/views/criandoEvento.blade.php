@@ -17,7 +17,7 @@
         <div class="form-group">
             <label for="name">Organizador(a)</label>
             <div class="input-group">
-                <input type="text" class="col-md-6 form-control mr-3 " id="name" placeholder="Nome" value="{{$usuario->name}}">
+                <input type="text" class="col-md-6 form-control mr-3 " id="name" placeholder="Nome"  value="{{$usuario->name}}">
                 <input type="text" class="col-md-6 form-control" id="sobrenome" placeholder="Nome" value="{{$usuario->sobrenome}}">
             </div>
         </div>
@@ -55,7 +55,7 @@
             <select class="form-control form-control-sm" name="categorias" id="categorias">
                 <option value="">-- Selecione a categoria --</option>
                 @foreach ($categorias as $categoria)
-                    <option value="{{$categoria->id}}">{{$categoria->descricao}}</option>   
+                    <option name ="categoria_descricao" value="{{$categoria->id}}">{{$categoria->descricao}}</option>   
                 @endforeach
             </select>
         </div>
@@ -83,7 +83,8 @@
             <label for="exampleFormControlTextarea1">Descrição do evento</label>
             <textarea name="descricao" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <button class="btn btn-outline-secondary mt-4" type="submit">Criar</button>
+        <input type="hidden" name="user_id" value="{{$usuario->id}}">
+        <button class="btn btn-outline-secondary mt-4"  type="submit">Criar</button>
     </form>
 
 </main>
