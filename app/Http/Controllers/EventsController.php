@@ -8,6 +8,7 @@ use App\Eventos;
 use App\User;
 use App\Categorias;
 use Illuminate\Support\Facades\Auth;
+use DB;
 
 class EventsController extends Controller
 {
@@ -17,7 +18,6 @@ class EventsController extends Controller
         $categorias = Categorias::find($eventos->fk_categorias);
 
         return view('event', ["eventos"=>$eventos, "users"=>$users, "categorias"=>$categorias]);
-
     }
 
     /**
@@ -28,7 +28,10 @@ class EventsController extends Controller
     public function home(){
         $categorias = Categorias::all();
         $eventos = Eventos::orderBy('id', 'ASC')->get();
-        
+        // $eventos = DB::table('eventos')
+        // ->join('users', 'eventos.fk_users', '=', 'users.id')
+        // ->select('eventos.id', 'eventos.titulo', 'eventos.descricao', 'users.name')
+        // ->get();
         return view('home', compact('eventos', 'categorias'));
     }
     
@@ -37,6 +40,7 @@ class EventsController extends Controller
         $categorias = Categorias::all();
         $eventos = Eventos::all();
         if($request->input("select_categoria")) {
+
             $eventos = Eventos::where('fk_categorias', '=', $request->input("select_categoria"))->get();
         }
         
