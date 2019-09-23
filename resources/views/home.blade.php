@@ -33,13 +33,13 @@
     <section class="container mt-5  ">
 
         <h4 class="ml-5">Meus Eventos</h4>
-        <div class="row d-flex justify-content-around">
+        <div class="row">
             @foreach ($eventos as $evento) 
                             
             <div class="card meus-eventos mt-3 ml-5" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">{{$evento->titulo}}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">{{$evento->fk_users}}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted"> Criado por: {{$evento->fk_users}}</h6>
                     <p class="card-text">{{$evento->descricao}}</p>
                     <a href="event/{{$evento->id}}" class="card-link">Acesse</a>
                     </div>

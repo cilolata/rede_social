@@ -13,8 +13,10 @@ class EventsController extends Controller
 {
     public function eventos($id){
         $eventos = Eventos::find($id);
-       // dd($eventos);
-        return view('event')->with('eventos', $eventos);
+        $users = User::find($eventos->fk_users);
+        $categorias = Categorias::find($eventos->fk_categorias);
+
+        return view('event', ["eventos"=>$eventos, "users"=>$users, "categorias"=>$categorias]);
 
     }
 
@@ -30,11 +32,24 @@ class EventsController extends Controller
         return view('home', compact('eventos', 'categorias'));
     }
     
-    public function search(){
+    public function search(Request $request){
+
+        $categorias = Categorias::all();
+        $eventos = Eventos::all();
+        if($request->input("select_categoria")) {
+            $eventos = Eventos::where('fk_categorias', '=', $request->input("select_categoria"))->get();
+        }
+        
+
+        
+        return view('search', compact('eventos', 'categorias'));
+    }
+
+    public function index(){
         $categorias = Categorias::all();
         $eventos = Eventos::orderBy('id', 'ASC')->get();
         
-        return view('search', compact('eventos', 'categorias'));
+        return view('index', compact('eventos', 'categorias'));
     }
 
 

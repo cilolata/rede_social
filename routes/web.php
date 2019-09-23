@@ -18,18 +18,16 @@ Route::get('/aboutus', function () {
 
 //Index
 Route::get('/index', function () {
-    return view('index');
+ return view('index');
 });
 
-//Route::get('/index', 'EventsController@search');
+Route::get('/index', 'EventsController@index');
+
 
 //Contact Us
 Route::get('/contact', 'ContactController@contact');
 
-// Criando eventos
-// Route::get('/criandoEvento', function () {
-//     return view('criandoEvento');
-// });
+
 
 Auth::routes();
 
@@ -39,6 +37,7 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/home', function () {
         return view('home');
     });
+
 
     Route::get('/home', 'EventsController@home');
     

@@ -80,7 +80,7 @@ class RegisterController extends Controller
             'CEP' => $data['CEP'],
         ]);
 
-        dd($data);
+       // dd($data);
 
         function deletarUsuario($id) {
             $user = User::find($id);

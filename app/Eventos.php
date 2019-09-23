@@ -11,10 +11,12 @@ class Eventos extends Model
     protected $fillable = ['dataEvento','titulo', 'descricao', 'imagem', 'cep', 'endereco', 'cidade', 'estado', 'inicioEvento', 'fimEvento', 'fk_categorias', 'fk_users'];
 
     public function categorias() {
-        return $this->hasOne(Categorias::class, 'id', 'fk_categorias');
+     return $this->hasOne(Categorias::class, 'id', 'fk_categorias');
     }
 
     public function users() {
         return $this->hasOne(User::class, 'id', 'fk_users');
     }
+
+   
 }
