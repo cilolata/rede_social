@@ -56,9 +56,7 @@
                                 <div class="panel-body">
                                     <h5><span class="label label-primary">Answer</span></h5>
 
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint accusamus nam
-                                        libero, itaque impedit delectus illum repellat ipsam rerum laboriosam facere
-                                        obcaecati in, alias vitae facilis laudantium debitis repellendus?
+                                    <p>O que é preciso fazer para ser um voluntário e qual a idade mínima exigida?
                                     </p>
                                 </div>
                             </div>
@@ -76,9 +74,7 @@
                                 <div class="panel-body">
                                     <h5><span class="label label-primary">Answer</span></h5>
 
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex nam assumenda
-                                        ullam labore. Pariatur nihil at nesciunt deleniti qui neque ab, animi error,
-                                        veritatis eos dolorem aspernatur doloribus consequuntur.</p>
+                                    <p>Como funciona esta rede social? E qual é o tipo de público que ela pretende atender?</p>
                                 </div>
                             </div>
                         </div>
@@ -95,9 +91,7 @@
                                 <div class="panel-body">
                                     <h5><span class="label label-primary">Answer</span></h5>
 
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, rerum consequatur?
-                                        Quos atque repellat doloremque dolores quaerat minima deserunt eius, consectetur
-                                        consequatur eligendi quisquam ex. Omnis praesentium et esse reprehenderit?</p>
+                                    <p>Na minha comunidade há uma grande carência de ações sociais. Posso criar mais de um evento em diferentes áreas?</p>
                                 </div>
                             </div>
                         </div>
@@ -114,9 +108,7 @@
                                 <div class="panel-body">
                                     <h5><span class="label label-primary">Answer</span></h5>
 
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur a,
-                                        aspernatur hic deserunt veritatis vitae corrupti quis nostrum aliquam nulla
-                                        quibusdam molestiae numquam perspiciatis nam dolorem obcaecati, sapiente blanditiis.
+                                    <p>Achei bem interessante a proposta de vocês, mas nao tenho tempo para participar de nenhum Evento. Existe outra forma de contribuir com o projeto?  
                                     </p>
                                 </div>
                             </div>

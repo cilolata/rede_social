@@ -21,7 +21,7 @@
                 <img src="img/volunteer.jpg" alt="mão com coração" class="w-75 ml-5">
             </article>
             <article class=" col-md-6 d-flex justify-content-center mt-5">
-                <img src="img/2144509.jpg" alt="pessoas se ajudando" class="w-75 d-none d-md-block">
+                <img src="img/juntos.jpg" alt="pessoas se ajudando" class="w-100 d-none d-lg-block">
             </article>
             <article class="col-12 col-md-6 mt-5 pt-3">
                 <p class="text-justify"> O título provém dos seguintes exemplos: "Considere um edifício com algumas janelas
@@ -33,7 +33,7 @@
                 <p class="text-justify"> Uma estratégia de êxito para prevenir o vandalismo, dizem os autores do estudo, é resolver os
                     problemas quando eles são pequenos. Reparar as janelas quebradas em pouco tempo, dizem os autores, e
                     ver-se-á que os vândalos terão menos probabilidade de estragar mais. Limpar os passeios e a tendência
-                    será de o lixo não acumular. Assim como outras ações sociais: cuidar de praças, animais, incentivar projetos esportivos e/ou artísticos na comunidade.</p>
+                    será de o lixo não acumular. Assim, a nossa proposta, baseada nesta teoria, visa reunir pessoas para realizarem ações sociais em suas comunidades como: cuidar de praças, animais, incentivar projetos esportivos e/ou artísticos na comunidade.</p>
             </article>
         </section>
     </main>
