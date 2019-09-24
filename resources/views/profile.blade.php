@@ -58,7 +58,7 @@
                 value="{{$usuario->cidade}}" required>
             </div>
           </div>
-            <button class="btn btn-secondary mt-4" type="submit">Enviar</button>
+            <button class="btn btn-outline-secondary mt-4" type="submit">Enviar</button>
 
           </div>
         </div>

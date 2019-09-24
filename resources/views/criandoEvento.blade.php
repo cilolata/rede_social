@@ -17,11 +17,13 @@
         <div class="form-group">
             <label for="name">Organizador(a)</label>
             <div class="input-group">
-                <input type="text" class="col-md-6 form-control mr-3 " id="name" placeholder="Nome"  value="{{$usuario->name}}">
-                <input type="text" class="col-md-6 form-control" id="sobrenome" placeholder="Nome" value="{{$usuario->sobrenome}}">
+                <input type="text" class="col-md-6 form-control mr-3 " id="name" placeholder="Nome"
+                    value="{{$usuario->name}}">
+                <input type="text" class="col-md-6 form-control" id="sobrenome" placeholder="Nome"
+                    value="{{$usuario->sobrenome}}">
             </div>
         </div>
-        
+
         <div class="form-group">
             <label for="">Foto do evento</label>
             <input name="imagem" type="file" class="form-control-file" id="FotoEvento">
@@ -33,13 +35,15 @@
 
         <div class="form-group">
             <label for="CEP">CEP</label>
-            <input type="text" class="form-control" id="CEP" maxlength="9" placeholder=" Digite o CEP do evento" required name="CEP">
+            <input type="text" class="form-control" id="CEP" maxlength="9" placeholder=" Digite o CEP do evento"
+                required name="CEP">
         </div>
 
 
         <div class="form-group">
             <label for="inputEndereco">Endereço</label>
-            <input name="endereco" type="text" class="form-control" id="endereco" placeholder="Digite o endereço do evento">
+            <input name="endereco" type="text" class="form-control" id="endereco"
+                placeholder="Digite o endereço do evento">
         </div>
 
         <div class="form-group ">
@@ -55,39 +59,38 @@
             <select class="form-control form-control-sm" name="categorias" id="categorias">
                 <option value="">-- Selecione a categoria --</option>
                 @foreach ($categorias as $categoria)
-                    <option name ="categoria_descricao" value="{{$categoria->id}}">{{$categoria->descricao}}</option>   
+                <option name="categoria_descricao" value="{{$categoria->id}}">{{$categoria->descricao}}</option>
                 @endforeach
             </select>
         </div>
         <div class="form-group">
-        
-                <div class="form-group d-flex flex-column">
-                    <label for="inputData">Data</label>
-                    <input name="dataEvento" type="date" class="form-control col-lg-3 col-sm-12" id="data">
-                </div>
-               
-                <div class="row mt-3 ml-1">
 
-                    <div class=" d-flex flex-column">
-                        <label for="inputHorarioInicio" class="mr-2">Horário de inicio</label>
-                        <input name="inicioEvento" type="time" class="form-control-sm mr-2" id="nputHorarioInicio">
-                    </div>
-                    <div class=" d-flex flex-column">
-                        <label for="inputHorarioTermino" class="mr-2">Horário de término</label>
-                        <input name="fimEvento" type="time" class="form-control-sm mr-2" id="inputHorarioTermino">
-                    </div>
+            <div class="form-group d-flex flex-column">
+                    
+                <label for="inputData">Data</label>
+                <input name="dataEvento" type="date" class="form-control col-lg-3 col-sm-12" id="data">
             </div>
-      
-        <div class="form-group mt-2">
-            <label for="exampleFormControlTextarea1">Descrição do evento</label>
-            <textarea name="descricao" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <input type="hidden" name="user_id" value="{{$usuario->id}}">
-        <button class="btn btn-outline-secondary mt-4"  type="submit">Criar</button>
+           
+            <div class="row mt-3 ml-1">
+
+                <div class=" d-flex flex-column">
+                    <label for="inputHorarioInicio" class="mr-2">Horário de inicio</label>
+                    <input name="inicioEvento" type="time" class="form-control-sm mr-2" id="nputHorarioInicio">
+                </div>
+                <div class=" d-flex flex-column">
+                    <label for="inputHorarioTermino" class="mr-2">Horário de término</label>
+                    <input name="fimEvento" type="time" class="form-control-sm mr-2" id="inputHorarioTermino">
+                </div>
+            </div>
+
+            <div class="form-group mt-2">
+                <label for="exampleFormControlTextarea1">Descrição do evento</label>
+                <textarea name="descricao" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <input type="hidden" name="user_id" value="{{$usuario->id}}">
+            <button class="btn btn-outline-secondary mt-4" type="submit">Criar</button>
     </form>
 
 </main>
-
-
 
 @endsection

@@ -12,6 +12,8 @@ use DB;
 
 class EventsController extends Controller
 {
+
+    //rotinas pagina evento
     public function eventos($id){
         $eventos = Eventos::find($id);
         $users = User::find($eventos->fk_users);
@@ -25,6 +27,8 @@ class EventsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+     //rotinas pagina home
     public function home(){
         $categorias = Categorias::all();
         $eventos = Eventos::orderBy('id', 'ASC')->get();
@@ -34,7 +38,8 @@ class EventsController extends Controller
         // ->get();
         return view('home', compact('eventos', 'categorias'));
     }
-    
+
+    //rotinas pagina search    
     public function search(Request $request){
 
         $categorias = Categorias::all();
@@ -43,12 +48,10 @@ class EventsController extends Controller
 
             $eventos = Eventos::where('fk_categorias', '=', $request->input("select_categoria"))->get();
         }
-        
-
-        
         return view('search', compact('eventos', 'categorias'));
     }
 
+    //rotinas pagina index
     public function index(){
         $categorias = Categorias::all();
         $eventos = Eventos::orderBy('id', 'ASC')->get();
@@ -62,11 +65,8 @@ class EventsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        
-    }
 
+    //pagina criando evento
     public function adicionandoEvento(){
         $usuario = Auth::user();
         $usuarios = User::all();
@@ -75,6 +75,7 @@ class EventsController extends Controller
         return view('criandoEvento', compact('usuario','usuarios','categorias'));
     }
     
+    //salvando e validando o evento na pagina criando evento
     public function salvandoEvento(Request $request){
         $request->validate([
             "dataEvento"=> 'required',
@@ -86,13 +87,11 @@ class EventsController extends Controller
             "inicioEvento"=> 'required',
             "fimEvento"=> 'required',
             "user_id" => "required"
-
-            ]);
+         ]);
 
         // salvando caminho da imagem e armazenando-a no projeto
         // capturando imagem selecionada pelo usuário
         $arquivo = $request->file('imagem');
-
         // if (empty($arquivo)) {
         //     abort(400, 'Nenhum arquivo foi enviado');
         // }
@@ -114,6 +113,7 @@ class EventsController extends Controller
         // movendo/armazenando imagem dentro do projeto
         $arquivo->move($caminhoAbsoluto, $nomeArquivo);
 
+        // criando o evento trazendo as infos dos inputs da pagina criando evento
         $eventos = Eventos::create([
             "dataEvento"=> $request->input("dataEvento"),
             "imagem" =>$caminhoRelativo,
@@ -128,7 +128,6 @@ class EventsController extends Controller
             "fk_users"=> $request->input("user_id")
             
         ]);
-
 
         $eventos->save();        
         $evento = $eventos->id;

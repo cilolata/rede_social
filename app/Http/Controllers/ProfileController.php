@@ -8,15 +8,16 @@ use Illuminate\Support\Facades\Auth;
 
 class ProfileController extends Controller
 {
+    //retornando as infos do register para a pagina profile 
     public function profile($id){
         $usuario = User::find($id);
         return view('profile')->with('usuario', $usuario);
     }
 
+    //validando os dados do usuario pelo banco e editando o usuario na pagina profile
     public function alterarUsuario(Request $request, $id) {
         $usuario = User::find($id);
-
-    
+        
         $request->validate([
             'name' => $data['name'],
             'sobrenome' => $data['sobrenome'],

@@ -38,7 +38,7 @@ Route::middleware(['auth'])->group(function(){
         return view('home');
     });
 
-
+    // rotinas pagina home
     Route::get('/home', 'EventsController@home');
     
     // listando profile a partir do ID
@@ -50,11 +50,9 @@ Route::middleware(['auth'])->group(function(){
     // listando evento específico a partir do ID
     Route::get('/event/{id}', 'EventsController@eventos');
 
-    // criando eventos
+    // criando eventos e salvando eventos
     Route::get('/criandoEvento', 'EventsController@adicionandoEvento');
     Route::post('/criandoEvento', 'EventsController@salvandoEvento');
     
-
-    //Profile - completar o cadastro
 
 });
