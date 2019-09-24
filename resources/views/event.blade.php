@@ -27,7 +27,7 @@
                         <div class="event-info">
                             <div class="wrap">
                                 <i class="fa fa-clock-o d-inline-flex mr-1"></i>
-                                <h5 class="d-inline-flex">{{ $eventos->dataEvento }}</h5>
+                                <h5 class="d-inline-flex">{{ date('d-m-Y', strtotime($eventos->dataEvento)) }}</h5>
                                 <div>
                                     <h5 class="d-inline-flex">Horário de início: {{ $eventos->inicioEvento }}</h5>
                                 </div>
