@@ -48,15 +48,17 @@
                             <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
                                 data-parent="#faqAccordion" data-target="#question0">
                                 <h4 class="panel-title">
-                                    <a href="#" class="ing">Q: Question 01?</a>
+                                    <a href="#" class="ing">Pergunta 01?</a>
                                 </h4>
 
                             </div>
                             <div id="question0" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
-                                    <h5><span class="label label-primary">Answer</span></h5>
-
                                     <p>O que é preciso fazer para ser um voluntário e qual a idade mínima exigida?
+                                <h4 class="panel-title">
+                                    <a href="#" class="ing">Resposta 01</a>
+                                </h4>                         
+                                    <p>Para ser voluntário é preciso escolher um projeto, se indentificar com ele e se tudo estiver certo, assinar um contrato. A idade mínima exigida é de 14 anos. </p>
                                     </p>
                                 </div>
                             </div>
@@ -66,15 +68,17 @@
                             <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse"
                                 data-parent="#faqAccordion" data-target="#question1">
                                 <h4 class="panel-title">
-                                    <a href="#" class="ing">Q: Question 02?</a>
+                                    <a href="#" class="ing">Pergunta 02?</a>
                                 </h4>
 
                             </div>
                             <div id="question1" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
-                                    <h5><span class="label label-primary">Answer</span></h5>
-
                                     <p>Como funciona esta rede social? E qual é o tipo de público que ela pretende atender?</p>
+                                <h4 class="panel-title">
+                                    <a href="#" class="ing">Resposta 02</a>
+                                </h4> 
+                                    <p>Esta rede social tem o intuito de conectar pessoas da mesma comunidade, para criarem um evento, que ajude o seu entorno: como limpar uma praça, cuidar de animais. E pretende atingir o maior número de pessoas, que tenham interesses em trabalhar em prol de sua comunidade.</p>      
                                 </div>
                             </div>
                         </div>
@@ -83,15 +87,16 @@
                             <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse"
                                 data-parent="#faqAccordion" data-target="#question2">
                                 <h4 class="panel-title">
-                                    <a href="#" class="ing">Q: Question 03?</a>
+                                    <a href="#" class="ing">Pergunta 03?</a>
                                 </h4>
-
                             </div>
                             <div id="question2" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
-                                    <h5><span class="label label-primary">Answer</span></h5>
-
-                                    <p>Na minha comunidade há uma grande carência de ações sociais. Posso criar mais de um evento em diferentes áreas?</p>
+                                     <p>Na minha comunidade há uma grande carência de ações sociais. Posso criar mais de um evento em diferentes áreas?</p>
+                                 <h4 class="panel-title">
+                                    <a href="#" class="ing">Resposta 03</a>
+                                </h4> 
+                                    <p>Sim. Porém, estes eventos precisam ser criados em datas distintas, assim pessoas que tenham interesses nos dois possam frequentá-los, e pessoas que tenham interesses somente num deles não fiquem confusas e possam se dedicar ao máximo no evento escolhido.</p> 
                                 </div>
                             </div>
                         </div>
@@ -100,16 +105,18 @@
                             <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse"
                                 data-parent="#faqAccordion" data-target="#question3">
                                 <h4 class="panel-title">
-                                    <a href="#" class="ing">Q: Question 04?</a>
+                                    <a href="#" class="ing">Pergunta 04?</a>
                                 </h4>
 
                             </div>
                             <div id="question3" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
-                                    <h5><span class="label label-primary">Answer</span></h5>
-
                                     <p>Achei bem interessante a proposta de vocês, mas nao tenho tempo para participar de nenhum Evento. Existe outra forma de contribuir com o projeto?  
                                     </p>
+                                <h4 class="panel-title">
+                                    <a href="#" class="ing">Resposta 04</a>
+                                </h4> 
+                                    <p>Por enquanto não aceitamos doações, mas se você puder divulgar para o maior número de pessoas um evento que ocorra em sua comunidade, agradecemos.</p> 
                                 </div>
                             </div>
                         </div>
