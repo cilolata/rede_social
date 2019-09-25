@@ -39,7 +39,10 @@ Route::middleware(['auth'])->group(function(){
     });
 
     // rotinas pagina home
-    Route::get('/home', 'EventsController@home');
+  //   Route::get('/home', 'EventsController@home');
+   // Route::get('/home','EventsController@getUserEvents');
+   Route::get('/home', 'EventsController@pesquisar');
+
     
     // listando profile a partir do ID
     Route::get('/profile/{id}', 'ProfileController@profile');

@@ -55,8 +55,8 @@
             <input name="estado" type="text" class="form-control" id="estado" placeholder="Digite o estado do evento">
         </div>
         <div class="form-group ">
-            <label for="">Escolha uma categoria</label>
-            <select class="form-control form-control-sm" name="categorias" id="categorias">
+            <label for="categorias">Escolha uma categoria</label>
+            <select class="form-control form-control-sm" name="categoria_descricao" id="categorias">
                 <option value="">-- Selecione a categoria --</option>
                 @foreach ($categorias as $categoria)
                 <option name="categoria_descricao" value="{{$categoria->id}}">{{$categoria->descricao}}</option>

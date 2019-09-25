@@ -28,7 +28,6 @@ class EventsController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-     //rotinas pagina home
     public function home(){
         $categorias = Categorias::all();
         $eventos = Eventos::orderBy('id', 'ASC')->get();
@@ -38,6 +37,15 @@ class EventsController extends Controller
         // ->get();
         return view('home', compact('eventos', 'categorias'));
     }
+    
+    //pesquisar pagina home
+  public function pesquisar(Request $request){
+        $eventos = Eventos::all();
+        $categorias = Categorias::all();
+        $pesquisar = Eventos::where('descricao','LIKE', $eventos)->get();
+
+        return view('home')->with('eventos', $eventos);
+  }
 
     //rotinas pagina search    
     public function search(Request $request){
@@ -54,7 +62,7 @@ class EventsController extends Controller
     //rotinas pagina index
     public function index(){
         $categorias = Categorias::all();
-        $eventos = Eventos::orderBy('id', 'ASC')->get();
+        $eventos = Eventos::orderBy('id', 'ASC')->paginate(4);
         
         return view('index', compact('eventos', 'categorias'));
     }
@@ -86,7 +94,9 @@ class EventsController extends Controller
             "estado"=> 'required',
             "inicioEvento"=> 'required',
             "fimEvento"=> 'required',
+            "categoria_descricao" => 'required',
             "user_id" => "required"
+            
          ]);
 
         // salvando caminho da imagem e armazenando-a no projeto

@@ -7,11 +7,11 @@
 @section('content')
 
     <main id="search-events" class="container">
-        <section class="row">
-            <h2 class="mr-auto mt-5 pb-2 ml-2">Eventos</h2>
+        <section class="row events">
+            <h2 class="mr-auto mt-5 pb-2 ml-2 d-none d-lg-block">Eventos</h2>
             <article class="mr-1">
-                <form action="/search" method="get">
-                    <div class="input-group mt-5 mr-5">
+                <form action="/search" method="get" class="">
+                    <div class="input-group mt-5  mb-4">
                         <select class="custom-select" name="select_categoria" id="inputGroupSelect04" aria-label="Example select with button addon">
                         <option value="todos" selected>-- Selecione a categoria --</option>
 
@@ -19,9 +19,9 @@
                             <option value="{{$categoria->id}}">{{$categoria->descricao}}</option> 
                             @endforeach   
                         </select>
-                        <button name="botao_search" class="botao_search" type="submit" class="ml-3" class="bg-white">
-                            <i class="fas fa-search"></i>
-                        </button>
+                                <button name="botao_search" class="botao_search" type="submit" class="ml-3" class="bg-white">
+                                    <i class="fas fa-search"></i>
+                                </button>
                     </div>
                 </form>
             </div>

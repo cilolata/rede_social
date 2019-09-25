@@ -18,6 +18,9 @@ class Eventos extends Model
     public function users() {
         return $this->hasOne(User::class, 'id', 'fk_users');
     }
+   // public function users() {
+       // return $this->belongsTo('App\User');
+   // }
 
    
 }
