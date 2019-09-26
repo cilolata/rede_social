@@ -80,7 +80,7 @@
                                 <li class="nav-item dropdown-item"><a href="{{url('/home')}}" class="nav-link">Home</a></li>
                                 <li class="nav-item dropdown-item"><a href="{{url('/criandoEvento')}}" class="nav-link">Criar evento</a></li>
                                 <li class="nav-item dropdown-item"><a href="{{url('/search')}}" class="nav-link">Eventos</a></li>
-                                <li class="nav-item dropdown-item"><a href="{{url('/profile')}}" class="nav-link"> Editar Perfil</a></li>
+                                <li class="nav-item dropdown-item"><a href="{{url('/profile/'. auth()->user()->id )}}" class="nav-link"> Editar Perfil</a></li>
                                 <li class="nav-item dropdown-item">
                                     <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}

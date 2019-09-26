@@ -103,7 +103,6 @@ class EventsController extends Controller
             "fk_users"=> $request->input("users"),
         ]);
 
-
         $eventos->save();        
         $evento = $eventos->id;
 

@@ -35,6 +35,8 @@ Auth::routes();
 
 Route::middleware(['auth'])->group(function(){
 
+    Route::get('/cabecalho', 'ShowProfile@profileId');
+
     //Home usuário logado
     Route::get('/home', function () {
         return view('home');
