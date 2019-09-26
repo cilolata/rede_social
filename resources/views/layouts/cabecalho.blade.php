@@ -80,8 +80,13 @@
                                 <li class="nav-item dropdown-item"><a href="{{url('/home')}}" class="nav-link">Home</a></li>
                                 <li class="nav-item dropdown-item"><a href="{{url('/criandoEvento')}}" class="nav-link">Criar evento</a></li>
                                 <li class="nav-item dropdown-item"><a href="{{url('/search')}}" class="nav-link">Eventos</a></li>
+<<<<<<< HEAD
                                 <li class="nav-item dropdown-item"><a href="{{url('/profile/'. auth()->user()->id )}}" class="nav-link"> Editar Perfil</a></li>
+=======
+                                <li class="nav-item dropdown-item"><a href="{{url('/profile/'.Auth::user()->id)}}" class="nav-link"> Editar Perfil</a></li>
+>>>>>>> 22be942cfbc8de7e018c0843d41e63eadb787497
                                 <li class="nav-item dropdown-item">
+                
                                     <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>

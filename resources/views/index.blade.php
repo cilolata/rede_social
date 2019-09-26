@@ -12,11 +12,8 @@
     <article class="row">
       <div class="col-12 col-lg-6 mt-5">
         <h1 class="display-5 display-sm-1">Conecte-se com pessoas que querem mudar o mundo</h1>
-        <p class="text-justify">Conecte-se pessoas que tenham interesses comuns em promover ações positivas para
-          a sociedade .
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, vel! Exercitationem tenetur vel
-          fuga illum iste suscipit dicta! Suscipit reprehenderit modi aliquam itaque aliquid, a sunt
-          architecto maiores perferendis ratione.
+        <p class="text-justify">Conecte-se pessoas que tenham interesses comuns em promover ações positivas na
+           sociedade. 
         </p>
         <a class="btn btn-outline-secondary btn-md" href="{{url('register')}}" role="button">Cadastre-se</a>
       </div>
@@ -42,15 +39,10 @@
           <img src="img/destaque2.jpg" alt="" class="w-75">
         </div>
         <div class="col-12 col-lg-6 ">
-          <p class="text-justify">Conecte-se pessoas que tenham interesses comuns em promover ações positivas para
-            a sociedade .
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, vel! Exercitationem tenetur vel
-            fuga illum iste suscipit dicta! Suscipit reprehenderit modi aliquam itaque aliquid, a sunt
-            architecto maiores perferendis ratione.
+          <p class="text-justify">Há alguns anos, a Universidade de Stanford (EUA), realizou uma interessante experiência de psicologia social. Deixou dois carros idênticos, da mesma marca, modelo e cor, abandonados na rua. Um no Bronx, zona pobre e conflituosa de Nova York e o outro em Palo Alto, zona rica e tranquila da Califórnia. Dois carros idênticos abandonados, dois bairros com populações muito diferentes e uma equipe de especialistas em psicologia social estudando as condutas das pessoas em cada local.
+
+              Resultado: o carro abandonado no Bronx começou a ser vandalizado em poucas horas. As rodas foram roubadas, depois o motor, os espelhos, o rádio, etc. Levaram tudo o que fosse aproveitável e aquilo que não puderam levar, destruíram. Contrariamente, o carro abandonado em Palo Alto manteve-se intacto. Só que não parou por aí...
           </p>
-          <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error corrupti
-            repellendus maxime corporis reiciendis accusantium tempore omnis minima velit,
-            a vel blanditiis, nam itaque eos temporibus illum qui provident?</p>
           <a class="btn btn-outline-secondary" href="aboutus" role="button">Leia mais</a>
         </div>
       </div>
@@ -70,52 +62,20 @@
   <section class="minhas_comunidades mt-5 d-none d-lg-block d-xl-block container">
     <h5 class="mt-5">Eventos</h5>
     <div class="row">
-      
+      @foreach ($eventos as $evento)
+          
       <div class="col-12 col-sm-6 col-md-3 cardAnuncioCont">
         <div class="card d-block">
-          <img class="card-img-top" src="img\imagem1.jpg" alt="Imagem de capa do card">
+        <img class="card-img-top" src="{{$evento->imagem}}" alt="Imagem de capa do card">
           <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
-              preencher o conteúdo do card.</p>
-            <a href="#" class="btn btn-outline-secondary">Visitar</a>
+          <h5 class="card-title">{{$evento->titulo}}</h5>
+            <p class="card-text">{{$evento->descricao}}.</p>
+              <a href="" class="btn btn-outline-secondary">Visitar</a>
+            </div>
           </div>
         </div>
-      </div>
-      
-      <div class="col-12 col-sm-6 col-md-3 cardAnuncioCont">
-        <div class="card d-block">
-          <img class="card-img-top" src="img\imagem1.jpg" alt="Imagem de capa do card">
-          <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
-              preencher o conteúdo do card.</p>
-            <a href="#" class="btn btn-outline-secondary">Visitar</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 cardAnuncioCont">
-        <div class="card d-block">
-          <img class="card-img-top" src="img\imagem1.jpg" alt="Imagem de capa do card">
-          <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
-              preencher o conteúdo do card.</p>
-            <a href="#" class="btn btn-outline-secondary">Visitar</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 cardAnuncioCont">
-        <div class="card d-block">
-          <img class="card-img-top" src="img\imagem1.jpg" alt="Imagem de capa do card">
-          <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
-              preencher o conteúdo do card.</p>
-            <a href="#" class="btn btn-outline-secondary">Visitar</a>
-          </div>
-        </div>
-      </div>
+        
+        @endforeach 
     </div>
   </section>
 
@@ -138,81 +98,72 @@
 
           <!--Slides-->
           <div class="carousel-inner" role="listbox">
-
+                
             <!--First slide-->
             <div class="carousel-item active">
               <div class="col-md-4">
                 <div class="card mb-2">
-                  <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
+                  <img class="card-img-top" src="{{$evento->imagem}}" alt="Imagem de capa do card">
                   <div class="card-body">
-                    <h4 class="card-title">Card 1</h4>
-                    <p class="card-text">Um exemplo de texto rápido para construir o título do card
-                      e fazer preencher o conteúdo do card.</p>
+                    <h4 class="card-title">{{$evento->titulo}}</h4>
+                    <p class="card-text">{{$evento->descricao}}</p>
                     <a href="#" class="btn btn-secondary">Visitar</a>
                   </div>
                 </div>
               </div>
             </div>
             <!--/.First slide-->
-
-            <!--Second slide-->
-            <div class="carousel-item">
-              <div class="col-md-4">
-                <div class="card mb-2">
-                  <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <h4 class="card-title">Card 2</h4>
-                    <p class="card-text">Um exemplo de texto rápido para construir o título do card
-                      e fazer preencher o conteúdo do card.</p>
-                    <a href="#" class="btn btn-secondary">Visitar</a>
+            
+              <div class="carousel-item">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="{" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h4 class="card-title"></h4>
+                      <p class="card-text"></p>
+                      <a href="#" class="btn btn-secondary">Visitar</a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!--/.Second slide-->
-
-            <!--Third slide-->
-            <div class="carousel-item">
-              <div class="col-md-4">
-                <div class="card mb-2">
-                  <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <h4 class="card-title">Card 3</h4>
+              
+              
+              
+              <div class="carousel-item">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h4 class="card-title">Card 3</h4>
                     <p class="card-text">Um exemplo de texto rápido para construir o título do card
                       e fazer preencher o conteúdo do card.</p>
-                    <a href="#" class="btn btn-secondary">Visitar</a>
+                      <a href="#" class="btn btn-secondary">Visitar</a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!--/.Third slide-->
-
-            <!--Fourth slide-->
-            <div class="carousel-item">
-              <div class="col-md-4">
-                <div class="card mb-2">
-                  <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <h4 class="card-title">Card 4</h4>
-                    <p class="card-text">Um exemplo de texto rápido para construir o título do card
-                      e fazer preencher o conteúdo do card.</p>
-                    <a href="#" class="btn btn-secondary">Visitar</a>
+              
+              <div class="carousel-item">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h4 class="card-title">Card 4</h4>
+                      <p class="card-text">Um exemplo de texto rápido para construir o título do card
+                        e fazer preencher o conteúdo do card.</p>
+                        <a href="#" class="btn btn-secondary">Visitar</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                
               </div>
+              
             </div>
-            <!--/.Fourth slide-->
-
-          </div>
-          <!--/.Slides-->
-
         </div>
-        <!--/.Carousel Wrapper-->
-
-      </div>
-    </article>
-  </section>
-
+      </article>
+    </section>
+    
 
 
 

@@ -106,10 +106,14 @@ class RegisterController extends Controller
             'CEP' => $data['CEP'],
         ]);
 
+<<<<<<< HEAD
         // $user->save();
         dd($user);
         // return $user;
     }
+=======
+       // dd($data);
+>>>>>>> 22be942cfbc8de7e018c0843d41e63eadb787497
 
     function deletarUsuario($id) {
             $user = User::find($id);

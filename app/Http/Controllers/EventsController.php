@@ -8,14 +8,18 @@ use App\Eventos;
 use App\User;
 use App\Categorias;
 use Illuminate\Support\Facades\Auth;
+use DB;
 
 class EventsController extends Controller
 {
+
+    //rotinas pagina evento
     public function eventos($id){
         $eventos = Eventos::find($id);
-       // dd($eventos);
-        return view('event')->with('eventos', $eventos);
+        $users = User::find($eventos->fk_users);
+        $categorias = Categorias::find($eventos->fk_categorias);
 
+        return view('event', ["eventos"=>$eventos, "users"=>$users, "categorias"=>$categorias]);
     }
 
     /**
@@ -23,13 +27,44 @@ class EventsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    
-    
-    public function search(){
+
+    public function home(){
         $categorias = Categorias::all();
         $eventos = Eventos::orderBy('id', 'ASC')->get();
-        
+        // $eventos = DB::table('eventos')
+        // ->join('users', 'eventos.fk_users', '=', 'users.id')
+        // ->select('eventos.id', 'eventos.titulo', 'eventos.descricao', 'users.name')
+        // ->get();
+        return view('home', compact('eventos', 'categorias'));
+    }
+    
+    //pesquisar pagina home
+  public function pesquisar(Request $request){
+        $eventos = Eventos::all();
+        $categorias = Categorias::all();
+        $pesquisar = Eventos::where('descricao','LIKE', $eventos)->get();
+
+        return view('home')->with('eventos', $eventos);
+  }
+
+    //rotinas pagina search    
+    public function search(Request $request){
+
+        $categorias = Categorias::all();
+        $eventos = Eventos::all();
+        if($request->input("select_categoria")) {
+
+            $eventos = Eventos::where('fk_categorias', '=', $request->input("select_categoria"))->get();
+        }
         return view('search', compact('eventos', 'categorias'));
+    }
+
+    //rotinas pagina index
+    public function index(){
+        $categorias = Categorias::all();
+        $eventos = Eventos::orderBy('id', 'ASC')->paginate(4);
+        
+        return view('index', compact('eventos', 'categorias'));
     }
 
 
@@ -38,11 +73,8 @@ class EventsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        
-    }
 
+    //pagina criando evento
     public function adicionandoEvento(){
         $usuario = Auth::user();
         $usuarios = User::all();
@@ -51,6 +83,7 @@ class EventsController extends Controller
         return view('criandoEvento', compact('usuario','usuarios','categorias'));
     }
     
+    //salvando e validando o evento na pagina criando evento
     public function salvandoEvento(Request $request){
         $request->validate([
             "dataEvento"=> 'required',
@@ -60,14 +93,15 @@ class EventsController extends Controller
             "cidade"=> 'required',
             "estado"=> 'required',
             "inicioEvento"=> 'required',
-            "fimEvento"=> 'required'
-
-            ]);
+            "fimEvento"=> 'required',
+            "categoria_descricao" => 'required',
+            "user_id" => "required"
+            
+         ]);
 
         // salvando caminho da imagem e armazenando-a no projeto
         // capturando imagem selecionada pelo usuário
         $arquivo = $request->file('imagem');
-
         // if (empty($arquivo)) {
         //     abort(400, 'Nenhum arquivo foi enviado');
         // }
@@ -89,6 +123,7 @@ class EventsController extends Controller
         // movendo/armazenando imagem dentro do projeto
         $arquivo->move($caminhoAbsoluto, $nomeArquivo);
 
+        // criando o evento trazendo as infos dos inputs da pagina criando evento
         $eventos = Eventos::create([
             "dataEvento"=> $request->input("dataEvento"),
             "imagem" =>$caminhoRelativo,
@@ -99,8 +134,9 @@ class EventsController extends Controller
             "estado"=> $request->input("estado"),
             "inicioEvento"=> $request->input("inicioEvento"),
             "fimEvento"=> $request->input("fimEvento"),
-            "fk_categorias"=> $request->input("categorias"),
-            "fk_users"=> $request->input("users"),
+            "fk_categorias"=> $request->input("categoria_descricao"),
+            "fk_users"=> $request->input("user_id")
+            
         ]);
 
         $eventos->save();        

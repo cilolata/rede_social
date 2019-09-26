@@ -18,18 +18,16 @@ Route::get('/aboutus', function () {
 
 //Index
 Route::get('/index', function () {
-    return view('index');
+ return view('index');
 });
 
-//Route::get('/index', 'EventsController@search');
+Route::get('/index', 'EventsController@index');
+
 
 //Contact Us
 Route::get('/contact', 'ContactController@contact');
 
-// Criando eventos
-// Route::get('/criandoEvento', function () {
-//     return view('criandoEvento');
-// });
+
 
 Auth::routes();
 
@@ -41,6 +39,12 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/home', function () {
         return view('home');
     });
+
+    // rotinas pagina home
+  //   Route::get('/home', 'EventsController@home');
+   // Route::get('/home','EventsController@getUserEvents');
+   Route::get('/home', 'EventsController@pesquisar');
+
     
     // listando profile a partir do ID
     Route::get('/profile/{id}', 'ProfileController@profile');
@@ -51,11 +55,9 @@ Route::middleware(['auth'])->group(function(){
     // listando evento específico a partir do ID
     Route::get('/event/{id}', 'EventsController@eventos');
 
-    // criando eventos
+    // criando eventos e salvando eventos
     Route::get('/criandoEvento', 'EventsController@adicionandoEvento');
     Route::post('/criandoEvento', 'EventsController@salvandoEvento');
     
-
-    //Profile - completar o cadastro
 
 });

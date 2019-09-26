@@ -1,7 +1,6 @@
 
 /*  Regras Gerais Início 
 ------------------------ */
-
 * {
   margin: 0;
   padding: 0;
@@ -41,16 +40,12 @@ a.btn.btn-success {
   background-color: #fff;
 }
 
-
 /* início header pag index 
 -------------------------*/
-
 
 .navbar-brand span {
   padding: 0 0 0 5px;
 }
-
-
 
 /*inicio index
 -----------------------------------*/
@@ -101,15 +96,12 @@ a.btn.btn-success {
 
  /*inicio section eventos pg index
 ----------------------------------*/
-
 .div-card-anuncios{
   height: 60vh;  
 }
 
-
 /* inicio section pagina contact-us 
 ---------------------------------*/
-
 #contact-us {
   height: 100%;
 }
@@ -126,10 +118,8 @@ a.btn.btn-success {
   resize: none;
 }
 
-
 /* início pagina about-us 
 -----------------------*/
-
 #about-us article p {
   margin-top: 20px;
 }
@@ -138,10 +128,13 @@ a.btn.btn-success {
   width: 50%;
 }
 
+#about-us article .img.juntos.jpg {
+  width: 50%;
+  margin-top: 50%;
+}
 
 /* início pagina event 
 ---------------------*/
-
 #event {
   margin-top: 9%;
 }
@@ -181,7 +174,6 @@ a.btn.btn-success {
 
 /* section pesquisar pagina home
 ------------------------------*/
-
 .home-pesquisar {
   background-color: #fff;
   position: relative;
@@ -211,9 +203,17 @@ a.btn.btn-success {
   width: 70%;
 }
 
+/*pagina search
+--------*/
+.botao_search {
+  width: 30px;
+  height: 40px;
+  background: transparent;
+  border:  1px;
+}
+
 /* --footer início 
------------------- */
- 
+------------------ */ 
 footer {
   cursor: pointer;
   background-color: #f8f9fa;
@@ -228,7 +228,6 @@ footer {
 .list-unstyled ul{
   text-align: center;
 }
-
 
 #logoFooter {
   margin: 0 calc(50% - 16px);
@@ -254,7 +253,7 @@ footer {
 
 
 /* media queries
------------------*/
+-------------------*/
 
 @media (max-width: 767.98px) { 
 
@@ -268,14 +267,20 @@ footer {
     margin-top:100px;
   }
 
- 
  /* pagina eventos/search*/
-  .meus-eventos{
-    margin-top:50px;
+
+
+  .events{
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
   }
-  .nichos{
-    margin: 0;
-    padding: 0;
+
+  .card-columns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
   }
 
   /* pagina profile*/
@@ -289,3 +294,6 @@ footer {
     height: 30vh;
   }
  }
+
+ /*fim media queries
+ --------------------*/
