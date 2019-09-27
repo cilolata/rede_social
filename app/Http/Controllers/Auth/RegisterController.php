@@ -51,13 +51,16 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'sobrenome'=> ['required', 'string', 'max:255'],
-            "imagem" => ['required', 'string', 'max:300'],
+            //"imagem" => ['required', 'string', 'max:300'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'cidade' => ['required', 'string', 'max:200'],
             'estado' => ['required', 'string', 'max:200'],
             'CEP' => ['required', 'string', 'max:9']
         ]);
+
+
+
     }
 
     /**
@@ -69,10 +72,33 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
 
-        return User::create([
+        // salvando caminho da imagem e armazenando-a no projeto
+        // capturando imagem selecionada pelo usuário
+
+        $request = request();
+
+        $arquivo = $request->file('imagem');
+        
+        $nomePasta = "uploads_perfil";
+        // capturando o caminho até o projeto
+        $arquivo->storePublicly($nomePasta);
+
+        // caminho absoluto que sempre será utilizado o mesmo
+        $caminhoAbsoluto = public_path() . "/storage/$nomePasta";
+
+        // capturando o tmp_name
+        $nomeArquivo = $arquivo->getClientOriginalName();
+
+        // capturando o caminho relativo dentro do projeto
+        $caminhoRelativo = "storage/$nomePasta/$nomeArquivo";
+
+        // movendo/armazenando imagem dentro do projeto
+        $arquivo->move($caminhoAbsoluto, $nomeArquivo);
+
+        $user =  User::create([
             'name' => $data['name'],
             'sobrenome' => $data['sobrenome'],
-            'imagem' => $data['imagem'],
+            'imagem' => $caminhoRelativo,
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'cidade' => $data['cidade'],
@@ -82,13 +108,13 @@ class RegisterController extends Controller
 
        // dd($data);
 
-        function deletarUsuario($id) {
+    function deletarUsuario($id) {
             $user = User::find($id);
     
             $user->delete();
     
             return redirect('/index');
-        }
+    }
+
     }
 }
-

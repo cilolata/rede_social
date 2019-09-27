@@ -90,17 +90,18 @@
 
           <!--Indicators-->
           <ol class="carousel-indicators">
-            <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-            <li data-target="#multi-item-example" data-slide-to="1"></li>
-            <li data-target="#multi-item-example" data-slide-to="2"></li>
+            @foreach($eventos as $evento)
+            <li data-target="#multi-item-example" data-slide-to="{{ $loop->index }}" class="{{ $loop->first ? 'active' : '' }}"></li>
+            @endforeach
           </ol>
           <!--/.Indicators-->
 
           <!--Slides-->
           <div class="carousel-inner" role="listbox">
-                
+             
+          @foreach ($eventos as $evento)
             <!--First slide-->
-            <div class="carousel-item active">
+            <div class="carousel-item {{ $loop->first ? 'active' : ''}}">
               <div class="col-md-4">
                 <div class="card mb-2">
                   <img class="card-img-top" src="{{$evento->imagem}}" alt="Imagem de capa do card">
@@ -113,53 +114,9 @@
               </div>
             </div>
             <!--/.First slide-->
-            
-              <div class="carousel-item">
-                <div class="col-md-4">
-                  <div class="card mb-2">
-                    <img class="card-img-top" src="{" alt="Imagem de capa do card">
-                    <div class="card-body">
-                      <h4 class="card-title"></h4>
-                      <p class="card-text"></p>
-                      <a href="#" class="btn btn-secondary">Visitar</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              
-              
-              <div class="carousel-item">
-                <div class="col-md-4">
-                  <div class="card mb-2">
-                    <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
-                    <div class="card-body">
-                      <h4 class="card-title">Card 3</h4>
-                    <p class="card-text">Um exemplo de texto rápido para construir o título do card
-                      e fazer preencher o conteúdo do card.</p>
-                      <a href="#" class="btn btn-secondary">Visitar</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="carousel-item">
-                <div class="col-md-4">
-                  <div class="card mb-2">
-                    <img class="card-img-top" src="img/imagem1.jpg" alt="Imagem de capa do card">
-                    <div class="card-body">
-                      <h4 class="card-title">Card 4</h4>
-                      <p class="card-text">Um exemplo de texto rápido para construir o título do card
-                        e fazer preencher o conteúdo do card.</p>
-                        <a href="#" class="btn btn-secondary">Visitar</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-              
-            </div>
+          @endforeach
+          
+          </div>
         </div>
       </article>
     </section>

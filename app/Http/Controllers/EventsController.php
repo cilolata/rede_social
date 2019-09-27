@@ -24,11 +24,9 @@ class EventsController extends Controller
     //rotinas pagina home
     public function home(){
         $categorias = Categorias::all();
-        $eventos = Eventos::orderBy('id', 'ASC')->get();
-        // $eventos = DB::table('eventos')
-        // ->join('users', 'eventos.fk_users', '=', 'users.id')
-        // ->select('eventos.id', 'eventos.titulo', 'eventos.descricao', 'users.name')
-        // ->get();
+        $usuario = User::find(id);
+        //$eventos = Eventos::orderBy('id', 'ASC')->get();
+        $eventos = Eventos::table('eventos')->where($eventos->users->name, '=', $usuario->name)->get();
         return view('home', compact('eventos', 'categorias'));
     }
     
