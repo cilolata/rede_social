@@ -17,11 +17,7 @@ class ProfileController extends Controller
     //validando os dados do usuario pelo banco e editando o usuario na pagina profile
     public function alterarUsuario(Request $request, $id) {
         $usuario = User::find($id);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 22be942cfbc8de7e018c0843d41e63eadb787497
         $request->validate([
             'name' => $data['name'],
             'sobrenome' => $data['sobrenome'],

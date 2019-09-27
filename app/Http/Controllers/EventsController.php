@@ -30,11 +30,9 @@ class EventsController extends Controller
 
     public function home(){
         $categorias = Categorias::all();
-        $eventos = Eventos::orderBy('id', 'ASC')->get();
-        // $eventos = DB::table('eventos')
-        // ->join('users', 'eventos.fk_users', '=', 'users.id')
-        // ->select('eventos.id', 'eventos.titulo', 'eventos.descricao', 'users.name')
-        // ->get();
+        $usuario = User::find(id);
+        //$eventos = Eventos::orderBy('id', 'ASC')->get();
+        $eventos = Eventos::table('eventos')->where($eventos->users->name, '=', $usuario->name)->get();
         return view('home', compact('eventos', 'categorias'));
     }
     
@@ -62,7 +60,7 @@ class EventsController extends Controller
     //rotinas pagina index
     public function index(){
         $categorias = Categorias::all();
-        $eventos = Eventos::orderBy('id', 'ASC')->paginate(4);
+        $eventos = Eventos::orderBy('id', 'ASC')->take(4)->get();
         
         return view('index', compact('eventos', 'categorias'));
     }

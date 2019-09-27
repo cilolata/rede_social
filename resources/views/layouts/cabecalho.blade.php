@@ -71,7 +71,7 @@
                     </a>
                     <div class="dropdown header-paginas-internas" id="nav-principal">
                         <div class="navbar-nav list-unstyle ml-auto ">
-                            <img  src="https://i.pinimg.com/originals/b9/58/5a/b9585a9d1b20060f0d7e83c72eaa159f.jpg" class="rounded-circle img-profile" height="40" width="40" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" alt="imagem do usuario">
+                            <img  src="{{ url(Auth::user()->imagem) }} " class="rounded-circle img-profile" height="40" width="40" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" alt="imagem do usuario">
                             <div class="navbar-text d-none d-lg-block ml-1">
                                 {{ Auth::user()->name}}
                                 <span class="caret"></span>
@@ -80,11 +80,7 @@
                                 <li class="nav-item dropdown-item"><a href="{{url('/home')}}" class="nav-link">Home</a></li>
                                 <li class="nav-item dropdown-item"><a href="{{url('/criandoEvento')}}" class="nav-link">Criar evento</a></li>
                                 <li class="nav-item dropdown-item"><a href="{{url('/search')}}" class="nav-link">Eventos</a></li>
-<<<<<<< HEAD
-                                <li class="nav-item dropdown-item"><a href="{{url('/profile/'. auth()->user()->id )}}" class="nav-link"> Editar Perfil</a></li>
-=======
                                 <li class="nav-item dropdown-item"><a href="{{url('/profile/'.Auth::user()->id)}}" class="nav-link"> Editar Perfil</a></li>
->>>>>>> 22be942cfbc8de7e018c0843d41e63eadb787497
                                 <li class="nav-item dropdown-item">
                 
                                     <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">

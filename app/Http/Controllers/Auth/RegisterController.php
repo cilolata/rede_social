@@ -74,11 +74,11 @@ class RegisterController extends Controller
 
         // salvando caminho da imagem e armazenando-a no projeto
         // capturando imagem selecionada pelo usuário
-        dd($data["imagem"]);
-        exit;
-        $arquivo = $data["imagem"]->file('imagem');
-        
 
+        $request = request();
+
+        $arquivo = $request->file('imagem');
+        
         $nomePasta = "uploads_perfil";
         // capturando o caminho até o projeto
         $arquivo->storePublicly($nomePasta);
@@ -106,14 +106,7 @@ class RegisterController extends Controller
             'CEP' => $data['CEP'],
         ]);
 
-<<<<<<< HEAD
-        // $user->save();
-        dd($user);
-        // return $user;
-    }
-=======
        // dd($data);
->>>>>>> 22be942cfbc8de7e018c0843d41e63eadb787497
 
     function deletarUsuario($id) {
             $user = User::find($id);
@@ -122,5 +115,6 @@ class RegisterController extends Controller
     
             return redirect('/index');
     }
-}
 
+    }
+}
