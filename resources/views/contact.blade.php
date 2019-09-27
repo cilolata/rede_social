@@ -21,7 +21,7 @@
                     <div class="col-12 col-lg-6 contact">
                         <form class="" action="" method="POST">
                             <div class="form-group">
-                                <div class="form-group d-flex">
+                                <div class="form-group d-flex flex-wrap">
                                     <label for="nome" class="col-sm-6 col-12">Nome:
                                         <input type="text" class="form-control" id="nome" name="nome" required>
                                     </label>
