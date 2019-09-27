@@ -41,17 +41,22 @@ Route::middleware(['auth'])->group(function(){
     // rotinas pagina home
   //   Route::get('/home', 'EventsController@home');
    // Route::get('/home','EventsController@getUserEvents');
-   Route::get('/home', 'EventsController@pesquisar');
 
     
     // listando profile a partir do ID
     Route::get('/profile/{id}', 'ProfileController@profile');
+    Route::post('/profile/{id}', 'ProfileController@alterarUsuario');
+    Route::post('/profile/{id}', 'ProfileController@removerUsuario');
+
 
     // listando todos eventos
     Route::get('/search', 'EventsController@search');
 
     // listando evento específico a partir do ID
     Route::get('/event/{id}', 'EventsController@eventos');
+
+    //adicionando participante no evento
+    Route::GET('/event', 'EventsController@adicionarParticipantes');
 
     // criando eventos e salvando eventos
     Route::get('/criandoEvento', 'EventsController@adicionandoEvento');

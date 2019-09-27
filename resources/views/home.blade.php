@@ -14,7 +14,7 @@
                 Ache um grupo ou atividade e junte-se para transformar a sua comunidade
             </h4>
                 <form action="/home" method="GET" class="home-pesquisar form-group" enctype="multipart/form-data">    
-                <input type="text" name="pesquisar" value="" class="form-control input-pesquisar tex-align-center shadow-sm" aria-label="pesquisar-area" placeholder="Pesquisar Eventos">
+                <input type="text" name="palavra" value="" class="form-control input-pesquisar tex-align-center shadow-sm" aria-label="pesquisar-area" placeholder="Pesquisar Eventos">
                     <button type="submit" class="icon-pesquisar"><i class="fas fa-search"></i></button>
                 </form>
         </div>
@@ -35,20 +35,20 @@
     <section class="container mt-5  ">
 
         <h4 class="ml-5">Meus Eventos</h4>
-        <div class="row">
-            @foreach ($eventos as $evento)  
+ <!--       <div class="row">
+            {{-- @foreach ($eventos as $evento)   --}}
             <div class="card meus-eventos mt-3 ml-5" style="width: 18rem;">
                     <div class="card-body">
-                        <h5 class="card-title">{{$evento->titulo}}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted"> Criado por: {{$evento->users->name}}</h6>
-                        <p class="card-text">{{$evento->descricao}}</p>
-                        <a href="event/{{$evento->id}}" class="card-link">Acesse</a>
+                        {{-- <h5 class="card-title">{{$evento->titulo}}</h5> --}}
+                        {{-- <h6 class="card-subtitle mb-2 text-muted"> Criado por: {{$evento->users->name}}</h6> --}}
+                        {{-- <p class="card-text">{{$evento->descricao}}</p> --}}
+                        {{-- <a href="event/{{$evento->id}}" class="card-link">Acesse</a> --}}
                     </div>
                 </div>
-            @endforeach
+            {{-- @endforeach --}}
 
         {{--    @foreach (App\Eventos::all() as $evento) --}}
-    <!--
+    
             <div class="card meus-eventos mt-3 ml-5" style="width: 18rem;">
                     <div class="card-body">
                         {{-- <h5 class="card-title">{{$evento->titulo}}</h5> --}}
