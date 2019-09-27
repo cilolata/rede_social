@@ -58,14 +58,38 @@
                                 <a href="#"></a>
                                 <p>Organizador(a): {{$users->name}}</p>
                             </div>
-                            <div class="d-flex justify-content-end">
-                                <button class="btn btn-outline-secondary">
+                            <form class="mt-5" method="GET" action="/event" enctype="multipart/form-data">
+                                <div class="d-flex justify-content-end">
+                                <input type="hidden" name="evento_id" value="{{$eventos->id}}">
+                                <input type="hidden" name="user_id" value="{{$users->id}}">                               
+                                <button class="btn btn-outline-secondary" type="submit">
                                     Participar!
                                 </button>
                             </div>
+                        </form>
                     </div>
-                </div>
+                </div>   
+                <table class="table mt-3">
+                    <thead>
+                        <tr>
+                            <th scope="col">Participantes</th>  
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>     
+                             {{-- <td>{{$participantes->$users->name}}</td> --}}
+                            {{-- <td>{{$participantes->$users->imagem}}</td> --}}
+                        </tr>
+                           
+                    </tbody>
+                </table>
+
+            </form>
             </article>
+
+            <section>
+                   
+            </section>
     
             <article class="col-3 side-bar d-none d-lg-block d-xl-block">
                 <div class="other-events">
@@ -143,6 +167,7 @@
         </section>
     
     </main>
+ 
 
 
 @endsection

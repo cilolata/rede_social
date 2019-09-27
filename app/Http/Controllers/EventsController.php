@@ -13,21 +13,15 @@ use DB;
 class EventsController extends Controller
 {
 
-    //rotinas pagina evento
-    public function eventos($id){
-        $eventos = Eventos::find($id);
-        $users = User::find($eventos->fk_users);
-        $categorias = Categorias::find($eventos->fk_categorias);
-
-        return view('event', ["eventos"=>$eventos, "users"=>$users, "categorias"=>$categorias]);
+    //rotinas pagina index
+    public function index(){
+        $categorias = Categorias::all();
+        $eventos = Eventos::orderBy('id', 'ASC')->paginate(4);
+        
+        return view('index', compact('eventos', 'categorias'));
     }
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-
+    //rotinas pagina home
     public function home(){
         $categorias = Categorias::all();
         $usuario = User::find(id);
@@ -36,48 +30,34 @@ class EventsController extends Controller
         return view('home', compact('eventos', 'categorias'));
     }
     
-    //pesquisar pagina home
-  public function pesquisar(Request $request){
-        $eventos = Eventos::all();
-        $categorias = Categorias::all();
-        $pesquisar = Eventos::where('descricao','LIKE', $eventos)->get();
+   
 
-        return view('home')->with('eventos', $eventos);
-  }
-
-    //rotinas pagina search    
-    public function search(Request $request){
-
-        $categorias = Categorias::all();
-        $eventos = Eventos::all();
-        if($request->input("select_categoria")) {
-
-            $eventos = Eventos::where('fk_categorias', '=', $request->input("select_categoria"))->get();
-        }
-        return view('search', compact('eventos', 'categorias'));
+    //rotinas pagina evento
+    public function eventos($id){
+        $eventos = Eventos::find($id);
+        $users = User::find($eventos->fk_users);
+        $categorias = Categorias::find($eventos->fk_categorias);
+      //  $eventos->fk_users = $users;
+     //   $participantes = User::find($users);       
+        return view('event', ["eventos"=>$eventos, "users"=>$users, "categorias"=>$categorias /*"participantes"=>$participantes*/]);
     }
 
-    //rotinas pagina index
-    public function index(){
-        $categorias = Categorias::all();
-        $eventos = Eventos::orderBy('id', 'ASC')->take(4)->get();
-        
-        return view('index', compact('eventos', 'categorias'));
+  /*  public function adicionarParticipantes(Request $request){
+        $eventos = Eventos::find($request->input("evento_id"));
+        $users = $request->input("user_id");
+        $eventos->fk_users = $users;
+        $participantes = User::find($users);
+        return view('event', compact('users', 'participantes', 'eventos'));
     }
 
+    */
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
 
     //pagina criando evento
     public function adicionandoEvento(){
         $usuario = Auth::user();
         $usuarios = User::all();
         $categorias = Categorias::all();
-
         return view('criandoEvento', compact('usuario','usuarios','categorias'));
     }
     
@@ -144,52 +124,20 @@ class EventsController extends Controller
     }
 
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
+
+    //rotinas pagina search    
+     public function search(Request $request){
+        $categorias = Categorias::all();
+        $eventos = Eventos::all();
+        if($request->input("select_categoria")) {
+            $eventos = Eventos::where('fk_categorias', '=', $request->input("select_categoria"))->get();
+        }
+        return view('search', compact('eventos', 'categorias'));
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
+    /*
      * Remove the specified resource from storage.
      *
      * @param  int  $id
