@@ -59,7 +59,7 @@
             </div>
           </div>
             <input type="hidden" name="user_id" value="{{auth()->user()->id}}"> 
-            <button class="btn btn-outline-secondary mt-4" type="submit">Editar</button>
+            <button class="btn btn-outline-secondary mt-4" type="submit">Salvar</button>
             {{-- <input type="hidden" name="user_id" value="{{auth()->user()->id}}">  --}}
             <button class="btn btn-outline-danger mt-4 ml-2" type="submit">Excluir Perfil</button>
 
