@@ -45,10 +45,10 @@ Route::middleware(['auth'])->group(function(){
    // Route::get('/home','EventsController@getUserEvents');
 
     
-    // listando profile a partir do ID
+    // profile
     Route::get('/profile/{id}', 'ProfileController@profile');
     Route::post('/profile/{id}', 'ProfileController@alterarUsuario');
-    Route::post('/profile/{id}', 'ProfileController@removerUsuario');
+    Route::delete('/profile/{id}', 'ProfileController@removerUsuario');
 
 
     // listando todos eventos

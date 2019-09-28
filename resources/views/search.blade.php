@@ -35,9 +35,8 @@
                     <div class="card-body">
                         <h5 class="card-title">{{$evento->titulo}}</h5>
                         <p class="card-text">{{$evento->descricao}}</p>
-                        <button class="btn btn-outline-secondary">
-                            <a class="text-secondary" href="event/{{$evento->id}}">Veja mais</a>
-                        </button>
+                            <a class="btn btn-outline-secondary" href="event/{{$evento->id}}">Veja mais</a>
+                        
                     </div>
                     
                     </div>
