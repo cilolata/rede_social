@@ -21,7 +21,7 @@ class ProfileController extends Controller
    
         $usuario->name = $request->input('name');
         $usuario->sobrenome = $request->input('sobrenome');
-      $usuario->email = $request->input('email');
+        $usuario->email = $request->input('email');
         $usuario->cidade = $request->input('cidade');
         $usuario->estado = $request->input('estado');
         $usuario->CEP = $request->input('CEP');
@@ -47,16 +47,17 @@ class ProfileController extends Controller
         return redirect('/profile/'. $request->input('user_id'));
     }
 
+    //removendo usuario
     public function removerUsuario(Request $request){
-       $id = $request->input('deletar');
-       $usuario = User::find(auth()->user()->id);
-       $eventos = Eventos::where('fk_users', '=', $id)->get();
+        $id = $request->input('user_id');
+        $usuario = User::find(auth()->user()->id);
+        $eventos = Eventos::where('fk_users', '=', $id)->get();
 
-    foreach($eventos as $evento):
-       $evento->delete();
-    endforeach;
-      $usuario->delete();
+        foreach($eventos as $evento):
+            $evento->delete();
+        endforeach;
+        $usuario->delete();
 
-      return redirect('/index');
+        return redirect('/index');
     }
 }

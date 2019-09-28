@@ -27,8 +27,6 @@ Route::get('/index', 'EventsController@index');
 //Contact Us
 Route::get('/contact', 'ContactController@contact');
 
-
-
 Auth::routes();
 
 Route::middleware(['auth'])->group(function(){
@@ -40,29 +38,29 @@ Route::middleware(['auth'])->group(function(){
         return view('home');
     });
 
-    // rotinas pagina home
-  //   Route::get('/home', 'EventsController@home');
-   // Route::get('/home','EventsController@getUserEvents');
+// rotinas pagina home
+Route::get('/home', 'EventsController@meusEventos');
+// Route::get('/home','EventsController@getUserEvents');
 
     
-    // profile
-    Route::get('/profile/{id}', 'ProfileController@profile');
-    Route::post('/profile/{id}', 'ProfileController@alterarUsuario');
-    Route::delete('/profile/{id}', 'ProfileController@removerUsuario');
+// profile
+Route::get('/profile/{id}', 'ProfileController@profile');
+Route::post('/profile/{id}', 'ProfileController@alterarUsuario');
+Route::delete('/profile/{id}', 'ProfileController@removerUsuario');
 
 
-    // listando todos eventos
-    Route::get('/search', 'EventsController@search');
+// listando todos eventos
+Route::get('/search', 'EventsController@search');
 
-    // listando evento específico a partir do ID
-    Route::get('/event/{id}', 'EventsController@eventos');
+// listando evento específico a partir do ID
+Route::get('/event/{id}', 'EventsController@eventos');
 
-    //adicionando participante no evento
-    Route::GET('/event', 'EventsController@adicionarParticipantes');
+//adicionando participante no evento
+Route::GET('/event', 'EventsController@adicionarParticipantes');
 
-    // criando eventos e salvando eventos
-    Route::get('/criandoEvento', 'EventsController@adicionandoEvento');
-    Route::post('/criandoEvento', 'EventsController@salvandoEvento');
+// criando eventos e salvando eventos
+Route::get('/criandoEvento', 'EventsController@adicionandoEvento');
+Route::post('/criandoEvento', 'EventsController@salvandoEvento');
     
 
 });

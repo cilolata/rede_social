@@ -27,6 +27,7 @@ a:visited {
   text-decoration: none;
 }
 
+
 a.btn.btn-success {
   color: #fff;
 }
@@ -79,18 +80,6 @@ a.btn.btn-success {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-image: url(../img/alimentacao-destaque.jpg);
-}
-
-.caixa-destaque2{
-  display: flex;
-  height: 100vh;
-  box-sizing: border-box;
-  opacity: 0.8;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   background-image: url(../img/animais-destaque.jpg);
 }
 
@@ -114,26 +103,14 @@ a.btn.btn-success {
   margin: 0 auto;
 }
 
+#faqAccordion a {
+  color: #000000;
+}
+
 #contact-us #textArea {
   resize: none;
 }
 
-  
-
-/* início pagina about-us 
------------------------*/
-#about-us article p {
-  margin-top: 20px;
-}
-
-#about-us article img {
-  width: 50%;
-}
-
-#about-us article .img.juntos.jpg {
-  width: 50%;
-  margin-top: 50%;
-}
 
 /* início pagina event 
 ---------------------*/
@@ -275,8 +252,7 @@ footer {
   }
 
  /* pagina eventos/search*/
-
-
+ 
   .events{
     display: flex;
     justify-content: center;

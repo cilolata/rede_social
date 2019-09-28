@@ -22,23 +22,21 @@ class EventsController extends Controller
     }
 
     //rotinas pagina home
-    public function home(){
-        $categorias = Categorias::all();
-       // $usuario = User::find(id);
-        //$eventos = Eventos::orderBy('id', 'ASC')->get();
-        $eventos = Eventos::table('eventos')->where($eventos->users->name, '=', $usuario->name)->get();
-        return view('home', compact('eventos', 'categorias'));
+    public function meusEventos(){
+        $todos = Eventos::all();
+        $nome = $todos->fk_users;
+        $usuario = User::find(auth()->user()->name);
+        $eventos = Eventos::where($nome, '=', $usuario)->get();
+        return view('home', compact('todos', 'nome', 'usuario', 'eventos'));
     }
-    
-   
 
     //rotinas pagina evento
     public function eventos($id){
         $eventos = Eventos::find($id);
         $users = User::find($eventos->fk_users);
         $categorias = Categorias::find($eventos->fk_categorias);
-      //  $eventos->fk_users = $users;
-     //   $participantes = User::find($users);       
+        //  $eventos->fk_users = $users;
+        //  $participantes = User::find($users);       
         return view('event', ["eventos"=>$eventos, "users"=>$users, "categorias"=>$categorias /*"participantes"=>$participantes*/]);
     }
 
