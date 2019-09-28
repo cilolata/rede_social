@@ -75,6 +75,7 @@ class RegisterController extends Controller
         // salvando caminho da imagem e armazenando-a no projeto
         // capturando imagem selecionada pelo usuário
 
+
         $request = request();
 
         $arquivo = $request->file('imagem');
@@ -94,7 +95,7 @@ class RegisterController extends Controller
 
         // movendo/armazenando imagem dentro do projeto
         $arquivo->move($caminhoAbsoluto, $nomeArquivo);
-
+     
         $user =  User::create([
             'name' => $data['name'],
             'sobrenome' => $data['sobrenome'],
@@ -106,7 +107,8 @@ class RegisterController extends Controller
             'CEP' => $data['CEP'],
         ]);
 
-       // dd($data);
+      
+
 
     function deletarUsuario($id) {
             $user = User::find($id);

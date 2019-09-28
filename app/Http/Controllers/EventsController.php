@@ -23,11 +23,18 @@ class EventsController extends Controller
 
     //rotinas pagina home
     public function meusEventos(){
-        $todos = Eventos::all();
-        $nome = $todos->fk_users;
-        $usuario = User::find(auth()->user()->name);
-        $eventos = Eventos::where($nome, '=', $usuario)->get();
-        return view('home', compact('todos', 'nome', 'usuario', 'eventos'));
+        $categorias = Categorias::all();
+        $eventos = Eventos::all();
+        $users = User::all();
+       // if($eventos->fk_users == auth()->user()){
+       //     return view('home',['eventos'=>$eventos]);
+     //   } else {
+            return view('home', compact('eventos', 'categorias', 'users'));
+       // }
+        
+       // $usuario = User::find(auth()->user()->name);
+       // $eventos = Eventos::where($nome, '=', $usuario)->get();
+        
     }
 
     //rotinas pagina evento
@@ -47,11 +54,6 @@ class EventsController extends Controller
         $participantes = User::find($users);
         return view('event', compact('users', 'participantes', 'eventos'));
     }
-
-
-
-
-
 
     //pagina criando evento
     public function adicionandoEvento(){
