@@ -24,7 +24,7 @@ class EventsController extends Controller
     //rotinas pagina home
     public function home(){
         $categorias = Categorias::all();
-        $usuario = User::find(id);
+       // $usuario = User::find(id);
         //$eventos = Eventos::orderBy('id', 'ASC')->get();
         $eventos = Eventos::table('eventos')->where($eventos->users->name, '=', $usuario->name)->get();
         return view('home', compact('eventos', 'categorias'));
@@ -42,7 +42,7 @@ class EventsController extends Controller
         return view('event', ["eventos"=>$eventos, "users"=>$users, "categorias"=>$categorias /*"participantes"=>$participantes*/]);
     }
 
-  /*  public function adicionarParticipantes(Request $request){
+   public function adicionarParticipantes(Request $request){
         $eventos = Eventos::find($request->input("evento_id"));
         $users = $request->input("user_id");
         $eventos->fk_users = $users;
@@ -50,7 +50,9 @@ class EventsController extends Controller
         return view('event', compact('users', 'participantes', 'eventos'));
     }
 
-    */
+
+
+
 
 
     //pagina criando evento
@@ -125,8 +127,8 @@ class EventsController extends Controller
 
 
 
-    //rotinas pagina search    
-     public function search(Request $request){
+       // rotinas pagina search    
+        public function search(Request $request){
         $categorias = Categorias::all();
         $eventos = Eventos::all();
         if($request->input("select_categoria")) {
