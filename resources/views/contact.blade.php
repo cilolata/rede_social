@@ -49,7 +49,7 @@
                             <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
                                 data-parent="#faqAccordion" data-target="#question0">
                                 <h4 class="panel-title">
-                                    <a href="#" class="ing">O que é preciso fazer para ser um voluntário e qual a idade mínima exigida?</a>
+                                    <a href="#" class="ing" >O que é preciso fazer para ser um voluntário e qual a idade mínima exigida?</a>
                                 </h4>
 
                             
