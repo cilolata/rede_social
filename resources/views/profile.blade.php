@@ -49,7 +49,7 @@
             <div class="col-md-3 mb-2">
               <label for="estado">Estado</label>
               <input type="text" class="form-control" id="UF" placeholder="Estado" required name="estado"
-                value="{{auth()->user()->Estado}}">
+                value="{{auth()->user()->estado}}">
             </div>
 
             <div class="col-md-3 mb-2">

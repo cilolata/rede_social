@@ -35,17 +35,17 @@
     <section class="container mt-5  ">
 
         <h4 class="ml-5">Meus Eventos</h4>
- <!--       <div class="row">
-            {{-- @foreach ($eventos as $evento)   --}}
+        <div class="row">
+            @foreach ($eventos as $evento)
             <div class="card meus-eventos mt-3 ml-5" style="width: 18rem;">
                     <div class="card-body">
-                        {{-- <h5 class="card-title">{{$evento->titulo}}</h5> --}}
-                        {{-- <h6 class="card-subtitle mb-2 text-muted"> Criado por: {{$evento->users->name}}</h6> --}}
-                        {{-- <p class="card-text">{{$evento->descricao}}</p> --}}
-                        {{-- <a href="event/{{$evento->id}}" class="card-link">Acesse</a> --}}
+                        <h5 class="card-title">{{$evento->titulo}}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> Criado por: {{$evento->users->name}}</h6>
+                        <p class="card-text">{{$evento->descricao}}</p>
+                        <a href="event/{{$evento->id}}" class="card-link">Acesse</a>
                     </div>
                 </div>
-            {{-- @endforeach --}}
+            @endforeach
 
         {{--    @foreach (App\Eventos::all() as $evento) --}}
     
@@ -59,7 +59,6 @@
                     </div>
                 </div>
             {{-- @endforeach --}}
-            -->
         </div>
     
     </section>

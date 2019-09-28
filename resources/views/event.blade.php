@@ -52,7 +52,7 @@
                         </div>
                         <div class="event-organizer">
                             <div class="img-cropper">
-                            <img class="ml-3 rounded-circle" style="width:100px;" src="" alt="user-image">
+                            <img class="ml-3 rounded-circle" style="width:100px;" src="{{ url($users->imagem)}}" alt="user-image">
                             </div>
                             <div class="user">
                                 <a href="#"></a>
