@@ -26,15 +26,9 @@ class EventsController extends Controller
         $categorias = Categorias::all();
         $eventos = Eventos::all();
         $users = User::all();
-       // if($eventos->fk_users == auth()->user()){
-       //     return view('home',['eventos'=>$eventos]);
-     //   } else {
+      
             return view('home', compact('eventos', 'categorias', 'users'));
-       // }
-        
-       // $usuario = User::find(auth()->user()->name);
-       // $eventos = Eventos::where($nome, '=', $usuario)->get();
-        
+     
     }
 
     //rotinas pagina evento
