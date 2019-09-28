@@ -27,6 +27,7 @@ a:visited {
   text-decoration: none;
 }
 
+
 a.btn.btn-success {
   color: #fff;
 }
@@ -112,6 +113,10 @@ a.btn.btn-success {
 
 #faqAccordion{
   margin: 0 auto;
+}
+
+#faqAccordion a {
+  color: #000000;
 }
 
 #contact-us #textArea {
