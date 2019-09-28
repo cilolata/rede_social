@@ -65,15 +65,15 @@
           <input type="hidden" name="user_id" value="{{auth()->user()->id}}">
           <button class="btn btn-outline-secondary mt-4" type="submit">Salvar</button>
           <button class="btn btn-outline-danger mt-4 ml-2"data-toggle="modal" onclick="event.preventDefault()"
-            data-target="#modalExemplo">Excluir Perfil</button>
+          data-target="#modalExemplo{{auth()->user()->id}}">Excluir Perfil</button>
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        <div class="modal fade" id="modalExemplo{{auth()->user()->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
           aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                  <h5 class="modal-title text-danger" id="exampleModalLabel">Tem certeza que você quer deletar seu perfil?</h5>
+              <h5 class="modal-title text-danger" id="exampleModalLabel">{{ auth()->user()->name }} Tem certeza que você quer deletar seu perfil?</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -84,10 +84,14 @@
               
               </form>
               <div class="modal-footer">
+                <form action="/profile/{{auth()->user()->id}}" method="POST">
+                    @csrf
+                    {{ method_field('DELETE') }}
+                    <button type="submit" class="btn btn-danger">Excluir</button>
+                </form>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                <input type="hidden" name="deletar" value="{{auth()->user()->id}}">
-                <button type="submit" class="btn btn-danger">Deletar</button>
               </div>
+              
             </div>
           </div>
         </div>
