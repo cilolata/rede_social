@@ -27,8 +27,6 @@ Route::get('/index', 'EventsController@index');
 //Contact Us
 Route::get('/contact', 'ContactController@contact');
 
-
-
 Auth::routes();
 
 Route::middleware(['auth'])->group(function(){
@@ -41,7 +39,7 @@ Route::middleware(['auth'])->group(function(){
     });
 
     // rotinas pagina home
-  //   Route::get('/home', 'EventsController@home');
+    Route::get('/home', 'EventsController@meusEventos');
    // Route::get('/home','EventsController@getUserEvents');
 
     

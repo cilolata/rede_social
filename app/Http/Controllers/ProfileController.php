@@ -48,15 +48,21 @@ class ProfileController extends Controller
     }
 
     public function removerUsuario(Request $request){
+<<<<<<< HEAD
+        $id = $request->input('user_id');
+        $usuario = User::find(auth()->user()->id);
+        $eventos = Eventos::where('fk_users', '=', $id)->get();
+=======
        $id = $request->input('deletar');
        $usuario = User::find(auth()->user()->id);
        $eventos = Eventos::where('fk_users', '=', $id)->get();
+>>>>>>> be2fa4323bc3094c006cdcc135b3dc2739373751
 
-    foreach($eventos as $evento):
-       $evento->delete();
-    endforeach;
-      $usuario->delete();
+        foreach($eventos as $evento):
+            $evento->delete();
+        endforeach;
+        $usuario->delete();
 
-      return redirect('/index');
+        return redirect('/index');
     }
 }
