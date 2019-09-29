@@ -84,7 +84,7 @@
 
     <article>
       <h5 class="ml-3 mb-3">Eventos</h5>
-      <div class="d-flex flex-row">
+      <div class="d-flex row justify-content-center ml-5 pl-3 mt-5">
         <!--Carousel Wrapper-->
         <div id="myCarousel" class="carousel slide carousel-multi-item" data-ride="carousel">
 
@@ -103,8 +103,8 @@
             <!--First slide-->
             <div class="carousel-item {{ $loop->first ? 'active' : ''}}">
               <div class="col-md-4">
-                <div class="card mb-2">
-                  <img class="card-img-top" src="{{$evento->imagem}}" alt="Imagem de capa do card">
+                <div class="card mb-2 w-75">
+                  <img class="card-img-top w-100" src="{{$evento->imagem}}" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h4 class="card-title">{{$evento->titulo}}</h4>
                     <p class="card-text">{{$evento->descricao}}</p>
@@ -120,11 +120,5 @@
         </div>
       </article>
     </section>
-    
-
-
-
 </main>
-
-
 @endsection

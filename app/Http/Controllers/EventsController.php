@@ -27,7 +27,7 @@ class EventsController extends Controller
         $eventos = Eventos::all();
         $users = User::all();
       
-            return view('home', compact('eventos', 'categorias', 'users'));
+        return view('home', compact('eventos', 'categorias', 'users'));
      
     }
 
