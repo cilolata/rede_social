@@ -58,10 +58,9 @@
                                 <a href="#"></a>
                                 <p>Organizador(a): {{$users->name}}</p>
                             </div>
-                            <form class="mt-5" method="GET" action="/event" enctype="multipart/form-data">
+                            <form class="mt-5" method="GET" action="/event/adicionarParticipantes" enctype="multipart/form-data">
                                 <div class="d-flex justify-content-end">
-                                <input type="hidden" name="evento_id" value="{{$eventos->id}}">
-                                <input type="hidden" name="user_id" value="{{$users->id}}">                               
+                                <input type="hidden" name="user_id" value="">                               
                                 <button class="btn btn-outline-secondary" type="submit">
                                     Participar!
                                 </button>
@@ -76,10 +75,12 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach ($users as $user)      
                         <tr>     
-                             {{-- <td>{{$participantes->$users->name}}</td> --}}
-                            {{-- <td>{{$participantes->$users->imagem}}</td> --}}
+                        {{-- <td>{{}}</td> --}}
+                        <td></td>
                         </tr>
+                        @endforeach
                            
                     </tbody>
                 </table>
@@ -95,21 +96,19 @@
                 <div class="other-events">
                     <h5>Eventos relacionados</h5>
                     
-                    <div class="other-events-body">
+                  <!--  <div class="other-events-body">
                         <div class="other-events-sample d-flex">
                             <ul class="list-unstyled">
-                                @foreach ($eventos as $evento)
-                                    @if ($categorias == 'id')      
-                                    <li class="media border-bottom pb-2">
-                                        <img class="mr-1 align-self-center" src="{{$evento->imagem}}" alt="foto do evento">
-                                        <div class="media-body">
-                                            <a href="#" class=>{{$evento->titulo}}</a>
-                                            <p class="mb-0">{{$evento->descricao}}</p>
-                                        <a href="search\{{$evento->fk_categoria}}">Veja mais</a>
-                                        </div>
-                                        @endif
-                                    </li>
-                                    @endforeach
+                                {{-- @foreach ($eventos as $evento) --}}
+                                <li class="media border-bottom pb-2">
+                                    <img class="mr-1 align-self-center" src="" alt="foto do evento">
+                                    <div class="media-body">
+                                        <a href="#" class=></a>
+                                        <p class="mb-0"></p>
+                                        <a href="search">Veja mais</a>
+                                    </div>
+                                </li> -->
+                                    {{-- @endforeach --}}
                             </ul>
                         </div>
                         <div class="other-events-sample d-flex">
