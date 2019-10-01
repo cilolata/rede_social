@@ -8,20 +8,23 @@
 <main class="container" id="main-home">
 
     <!--inicio section pesquisar-home-->
-    <section class="pesquisar-home p-5">
-        <div class="row d-flex justify-content-center">
-            <h4 class="paragrafo-pesquisar text-center text-capitalize font-weight-light p-5 mt-5 d-none d-lg-block">
-                Ache um grupo ou atividade e junte-se para transformar a sua comunidade
-            </h4>
-            <form action="/home" method="GET" class="home-pesquisar form-group" enctype="multipart/form-data">
-                <input type="text" name="palavra" value=""
-                    class="form-control input-pesquisar tex-align-center shadow-sm" aria-label="pesquisar-area"
-                    placeholder="Pesquisar Eventos">
-                <button type="submit" class="icon-pesquisar"><i class="fas fa-search"></i></button>
-            </form>
-        </div>
+    <section class=" p-5">
+        <div class=" row d-flex justify-content-center">
+            <div class="">
+                <h4 class="paragrafo-pesquisar text-center text-capitalize font-weight-light p-5 d-none d-lg-block">
+                    Ache um grupo ou atividade e junte-se para transformar a sua comunidade
+                </h4>
+                <div class=" botao-home d-flex justify-content-center">
+                    <button type="button" class="btn btn-home col-12 col-lg-3 mt-2 btn-lg w-100 mr-4"> <a href="{{url('/criandoEvento')}}"
+                            class="text-secondary">Crie um Evento</a></button>
+                    <button type="button" class="btn btn-home btn-home2 mt-2 col-lg-3 col-12 btn-lg w-100 "><a href="{{url('/search')}}"
+                            class="text-secondary">Veja todos os Eventos</a> </button>
+                </div>
+            </div>
     </section>
-
+    <h4 class="paragrafo-pesquisar text-center text-capitalize font-weight-light d-none d-lg-block">
+        Ou Ache um evento por uma categoria
+    </h4>
     <!--fim section pesquisar-->
     <section class="nichos mt-1 p-5 d-lg-flex d-none justify-content-around flex-wrap">
         <a href="{{route('/ecologia',['ecologia'])}}"><img class="mt-3 d-none d-lg-block" src="img/arvore.png" alt="ecologia"
@@ -40,8 +43,8 @@
     <section class="container mt-5  ">
         <h4 class="ml-5">Meus Eventos</h4>
         <div class="row">
-        @foreach ($eventos as $evento)
-        @if ($evento->fk_users == Auth::user()->id)
+            @foreach ($eventos as $evento)
+            @if ($evento->fk_users == Auth::user()->id)
             <div class="card meus-eventos mt-3 ml-5" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">{{$evento->titulo}}</h5>

@@ -34,12 +34,14 @@ class EventsController extends Controller
 
     //rotinas pagina evento
     public function eventos($id){
+        $eventosTodos = Eventos::all();
         $eventos = Eventos::find($id);
         $users = User::find($eventos->fk_users);
         $categorias = Categorias::find($eventos->fk_categorias);
         //  $eventos->fk_users = $users;
-        //  $participantes = User::find($users);       
-        return view('event', ["eventos"=>$eventos, "users"=>$users, "categorias"=>$categorias /*"participantes"=>$participantes*/]);
+        //  $participantes = User::find($users);
+        // return view('event',["eventos"=>$eventos, "users"=>$users, "categorias"=>$categorias /*"participantes"=>$participantes*/]
+        return view('event', compact('eventos','eventosTodos','users','categorias'));
     }
 
     //pagina criando evento
@@ -113,6 +115,12 @@ class EventsController extends Controller
     }
 
 
+        // filtro de eventos na pagina do evento
+        // public function filtroEventos($id){
+        //     $categoria = Categorias::all();
+            
+        //     return view('event', compact('categoria'));
+        // }
 
     // rotinas pagina search    
     public function search(Request $request){

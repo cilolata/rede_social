@@ -71,13 +71,29 @@ Route::middleware(['auth'])->group(function(){
         return view ('/search');
     })->name('/cidadania');
     
+<<<<<<< HEAD
+=======
+// profile
+Route::get('/profile/{id}', 'ProfileController@profile');
+Route::post('/profile/{id}', 'ProfileController@alterarUsuario');
+Route::delete('/profile/{id}', 'ProfileController@removerUsuario');
+
+// listando todos eventos
+Route::get('/search', 'EventsController@search');
+>>>>>>> 95fc7f57cde551d865368b4db600b78fe7b149e8
 
     // listando evento específico a partir do ID
     Route::get('/event/{id}', 'EventsController@eventos');
 
+<<<<<<< HEAD
     //adicionando participante no evento
     Route::post('/event', 'ParticipantesController@createParticipantes');
     Route::get('/event', 'ParticipantesController@adicionarParticipantes');
+=======
+//adicionando participante no evento
+Route::GET('/event/adicionarParticipantes/{id}', 'EventsController@adicionarParticipantes');
+//Route::GET('/event','EventsController@showEvents' );
+>>>>>>> 95fc7f57cde551d865368b4db600b78fe7b149e8
 
     // criando eventos e salvando eventos
     Route::get('/criandoEvento', 'EventsController@adicionandoEvento');
