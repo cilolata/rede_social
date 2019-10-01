@@ -129,8 +129,7 @@
                     </div>
                     @endforeach --}}
 
-                    @foreach ($eventosTodos as $evento)
-                    @if ($evento->fk_categorias == $evento->fk_categorias)
+                    @foreach ($categorias->eventos as $evento)
                     <div class="other-events-sample d-flex">
                         <ul class="list-unstyled">
                             <li class="media border-bottom pb-2">
@@ -142,7 +141,6 @@
                                 </div>
                             </li>
                         </ul>
-                        @endif
                     </div>
                     @endforeach
                 </div>
