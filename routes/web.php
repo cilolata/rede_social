@@ -55,7 +55,8 @@ Route::get('/search', 'EventsController@search');
 Route::get('/event/{id}', 'EventsController@eventos');
 
 //adicionando participante no evento
-Route::GET('/event', 'EventsController@adicionarParticipantes');
+Route::GET('/event/adicionarParticipantes/{id}', 'EventsController@adicionarParticipantes');
+//Route::GET('/event','EventsController@showEvents' );
 
 // criando eventos e salvando eventos
 Route::get('/criandoEvento', 'EventsController@adicionandoEvento');

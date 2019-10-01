@@ -49,8 +49,11 @@ class EventsController extends Controller
         $eventos->fk_users = $users;
         $participantes = User::find($users);
         return view('event', compact('users', 'participantes', 'eventos'));
+        //  $participantes = User::find($users);       
+        return view('event', ["eventos"=>$eventos, "users"=>$users, "categorias"=>$categorias]);
     }
 
+   
     //pagina criando evento
     public function adicionandoEvento(){
         $usuario = Auth::user();
