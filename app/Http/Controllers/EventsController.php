@@ -36,8 +36,7 @@ class EventsController extends Controller
         $eventos = Eventos::find($id);
         $users = User::find($eventos->fk_users);
         $categorias = Categorias::find($eventos->fk_categorias);
-        //  $eventos->fk_users = $users;
-        //  $participantes = User::find($users);       
+         
         return view('event', ["eventos"=>$eventos, "users"=>$users, "categorias"=>$categorias]);
     }
 
