@@ -38,29 +38,50 @@ Route::middleware(['auth'])->group(function(){
         return view('home');
     });
 
-// rotinas pagina home
-Route::get('/home', 'EventsController@meusEventos');
-// Route::get('/home','EventsController@getUserEvents');
+    // rotinas pagina home
+    Route::get('/home', 'EventsController@meusEventos');
+        
+    // profile
+    Route::get('/profile/{id}', 'ProfileController@profile');
+    Route::post('/profile/{id}', 'ProfileController@alterarUsuario');
+    Route::delete('/profile/{id}', 'ProfileController@removerUsuario');
 
+
+    // listando todos eventos
+    Route::get('/search', 'EventsController@search');
+
+    //gerando urls para cada categoria
+    Route::get('/search?select_categoria=1&botao_search=', function(){
+        return view ('/search');
+    })->name('/ecologia');
+
+    Route::get('search?select_categoria=2&botao_search==', function(){
+        return view ('/search');
+    })->name('/saude');
+
+    Route::get('/search?select_categoria=3&botao_search=', function(){
+        return view ('/search');
+    })->name('/alimentacao');
+
+    Route::get('/search?select_categoria=4&botao_search=', function(){
+        return view ('/search');
+    })->name('/animais');
+
+    Route::get('/search?select_categoria=5&botao_search=', function(){
+        return view ('/search');
+    })->name('/cidadania');
     
-// profile
-Route::get('/profile/{id}', 'ProfileController@profile');
-Route::post('/profile/{id}', 'ProfileController@alterarUsuario');
-Route::delete('/profile/{id}', 'ProfileController@removerUsuario');
 
-// listando todos eventos
-Route::get('/search', 'EventsController@search');
+    // listando evento específico a partir do ID
+    Route::get('/event/{id}', 'EventsController@eventos');
 
-// listando evento específico a partir do ID
-Route::get('/event/{id}', 'EventsController@eventos');
+    //adicionando participante no evento
+    Route::post('/event', 'ParticipantesController@createParticipantes');
+    Route::get('/event', 'ParticipantesController@adicionarParticipantes');
 
-//adicionando participante no evento
-Route::GET('/event/adicionarParticipantes/{id}', 'EventsController@adicionarParticipantes');
-//Route::GET('/event','EventsController@showEvents' );
-
-// criando eventos e salvando eventos
-Route::get('/criandoEvento', 'EventsController@adicionandoEvento');
-Route::post('/criandoEvento', 'EventsController@salvandoEvento');
+    // criando eventos e salvando eventos
+    Route::get('/criandoEvento', 'EventsController@adicionandoEvento');
+    Route::post('/criandoEvento', 'EventsController@salvandoEvento');
     
 
 });

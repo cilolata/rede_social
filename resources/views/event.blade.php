@@ -133,7 +133,7 @@
                     <div class="other-events-sample d-flex">
                         <ul class="list-unstyled">
                             <li class="media border-bottom pb-2">
-                                <img  src="{{ url($evento->imagem)}}" width="150px;" class="mr-1 align-self-center" alt="foto-evento">
+                                <img  src="{{ url($evento->imagem)}}" width="100px;" class="mr-1 align-self-center" alt="foto-evento">
                                 <div class="media-body">
                                 <a href="/event/{{$evento->id}}"> {{ $evento->titulo }}</a>
                                     <p class="mb-0">{{ $evento->descricao }} </p>

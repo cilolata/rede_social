@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Eventos;
 use App\User;
 use App\Categorias;
+use App\Participantes;
 use Illuminate\Support\Facades\Auth;
 use DB;
 
@@ -37,23 +38,10 @@ class EventsController extends Controller
         $eventos = Eventos::find($id);
         $users = User::find($eventos->fk_users);
         $categorias = Categorias::find($eventos->fk_categorias);
-        //  $eventos->fk_users = $users;
-        //  $participantes = User::find($users);
-        // return view('event',["eventos"=>$eventos, "users"=>$users, "categorias"=>$categorias /*"participantes"=>$participantes*/]
-        return view('event', compact('eventos','eventosTodos','users','categorias'));
-    }
-
-   public function adicionarParticipantes(Request $request){
-        $eventos = Eventos::find($request->input("evento_id"));
-        $users = $request->input("user_id");
-        $eventos->fk_users = $users;
-        $participantes = User::find($users);
-        return view('event', compact('users', 'participantes', 'eventos'));
-        //  $participantes = User::find($users);       
+         
         return view('event', ["eventos"=>$eventos, "users"=>$users, "categorias"=>$categorias]);
     }
 
-   
     //pagina criando evento
     public function adicionandoEvento(){
         $usuario = Auth::user();
@@ -76,7 +64,7 @@ class EventsController extends Controller
             "categoria_descricao" => 'required',
             "user_id" => "required"
             
-         ]);
+        ]);
 
         // salvando caminho da imagem e armazenando-a no projeto
         // capturando imagem selecionada pelo usuário
@@ -132,8 +120,8 @@ class EventsController extends Controller
         //     return view('event', compact('categoria'));
         // }
 
-       // rotinas pagina search    
-        public function search(Request $request){
+    // rotinas pagina search    
+    public function search(Request $request){
         $categorias = Categorias::all();
         $eventos = Eventos::all();
         if($request->input("select_categoria")) {
@@ -141,6 +129,7 @@ class EventsController extends Controller
         }
         return view('search', compact('eventos', 'categorias'));
     }
+
 
 
 
