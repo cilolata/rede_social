@@ -27,15 +27,15 @@
     </h4>
     <!--fim section pesquisar-->
     <section class="nichos mt-1 p-5 d-lg-flex d-none justify-content-around flex-wrap">
-        <a href="{{url('search')}}"><img class="mt-3 d-none d-lg-block" src="img/arvore.png" alt="ecologia"
+        <a href="{{route('/ecologia',['ecologia'])}}"><img class="mt-3 d-none d-lg-block" src="img/arvore.png" alt="ecologia"
                 title="ecologia"></a>
-        <a href="{{url('search')}}"><img class="mt-3 d-none d-lg-block" src="img/doacao-de-sangue.png" alt="saúde"
+        <a href="{{route('/saude',['saude'])}}"><img class="mt-3 d-none d-lg-block" src="img/doacao-de-sangue.png" alt="saúde"
                 title="saúde"></a>
-        <a href="{{url('search')}}"> <img class="mt-3 d-none d-lg-block" src="img/cereais.png" alt="alimentação"
+        <a href="{{route('/alimentacao',['alimentacao'])}}"> <img class="mt-3 d-none d-lg-block" src="img/cereais.png" alt="alimentação"
                 title="alimentação"></a>
-        <a href="{{url('search')}}"><img class="mt-3 d-none d-lg-block" src="img/cao.png" alt="animais"
+        <a href="{{route('/animais',['animais'])}}"><img class="mt-3 d-none d-lg-block" src="img/cao.png" alt="animais"
                 title="animais"></a>
-        <a href="{{url('search')}}"><img class="mt-3 d-none d-lg-block" src="img/friendship.png" alt="cidadania"
+        <a href="{{route('/cidadania',['cidadania'])}}"><img class="mt-3 d-none d-lg-block" src="img/friendship.png" alt="cidadania"
                 title="cidadania"></a>
     </section>
 
