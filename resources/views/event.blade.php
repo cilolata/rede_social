@@ -46,7 +46,7 @@
                                 </div>
                             <div class="wrap">
                                 <i class="fa fa-globe d-inline-flex mr-1"></i>                                    
-                                <h5 class="d-inline-flex">{{$categorias->descricao}}</h5>
+                                <h5 class="d-inline-flex"></h5>
                             </div>
                             <hr>
                         </div>
@@ -58,38 +58,20 @@
                                 <a href="#"></a>
                                 <p>Organizador(a): {{$users->name}}</p>
                             </div>
-                            <form class="mt-5" method="GET" action="/event" enctype="multipart/form-data">
+                            <form class="mt-5" method="POST" action="/event" enctype="multipart/form-data">
+                                @csrf
+                                {{ method_field('POST') }}
                                 <div class="d-flex justify-content-end">
-                                <input type="hidden" name="evento_id" value="{{$eventos->id}}">
-                                <input type="hidden" name="user_id" value="{{$users->id}}">                               
-                                <button class="btn btn-outline-secondary" type="submit">
-                                    Participar!
-                                </button>
-                            </div>
-                        </form>
+                                    <input type="hidden" name="evento_id" value="{{$eventos->id}}">
+                                    <input type="hidden" name="user_id" value="{{Auth::user()->id}}">                               
+                                    <button class="btn btn-outline-secondary" type="submit">
+                                        Participar!
+                                    </button>
+                                </div>
+                            </form>
                     </div>
                 </div>   
-                <table class="table mt-3">
-                    <thead>
-                        <tr>
-                            <th scope="col">Participantes</th>  
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>     
-                             {{-- <td>{{$participantes->$users->name}}</td> --}}
-                            {{-- <td>{{$participantes->$users->imagem}}</td> --}}
-                        </tr>
-                           
-                    </tbody>
-                </table>
-
-            </form>
             </article>
-
-            <section>
-                   
-            </section>
     
             <article class="col-3 side-bar d-none d-lg-block d-xl-block">
                 <div class="other-events">

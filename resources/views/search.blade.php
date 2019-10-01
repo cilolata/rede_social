@@ -14,7 +14,6 @@
                     <div class="input-group mt-5  mb-4">
                         <select class="custom-select" name="select_categoria" id="inputGroupSelect04" aria-label="Example select with button addon">
                         <option value="todos" selected>-- Selecione a categoria --</option>
-
                             @foreach ($categorias as $categoria) 
                             <option value="{{$categoria->id}}">{{$categoria->descricao}}</option> 
                             @endforeach   

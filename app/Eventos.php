@@ -18,7 +18,5 @@ class Eventos extends Model
     public function users() {
         return $this->hasMany(User::class, 'id', 'fk_users');
     }
- 
-
    
 }
