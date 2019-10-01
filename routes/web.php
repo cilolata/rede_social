@@ -48,7 +48,6 @@ Route::get('/profile/{id}', 'ProfileController@profile');
 Route::post('/profile/{id}', 'ProfileController@alterarUsuario');
 Route::delete('/profile/{id}', 'ProfileController@removerUsuario');
 
-
 // listando todos eventos
 Route::get('/search', 'EventsController@search');
 
