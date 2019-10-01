@@ -29,7 +29,7 @@
     <section class="nichos mt-1 p-5 d-lg-flex d-none justify-content-around flex-wrap">
         <a href="{{route('/ecologia',['ecologia'])}}"><img class="mt-3 d-none d-lg-block" src="img/arvore.png" alt="ecologia"
                 title="ecologia"></a>
-        <a href="{{route('/saude',['saude'])}}"><img class="mt-3 d-none d-lg-block" src="img/doacao-de-sangue.png" alt="saúde"
+        <a href="{{route('/saude',['saude'])}}"><img class=" nichos-img mt-3 d-none d-lg-block" src="img/doacao-de-sangue.png" alt="saúde"
                 title="saúde"></a>
         <a href="{{route('/alimentacao',['alimentacao'])}}"> <img class="mt-3 d-none d-lg-block" src="img/cereais.png" alt="alimentação"
                 title="alimentação"></a>
