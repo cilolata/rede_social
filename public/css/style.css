@@ -4,14 +4,16 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Hind Madurai', sans-serif;
+  font-family: benton-sans, sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
 
 input:focus {
   outline: -webkit-focus-ring-color auto 0px;
   border-color: rgba(136, 134, 134, 0.7);
   
- }
+}
 
 html, body {
   overflow-x: hidden;
@@ -23,17 +25,20 @@ main {
   width: 100%;
 }
 
+a{
+  color: #000;
+}
+
 a:visited {
   text-decoration: none;
 }
-
 
 a.btn.btn-success {
   color: #fff;
 }
 
 .btn{
-  border-radius: 20px;
+  border-radius: 100px;
   width: 100px;
 }
 
@@ -41,14 +46,44 @@ a.btn.btn-success {
   background-color: #fff;
 }
 
-/* início header pag index 
+/* header
 -------------------------*/
 
 .navbar-brand span {
   padding: 0 0 0 5px;
 }
 
-/*inicio index
+#navigation ul {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  margin-top: 8px;
+}
+
+#navigation .tool-nav li {
+  font-size: 13px;
+  margin: 5px;
+}
+
+#navigation li>a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+}
+
+#navigation li>a.highlight {
+  background: #414141;
+  color: #fff;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+#navigation .user>span {
+  color: #4b494d;
+  margin: 0.2em;
+}
+
+/* index
 -----------------------------------*/
 #destaque {
   height: 100vh;
@@ -71,6 +106,16 @@ a.btn.btn-success {
     background-image: url(../img/ecologia-destaque.jpg);
 }
 
+.caixa-banner{
+  display: flex;
+  height: 95vh;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+  background-image: url(../img/banner_together.png);
+}
+
 .caixa-destaque2{
   display: flex;
   height: 100vh;
@@ -83,13 +128,55 @@ a.btn.btn-success {
   background-image: url(../img/animais-destaque.jpg);
 }
 
- /*inicio section eventos pg index
+.conteudo-caixa {
+  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+  border-radius: 4px;
+  margin-left: 10%;
+  height: 60%;
+  transition: 1s box-shadow;
+}
+
+.conteudo-caixa2 {
+  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+  border-radius: 4px;
+  margin-right: 10%;
+  height: 70%;
+  transition: 1s box-shadow;
+}
+
+/* section eventos pg index
 ----------------------------------*/
 .div-card-anuncios{
   height: 60vh;  
 }
 
-/* inicio section pagina contact-us 
+/* página register e login
+--------------------*/
+.box-cadastro{
+  width:100vw;
+  display:flex;
+  justify-content: center;
+  padding:2%;
+  margin-top:3% 0;
+}
+.box-cadastro form{
+  width:45vw;
+  min-width: 300px;
+  min-height:60vh;
+  padding:4%;
+  border-radius:4px;
+  box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.18);
+  margin-top: 40px;
+}
+
+.label-cadastro {
+  padding-bottom: 5px;
+  font-size: 13px;
+}
+
+/* section pagina contact-us 
 ---------------------------------*/
 #contact-us {
   height: 100%;
@@ -111,7 +198,6 @@ a.btn.btn-success {
   resize: none;
 }
 
-
 /* início pagina event 
 ---------------------*/
 #event {
@@ -120,10 +206,10 @@ a.btn.btn-success {
 
 #event .event-body {
   background-color: #f8f9fa;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 15px;
+  border-radius:4px;
+  box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.18);
 }
-
 
 #event .event-info .wrap h5 {
   font-size: 1em;
@@ -132,7 +218,8 @@ a.btn.btn-success {
 #event .side-bar {
   background-color: #f8f9fa;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.18);
 }
 
 #event .media-body {
@@ -151,6 +238,11 @@ a.btn.btn-success {
   text-align: left;
 }
 
+#event .img-fluid, .img-thumbnail {
+  max-width: 70%;
+  height: 70%;
+}
+
 /* section pesquisar pagina home
 ------------------------------*/
 .btn-home{
@@ -158,8 +250,38 @@ a.btn.btn-success {
   background-color: white;
 }
 
+.img-hover img {
+  -webkit-transition: all .3s ease; /* Safari and Chrome */
+  -moz-transition: all .3s ease; /* Firefox */
+  -o-transition: all .3s ease; /* IE 9 */
+  -ms-transition: all .3s ease; /* Opera */
+  transition: all .3s ease;
+  position:relative;
+  padding: 10px 50px;
+}
+.img-hover img:hover {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
+  -moz-transform:scale(1.20); /* Firefox */
+  -ms-transform:scale(1.20); /* IE 9 */
+  -o-transform:translatZ(0) scale(1.20); /* Opera */
+  transform:translatZ(0) scale(1.20);
+}
 
-/*pagina profile
+.img-hover:hover:after {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:2;
+  width:30px;
+  height:30px;
+  border:1px solid #000;
+}
+
+
+/* pagina profile
 ---------------*/
 .img-perfil{
   background-color: #ddd;
@@ -170,7 +292,7 @@ a.btn.btn-success {
 }
 
 
-/*pagina search
+/* pagina search
 --------*/
 .botao_search {
   width: 30px;
@@ -179,6 +301,9 @@ a.btn.btn-success {
   border:  1px;
 }
 
+<<<<<<< HEAD
+/* footer 
+=======
 /*pagina home
 ---------------*/
 .nichos img:hover{
@@ -190,13 +315,13 @@ a.btn.btn-success {
 }
 
 /* --footer início 
+>>>>>>> 67660784e9f09099b5d3f5ec396fd9d771210803
 ------------------ */ 
 footer {
-  cursor: pointer;
   background-color: #f8f9fa;
-  margin-top: 50px;
-  padding: 36px 20px 20px 20px;
-  height: 25%;
+  margin-top: 80px;
+  padding: 25px 20px 10px 20px;
+  height: 15%;
 }
 
 .list-unstyled li {
@@ -225,9 +350,6 @@ footer {
 #copyright {
   margin: 10px auto;
 }
-/* fim footer
-------------------*/
-
 
 /* media queries
 -------------------*/
@@ -245,11 +367,23 @@ footer {
     
   }
 
-  
-
   .pesquisar-home{
     padding-bottom: 0;
     margin-top:100px;
+  }
+
+  img.img-categorias{
+    border-radius: 3px;
+    filter:brightness(100%);
+    transition: all .9s;
+  }
+  
+  img.img-categorias:hover{
+    border-radius: 3px;
+    filter:brightness(70%);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+     transform: scale(1.1);
   }
 
  /* pagina eventos/search*/
@@ -273,11 +407,9 @@ footer {
     width: 50%;
   }
 
-   /* footer*/
-   footer{
-    height: 30vh;
+  /* footer*/
+  footer{
+    height: 20vh;
   }
- }
+}
 
- /*fim media queries
- --------------------*/

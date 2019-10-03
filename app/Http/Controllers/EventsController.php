@@ -34,12 +34,12 @@ class EventsController extends Controller
 
     //rotinas pagina evento
     public function eventos($id){
-        $eventosTodos = Eventos::all();
+        $todosEventos = Eventos::all();
         $eventos = Eventos::find($id);
         $users = User::find($eventos->fk_users);
         $categorias = Categorias::find($eventos->fk_categorias);
-         
-        return view('event', ["eventos"=>$eventos, "users"=>$users, "categorias"=>$categorias]);
+        $participantes = Participantes::all();
+        return view('event', compact('todosEventos','eventos','users','categorias', 'participantes'));
     }
 
     //pagina criando evento

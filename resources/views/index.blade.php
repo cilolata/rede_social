@@ -7,52 +7,38 @@
 
 <main>
 
-  <!-- inicio section destaque-->
-  <section id="destaque" class="d-flex align-items-center container">
-    <article class="row">
-      <div class="col-12 col-lg-6 mt-5">
-        <h1 class="display-5 display-sm-1">Conecte-se com pessoas que querem mudar o mundo</h1>
-        <p class="text-justify">Conecte-se pessoas que tenham interesses comuns em promover ações positivas na
-           sociedade. 
-        </p>
-        <a class="btn btn-outline-secondary btn-md" href="{{url('register')}}" role="button">Cadastre-se</a>
-      </div>
-      <div class="imagem-principal col-6 d-none d-lg-block">
-        <div class="d-flex justify-content-center">
-          <img src="img/destaque1.jpg" alt="lâmpada com folha" class="w-75 ml-5">
-        </div>
-    </article>
-  </section>
+  
 
   <!--section caixa-destaque-1-->
-  <section class="">
+  <section>
     <div class="caixa-destaque1">
+      <div class="conteudo-caixa col-md-3 align-self-center p-4">
+        <h1 class="display-5 p-1">Conecte-se com pessoas que querem mudar o mundo</h1>
+        <p class="p-1">Ache pessoas que tenham interesses comuns em promover ações positivas na sociedade. 
+        </p>
+        <a class="btn btn-outline-dark btn-md" href="{{url('register')}}" role="button">Cadastre-se</a>
+      </div>
     </div>
   </section>
   <!--fim caixa-destaque1-->
 
-  <!--section destaque1-->
-  <section id="destaque1" class="d-flex container">
-    <article class="row">
-      <div class="d-flex justify-content-center align-items-center">
-        <div class="imagem-secundaria col-6 d-none d-lg-block">
-          <img src="img/destaque2.jpg" alt="" class="w-75">
-        </div>
-        <div class="col-12 col-lg-6 ">
-          <p class="text-justify">Há alguns anos, a Universidade de Stanford (EUA), realizou uma interessante experiência de psicologia social. Deixou dois carros idênticos, da mesma marca, modelo e cor, abandonados na rua. Um no Bronx, zona pobre e conflituosa de Nova York e o outro em Palo Alto, zona rica e tranquila da Califórnia. Dois carros idênticos abandonados, dois bairros com populações muito diferentes e uma equipe de especialistas em psicologia social estudando as condutas das pessoas em cada local.
-
-              Resultado: o carro abandonado no Bronx começou a ser vandalizado em poucas horas. As rodas foram roubadas, depois o motor, os espelhos, o rádio, etc. Levaram tudo o que fosse aproveitável e aquilo que não puderam levar, destruíram. Contrariamente, o carro abandonado em Palo Alto manteve-se intacto. Só que não parou por aí...
-          </p>
-          <a class="btn btn-outline-secondary" href="aboutus" role="button">Leia mais</a>
-        </div>
-      </div>
-    </article>
+  <!--section banner-->
+  <section>
+    <div class="caixa-banner">
+    </div>
   </section>
   <!-- fim section destaque1-->
 
   <!--section caixa-destaque-2-->
-  <section class="">
+  <section>
     <div class="caixa-destaque2">
+        <div class="conteudo-caixa2 col-md-3 align-self-center ml-auto p-4">
+            <h1 class="display-5 p-1">O que é a Together?</h1>
+            <p class="p-1"> Somos uma rede social dedicada a juntar pessoas para o bem comum.
+            </p>
+            <p>Para tanto, nos baseamos na Teoria das Janelas Quebradas e propomos uma série de ações de cidadania, nas quais pessoas podem se encontrar com objetivos em comum: melhorar o entorno de suas comunidades, promovendo ações sociais, que cuidem de pessoas, praças, animais, etc e que possam ser replicadas, promovendo melhorias em toda sociedade. </p>
+            <a class="btn btn-outline-dark btn-md" href="{{url('register')}}" role="button">Saiba mais</a>
+          </div>
     </div>
   </section>
   <!--fim section destaque-2-->
@@ -70,7 +56,7 @@
           <div class="card-body">
           <h5 class="card-title">{{$evento->titulo}}</h5>
             <p class="card-text">{{$evento->descricao}}.</p>
-              <a href="" class="btn btn-outline-secondary">Visitar</a>
+              <a href="event/{{$evento->id}}" class="btn btn-outline-secondary">Visitar</a>
             </div>
           </div>
         </div>
@@ -108,7 +94,7 @@
                   <div class="card-body">
                     <h4 class="card-title">{{$evento->titulo}}</h4>
                     <p class="card-text">{{$evento->descricao}}</p>
-                    <a href="#" class="btn btn-secondary">Visitar</a>
+                    <a href="event/{{$evento->id}}" class="btn btn-secondary">Visitar</a>
                   </div>
                 </div>
               </div>

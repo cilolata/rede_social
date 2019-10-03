@@ -107,6 +107,7 @@ class RegisterController extends Controller
             'CEP' => $data['CEP'],
         ]);
 
+        return $user;
       
 
 
