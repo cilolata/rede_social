@@ -94,41 +94,6 @@
 
         <article class="col-3 side-bar d-none d-lg-block d-xl-block">
             <div class="other-events">
-                {{-- <h5>Eventos relacionados</h5>
-                <div class="other-events-body">
-                    <div class="other-events-sample d-flex">
-                        <ul class="list-unstyled">
-                            @foreach ($eventos as $evento)
-                            @if ($categorias == 'id')
-                            <li class="media border-bottom pb-2">
-                                <img class="mr-1 align-self-center" src="{{$evento->imagem}}" alt="foto do evento">
-                                <div class="media-body">
-                                    <a href="#" class=>{{$evento->titulo}}</a>
-                                    <p class="mb-0">{{$evento->descricao}}</p>
-                                    <a href="search\{{$evento->fk_categoria}}">Veja mais</a>
-                                </div>
-                                @endif
-                            </li>
-                            @endforeach
-                        </ul>
-                    </div> --}}
-                    {{-- @foreach ($eventosTodos as $evento)
-                    @if ($evento->fk_categorias == $evento->fk_categorias)
-                    <div class="other-events-sample d-flex">
-                        <ul class="list-unstyled">
-                            <li class="media border-bottom pb-2">
-                                <img  src="{{ url($evento->imagem)}}" width="150px;" class="mr-1 align-self-center" alt="foto-evento">
-                                <div class="media-body">
-                                <a href="/event/{{$evento->id}}"> {{ $evento->titulo }}</a>
-                                    <p class="mb-0">{{ $evento->descricao }} </p>
-                                    <a href="/event/{{$evento->id}}">Veja mais</a>
-                                </div>
-                            </li>
-                        </ul>
-                        @endif
-                    </div>
-                    @endforeach --}}
-
                     @foreach ($categorias->eventos as $evento)
                     <div class="other-events-sample d-flex">
                         <ul class="list-unstyled">
