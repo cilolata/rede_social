@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\Participantes;
 use App\User;
 use App\Eventos;
 use App\Categorias;
+use Illuminate\Support\Facades\Auth;
+use DB;
 
 class ParticipantesController extends Controller
 {
@@ -15,9 +18,10 @@ class ParticipantesController extends Controller
         $eventos = Eventos::find($request->input("evento_id"));
         $users = User::find($request->input("user_id"));
         $participantes = Participantes::all();
+        $todosEventos = Eventos::all();
         
-        $evento = $eventos->id;
-        return view('/event/'.$evento, compact('users', 'participantes', 'eventos', 'categorias'));
+        $evento = $request->input("evento_id");
+        return view('event', compact('users', 'participantes', 'eventos', 'categorias', 'todosEventos'));
     }
 
     public function createParticipantes(Request $request){
@@ -30,7 +34,7 @@ class ParticipantesController extends Controller
         $participantes->save();
         
         $evento = $request->input("evento_id");
-        return view('/event/'.$evento);
+        return redirect('/event/'.$evento);
     }
 
     

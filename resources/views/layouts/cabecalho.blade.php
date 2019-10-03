@@ -1,7 +1,7 @@
 @section('cabecalho')
     <header id="app" class="mb-5">
         @guest
-            <nav class="navbar fixed-top navbar-expand-md navbar-light shadow-sm">
+            <nav id="navigation" class="navbar fixed-top navbar-expand-md navbar-light shadow-sm">
                 <div class="container">
 
                     <!--cabeçalho logo e nome--->
@@ -13,51 +13,16 @@
 
                     <!--inicio formulario entrar-->
                     <div class="dropdown">
-                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle rounded-5 " type="button"
-                            id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Entrar
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right mr-5" aria-labelledby="dropdownMenu2">
-                            <form class="px-4 py-3" method="POST" action="{{ route('login') }}">
-                                @csrf
-                                <div class="form-group">
-                                    <label for="email">{{ __('Email') }}</label>
-                                    <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-                                        @error('email')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror
-                                </div>
-                                <div class="form-group">
-                                    <label for="password">{{ __('Senha') }}</label>
-                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                                        @error('password')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror
-                                </div>
-                                <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                        <label class="form-check-label" for="remember">
-                                            {{ __('Lembrar senha') }}
-                                        </label>
-                                </div>
-                                <button type="submit" class="btn btn-outline-secondary">
-                                    {{ __('Login') }}
-                                </button>
-                            </form>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{ route('register') }}">Novo por aqui? Cadastre-se</a>
-                            @if (Route::has('password.request'))
-                                <a class="dropdown-item" href="{{ route('password.request') }}">
-                                    {{ __('Esqueceu sua senha?') }}
-                                </a>
-                            @endif
-                        </div>
+                        <div class="nav-wrapper">
+                                <ul class="tool-nav">
+                                    <li class="user">
+                                        <a href="{{url('/login')}}">Login</a>
+                                        <span>ou</span>
+                                        <a class="highlight" href="{{url('/register')}}">Cadastrar-se</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        <div>
                     </div>
                 </div>
             </nav>

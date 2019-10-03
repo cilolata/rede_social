@@ -46,7 +46,6 @@ Route::middleware(['auth'])->group(function(){
     Route::post('/profile/{id}', 'ProfileController@alterarUsuario');
     Route::delete('/profile/{id}', 'ProfileController@removerUsuario');
 
-
     // listando todos eventos
     Route::get('/search', 'EventsController@search');
 
@@ -71,6 +70,10 @@ Route::middleware(['auth'])->group(function(){
         return view ('/search');
     })->name('/cidadania');
     
+    // profile
+    Route::get('/profile/{id}', 'ProfileController@profile');
+    Route::post('/profile/{id}', 'ProfileController@alterarUsuario');
+    Route::delete('/profile/{id}', 'ProfileController@removerUsuario');
 
     // listando evento específico a partir do ID
     Route::get('/event/{id}', 'EventsController@eventos');
@@ -82,6 +85,5 @@ Route::middleware(['auth'])->group(function(){
     // criando eventos e salvando eventos
     Route::get('/criandoEvento', 'EventsController@adicionandoEvento');
     Route::post('/criandoEvento', 'EventsController@salvandoEvento');
-    
 
 });
