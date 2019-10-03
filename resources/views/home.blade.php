@@ -28,7 +28,7 @@
                 </div>
                 <h4 class="text-center text-capitalize font-weight-light p-5">Ou crie seu próprio evento!</h4>
                 <div class=" botao-home d-flex justify-content-center">
-                    <button type="button" class="btn btn-home col-12 col-lg-3 mt-2 btn-lg w-100 mr-4"> <a href="{{url('/criandoEvento')}}"
+                    <button type="button" class="btn btn-home col-12 col-lg-3 mt-2 btn-md w-100 mr-4"> <a href="{{url('/criandoEvento')}}"
                             class="text-secondary">Crie um Evento</a></button>
                 </div>
             </div>

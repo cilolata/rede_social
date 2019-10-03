@@ -14,7 +14,7 @@
     <div class="caixa-destaque1">
       <div class="conteudo-caixa col-md-3 align-self-center p-4">
         <h1 class="display-5 p-1">Conecte-se com pessoas que querem mudar o mundo</h1>
-        <p class="p-1">Conecte-se pessoas que tenham interesses comuns em promover ações positivas na sociedade. 
+        <p class="p-1">Ache pessoas que tenham interesses comuns em promover ações positivas na sociedade. 
         </p>
         <a class="btn btn-outline-dark btn-md" href="{{url('register')}}" role="button">Cadastre-se</a>
       </div>

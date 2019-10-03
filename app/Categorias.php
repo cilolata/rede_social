@@ -11,6 +11,6 @@ class Categorias extends Model
     protected $fillable = ["descricao"];
 
     public function eventos() {
-        return $this->hasMany(Eventos::class, 'id_categorias', 'id');
+        return $this->hasMany(Eventos::class, 'fk_categorias', 'id');
     }
 }
