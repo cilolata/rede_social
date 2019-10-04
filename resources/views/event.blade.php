@@ -74,7 +74,23 @@
 
         <article class="col-3 side-bar d-none d-lg-block d-xl-block">
             <div class="other-events">
-                @foreach ($todosEventos as $evento)
+
+                    @foreach ($categorias->eventos as $evento)
+                    <div class="other-events-sample d-flex">
+                        <ul class="list-unstyled">
+                            <li class="media border-bottom pb-2">
+                                <img  src="{{ url($evento->imagem)}}" width="100px;" class="mr-1 align-self-center" alt="foto-evento">
+                                <div class="media-body">
+                                <a href="/event/{{$evento->id}}"> {{ $evento->titulo }}</a>
+                                    <p class="mb-0">{{ $evento->descricao }} </p>
+                                    <a href="/event/{{$evento->id}}">Veja mais</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    @endforeach
+
+                {{-- @foreach ($todosEventos as $evento)
                 @if ($evento->fk_categorias == $eventos->fk_categorias)
                 <div class="other-events-sample d-flex">
                     <ul class="list-unstyled">
@@ -88,8 +104,9 @@
                         </li>
                     </ul>
                     @endif
+
                 </div>
-                @endforeach
+                @endforeach --}}
             </div>
         </article>
 

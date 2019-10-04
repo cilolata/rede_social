@@ -1,4 +1,3 @@
-
 /*  Regras Gerais Início 
 ------------------------ */
 * {
@@ -442,3 +441,413 @@ footer {
   }
 }
 
+/*  Regras Gerais Início 
+------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: benton-sans, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+input:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+  border-color: rgba(136, 134, 134, 0.7);
+  
+}
+
+html, body {
+  overflow-x: hidden;
+  background-color: #fff;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+a{
+  color: #000;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a.btn.btn-success {
+  color: #fff;
+}
+
+.btn{
+  border-radius: 100px;
+  width: 100px;
+}
+
+.navbar {
+  background-color: #fff;
+}
+
+/* header
+-------------------------*/
+
+.navbar-brand span {
+  padding: 0 0 0 5px;
+}
+
+#navigation ul {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  margin-top: 8px;
+}
+
+#navigation .tool-nav li {
+  font-size: 13px;
+  margin: 5px;
+}
+
+#navigation li>a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+}
+
+#navigation li>a.highlight {
+  background: #414141;
+  color: #fff;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+#navigation .user>span {
+  color: #4b494d;
+  margin: 0.2em;
+}
+
+/* index
+-----------------------------------*/
+#destaque {
+  height: 100vh;
+}
+
+#destaque1 {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.caixa-destaque1{
+    display: flex;
+    height: 100vh;
+    box-sizing: border-box;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../img/ecologia-destaque.jpg);
+}
+
+.caixa-banner{
+  display: flex;
+  height: 95vh;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+  background-image: url(../img/banner_together.png);
+}
+
+.caixa-destaque2{
+  display: flex;
+  height: 100vh;
+  box-sizing: border-box;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url(../img/animais-destaque.jpg);
+}
+
+.conteudo-caixa {
+  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+  border-radius: 4px;
+  margin-left: 10%;
+  height: 60%;
+  transition: 1s box-shadow;
+}
+
+.conteudo-caixa2 {
+  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+  border-radius: 4px;
+  margin-right: 10%;
+  height: 75%;
+  transition: 1s box-shadow;
+}
+
+/* section eventos pg index
+----------------------------------*/
+.div-card-anuncios{
+  height: 60vh;  
+}
+
+/* página register e login
+--------------------*/
+.box-cadastro{
+  width:100vw;
+  display:flex;
+  justify-content: center;
+  padding:2%;
+  margin-top:3% 0;
+}
+.box-cadastro form{
+  width:45vw;
+  min-width: 300px;
+  min-height:60vh;
+  padding:4%;
+  border-radius:4px;
+  box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.18);
+  margin-top: 40px;
+}
+
+.label-cadastro {
+  padding-bottom: 5px;
+  font-size: 13px;
+}
+
+/* section pagina contact-us 
+---------------------------------*/
+#contact-us {
+  height: 100%;
+}
+
+#contact-us .contact {
+  margin: 0 auto;
+}
+
+#faqAccordion{
+  margin: 0 auto;
+}
+
+#faqAccordion a {
+  color: #440650;
+}
+
+#contact-us #textArea {
+  resize: none;
+}
+
+/* início pagina event 
+---------------------*/
+#event {
+  margin-top: 9%;
+}
+
+#event .event-body {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius:4px;
+  box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.18);
+}
+
+#event .event-info .wrap h5 {
+  font-size: 1em;
+}
+
+#event .side-bar {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.18);
+}
+
+#event .media-body {
+  margin-left: 5px;
+}
+
+#event .media-body p {
+  font-size: 0.9em;
+}
+
+#event .media-body a {
+  font-size: 0.9em;
+}
+
+#event .side-bar .list-unstyled li{
+  text-align: left;
+}
+
+#event .img-fluid, .img-thumbnail {
+  max-width: 70%;
+  height: 70%;
+}
+
+/* section pesquisar pagina home
+------------------------------*/
+.btn-home{
+  border: 1px solid rgb(201, 204, 202);
+  background-color: white;
+}
+
+.img-hover img {
+  -webkit-transition: all .3s ease; /* Safari and Chrome */
+  -moz-transition: all .3s ease; /* Firefox */
+  -o-transition: all .3s ease; /* IE 9 */
+  -ms-transition: all .3s ease; /* Opera */
+  transition: all .3s ease;
+  position:relative;
+  padding: 10px 50px;
+}
+
+.img-hover img:hover {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
+  -moz-transform:scale(1.20); /* Firefox */
+  -ms-transform:scale(1.20); /* IE 9 */
+  -o-transform:translatZ(0) scale(1.20); /* Opera */
+  transform:translatZ(0) scale(1.20);
+}
+
+.img-hover:hover:after {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:2;
+  width:30px;
+  height:30px;
+  border:1px solid #000;
+}
+
+
+/* pagina profile
+---------------*/
+.img-perfil{
+  background-color: #ddd;
+  border-radius: 100%;
+  height: 200px;
+  object-fit: cover;
+  width: 200px;  
+}
+
+
+/* pagina search
+--------*/
+.botao_search {
+  width: 30px;
+  height: 36px;
+  background: transparent;
+  border:  1px;
+}
+
+/*pagina home
+---------------*/
+.nichos img:hover{
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* --footer início 
+------------------ */ 
+footer {
+  background-color: #f8f9fa;
+  margin-top: 80px;
+  padding: 25px 20px 10px 20px;
+  height: 15%;
+}
+
+.list-unstyled li {
+  text-align: center;
+}
+.list-unstyled ul{
+  text-align: center;
+}
+
+#logoFooter {
+  margin: 0 calc(50% - 16px);
+}
+
+.img_footer{
+  width: 30px;
+}
+
+.img_footer_mail{
+  width: 34px;
+}
+
+.fa-2x {
+    font-size: 1em;
+}
+
+#copyright {
+  margin: 10px auto;
+}
+
+/* media queries
+-------------------*/
+
+@media (max-width: 767.98px) { 
+
+  /* pagina-home*/
+  #main-home .div-input-home .home-pesquisar{
+    margin-top: 100px;
+  }
+
+  .botao-home{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .pesquisar-home{
+    padding-bottom: 0;
+    margin-top:100px;
+  }
+
+  img.img-categorias{
+    border-radius: 3px;
+    filter:brightness(100%);
+    transition: all .9s;
+  }
+  
+  img.img-categorias:hover{
+    border-radius: 3px;
+    filter:brightness(70%);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+     transform: scale(1.1);
+  }
+
+ /* pagina eventos/search*/
+ 
+  .events{
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+  }
+
+  .card-columns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  /* pagina profile*/
+
+  .img-perfil{
+    width: 50%;
+  }
+
+  /* footer*/
+  footer{
+    height: 20vh;
+  }
+}
