@@ -32,5 +32,14 @@ class ParticipantesController extends Controller
         $evento = $request->input("evento_id");
         return redirect('/event/'.$evento);
     }
-    
+
+    //rotinas pagina home
+    public function eventosParticipando(){
+        $categorias = Categorias::all();
+        $eventos = Eventos::all();
+        $users = User::all();
+        $participantes = Participantes::all();
+      
+        return view('home', compact('eventos', 'categorias', 'users', 'participantes'));
+    }
 }
