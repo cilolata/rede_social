@@ -12,24 +12,29 @@
         <div class="row d-flex justify-content-center">
             <div class="">
                 <h4 class="paragrafo-pesquisar text-center text-capitalize font-weight-light p-5">
-                        Que tipo de evento gostaria de ajudar? Escolha por uma categoria!
+                    Que tipo de evento gostaria de ajudar? Escolha por uma categoria!
                 </h4>
-                <div class="img-hover p-5">
-                    <a href="{{route('/ecologia',['ecologia'])}}"><img class="img-responsive" src="img/arvore.png" alt="ecologia"
-                            title="Ecologia"></a>
-                    <a href="{{route('/saude',['saude'])}}"><img class="img-responsive" src="img/doacao-de-sangue.png" alt="saúde"
-                            title="Saúde"></a>
-                    <a href="{{route('/alimentacao',['alimentacao'])}}"> <img class="img-responsive" src="img/cereais.png" alt="alimentação"
-                            title="Alimentação"></a>
-                    <a href="{{route('/animais',['animais'])}}"><img class="img-responsive" src="img/cao.png" alt="animais"
-                            title="Animais"></a>
-                    <a href="{{route('/cidadania',['cidadania'])}}"><img class="img-responsive" src="img/friendship.png" alt="cidadania"
-                            title="Cidadania"></a>
+                <div class=" botao-home d-flex justify-content-center  ">
+                    <button type="button"
+                        class="btn btn-home col-12 col-lg-3 mt-2 btn-md w-100 mr-4 d-block d-lg-none "> <a
+                            href="{{url('/search')}}" class="text-secondary">Procure por um evento</a></button>
+                </div>
+                <div class="img-hover p-5 d-none d-lg-block">
+                    <a href="{{route('/ecologia',['ecologia'])}}"><img class="img-responsive" src="img/arvore.png"
+                            alt="ecologia" title="Ecologia"></a>
+                    <a href="{{route('/saude',['saude'])}}"><img class="img-responsive" src="img/doacao-de-sangue.png"
+                            alt="saúde" title="Saúde"></a>
+                    <a href="{{route('/alimentacao',['alimentacao'])}}"> <img class="img-responsive"
+                            src="img/cereais.png" alt="alimentação" title="Alimentação"></a>
+                    <a href="{{route('/animais',['animais'])}}"><img class="img-responsive" src="img/cao.png"
+                            alt="animais" title="Animais"></a>
+                    <a href="{{route('/cidadania',['cidadania'])}}"><img class="img-responsive" src="img/friendship.png"
+                            alt="cidadania" title="Cidadania"></a>
                 </div>
                 <h4 class="text-center text-capitalize font-weight-light p-5">Ou crie seu próprio evento!</h4>
                 <div class=" botao-home d-flex justify-content-center">
-                    <button type="button" class="btn btn-home col-12 col-lg-3 mt-2 btn-md w-100 mr-4"> <a href="{{url('/criandoEvento')}}"
-                            class="text-secondary">Crie um Evento</a></button>
+                    <button type="button" class="btn btn-home col-12 col-lg-3 mt-2 btn-md w-100 mr-4"> <a
+                            href="{{url('/criandoEvento')}}" class="text-secondary">Crie um Evento</a></button>
                 </div>
             </div>
     </section>

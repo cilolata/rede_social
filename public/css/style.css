@@ -302,21 +302,7 @@ a.btn.btn-success {
   border:  1px;
 }
 
-<<<<<<< HEAD
 /* footer 
-=======
-/*pagina home
----------------*/
-.nichos img:hover{
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-/* --footer início 
->>>>>>> 67660784e9f09099b5d3f5ec396fd9d771210803
 ------------------ */ 
 footer {
   background-color: #f8f9fa;
@@ -405,7 +391,8 @@ footer {
   /* pagina profile*/
 
   .img-perfil{
-    width: 50%;
+    width: 40%;
+    height: 80%;
   }
 
   /* footer*/

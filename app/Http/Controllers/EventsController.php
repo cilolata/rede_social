@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Eventos;
@@ -13,7 +11,6 @@ use DB;
 
 class EventsController extends Controller
 {
-
     //rotinas pagina index
     public function index(){
         $categorias = Categorias::all();
@@ -21,7 +18,6 @@ class EventsController extends Controller
         
         return view('index', compact('eventos', 'categorias'));
     }
-
     //rotinas pagina home
     public function meusEventos(){
         $categorias = Categorias::all();
@@ -31,17 +27,15 @@ class EventsController extends Controller
         return view('home', compact('eventos', 'categorias', 'users'));
      
     }
-
     //rotinas pagina evento
     public function eventos($id){
         $todosEventos = Eventos::all();
         $eventos = Eventos::find($id);
-        $users = User::find($eventos->fk_users);
         $categorias = Categorias::find($eventos->fk_categorias);
+        $criadorEvento = User::find($eventos->fk_users);
         $participantes = Participantes::all();
-        return view('event', compact('todosEventos','eventos','users','categorias', 'participantes'));
+        return view('event', compact('categorias','todosEventos','eventos', 'criadorEvento', 'participantes'));
     }
-
     //pagina criando evento
     public function adicionandoEvento(){
         $usuario = Auth::user();
@@ -65,31 +59,21 @@ class EventsController extends Controller
             "user_id" => "required"
             
         ]);
-
         // salvando caminho da imagem e armazenando-a no projeto
         // capturando imagem selecionada pelo usuário
         $arquivo = $request->file('imagem');
-        // if (empty($arquivo)) {
-        //     abort(400, 'Nenhum arquivo foi enviado');
-        // }
-
+       
         $nomePasta = "uploads";
-
         // capturando o caminho até o projeto
         $arquivo->storePublicly($nomePasta);
-
         // caminho absoluto que sempre será utilizado o mesmo
         $caminhoAbsoluto = public_path() . "/storage/$nomePasta";
-
         // capturando o tmp_name
         $nomeArquivo = $arquivo->getClientOriginalName();
-
         // capturando o caminho relativo dentro do projeto
         $caminhoRelativo = "storage/$nomePasta/$nomeArquivo";
-
         // movendo/armazenando imagem dentro do projeto
         $arquivo->move($caminhoAbsoluto, $nomeArquivo);
-
         // criando o evento trazendo as infos dos inputs da pagina criando evento
         $eventos = Eventos::create([
             "dataEvento"=> $request->input("dataEvento"),
@@ -105,21 +89,11 @@ class EventsController extends Controller
             "fk_users"=> $request->input("user_id")
             
         ]);
-
         $eventos->save();        
         $evento = $eventos->id;
-
         return redirect('/event/'.$evento);
     }
-
-
-        // filtro de eventos na pagina do evento
-        // public function filtroEventos($id){
-        //     $categoria = Categorias::all();
-            
-        //     return view('event', compact('categoria'));
-        // }
-
+     
     // rotinas pagina search    
     public function search(Request $request){
         $categorias = Categorias::all();
@@ -129,10 +103,6 @@ class EventsController extends Controller
         }
         return view('search', compact('eventos', 'categorias'));
     }
-
-
-
-
     /*
      * Remove the specified resource from storage.
      *
