@@ -33,8 +33,20 @@ class EventsController extends Controller
         $eventos = Eventos::find($id);
         $categorias = Categorias::find($eventos->fk_categorias);
         $criadorEvento = User::find($eventos->fk_users);
-        $participantes = Participantes::all();
-        return view('event', compact('categorias','todosEventos','eventos', 'criadorEvento', 'participantes'));
+        $participantes = Participantes::where('fk_eventos', '=', $eventos->id)->get();
+        $participantesEvento = [];
+        
+        for($i=0; $i<count($participantes); $i++){
+            $participantesId =  $participantes[$i]->fk_users;
+            $participantesUser = User::find($participantesId);
+            $participantesImagem = $participantesUser->imagem;
+            $participanteNome = $participantesUser->name;
+            
+
+            $participantesEvento[] = ["imagem"=>$participantesImagem, "name"=>$participanteNome];
+        }
+
+        return view('event', compact('categorias','todosEventos','eventos', 'criadorEvento', 'participantesEvento'));
     }
     //pagina criando evento
     public function adicionandoEvento(){

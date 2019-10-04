@@ -53,7 +53,8 @@
                             <a href="#"></a>
                             <p class="mt-1">Organizador(a): {{$criadorEvento->name}}</p>
                         </div>
-                        <form class="mt-5" method="GET" action="/event/{id}" enctype="multipart/form-data">
+                        <form class="mt-5" method="post" action="/event" enctype="multipart/form-data">
+                            @csrf
                             <div class="d-flex justify-content-end">
                                 <input type="hidden" name="evento_id" value="{{$eventos->id}}">
                                 <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
@@ -64,11 +65,16 @@
                         </form>
                     </div>
                 </div>
-                <div class="img-cropper">
-                    @foreach ($participantes as $participante)
-                    <img class="rounded-circle img-profile" height="60" width="60" src="{{ url($participante->fk_user->imagem)}}" alt="user-image"> 
+                
+                <div class="img-cropper ">
+                    @foreach ($participantesEvento as $participante)
+                    @if(isset($participante))
+                    <img class="rounded-circle img-profile" height="60" width="60" src="{{ url($participante["imagem"])}}" alt="user-image"> 
+                    <p class="ml-2">{{$participante["name"]}}</p>
+                    @endif
                     @endforeach
                 </div>
+              
             </div>
         </article>
 

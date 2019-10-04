@@ -12,7 +12,7 @@
         <div class="row d-flex justify-content-center">
             <div class="home-inicial">
                 <h4 class="paragrafo-pesquisar text-center text-capitalize font-weight-light p-5">
-                    Que tipo de evento gostaria de ajudar? Escolha por uma categoria!
+                    Que tipo de evento gostaria de ajudar? Escolha por uma categoria abaixo!
                 </h4>
                 <div class=" botao-home d-flex justify-content-center  ">
                     <button type="button"
