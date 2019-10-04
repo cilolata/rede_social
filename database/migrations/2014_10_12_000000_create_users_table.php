@@ -24,7 +24,7 @@ class CreateUsersTable extends Migration
             $table->string('CEP')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->rememberToken();
+            $table->rememberToken('remember_token')->nullable();
             $table->timestamps();
         });
     }

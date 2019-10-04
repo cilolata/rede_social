@@ -40,23 +40,23 @@
                         </div>
                         <div class="wrap">
                             <i class="far fa-comment d-inline-flex mr-1"></i>
-                            <h5 class="d-inline-flex">{{ $categorias->descricao }}</h5>
+                            <h5 class="d-inline-flex">{{ $eventos->categorias->descricao }}</h5>
                         </div>
                         <hr>
                     </div>
                     <div class="event-organizer">
                         <div class="img-cropper">
                             <img class="rounded-circle img-profile" height="60" width="60"
-                                src="{{ url($users->imagem)}}" alt="user-image">
+                                src="{{ url($criadorEvento->imagem)}}" alt="user-image">
                         </div>
                         <div class="user">
                             <a href="#"></a>
-                            <p class="mt-1">Organizador(a): {{$users->name}}</p>
+                            <p class="mt-1">Organizador(a): {{$criadorEvento->name}}</p>
                         </div>
                         <form class="mt-5" method="GET" action="/event/{id}" enctype="multipart/form-data">
                             <div class="d-flex justify-content-end">
                                 <input type="hidden" name="evento_id" value="{{$eventos->id}}">
-                                <input type="hidden" name="user_id" value="{{$users->id}}">
+                                <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
                                 <button class="btn btn-outline-dark" type="submit">
                                     Participar!
                                 </button>

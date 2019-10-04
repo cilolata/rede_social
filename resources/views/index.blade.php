@@ -37,7 +37,7 @@
             <p class="p-1"> Somos uma rede social dedicada a juntar pessoas para o bem comum.
             </p>
             <p>Para tanto, nos baseamos na Teoria das Janelas Quebradas e propomos uma série de ações de cidadania, nas quais pessoas podem se encontrar com objetivos em comum: melhorar o entorno de suas comunidades, promovendo ações sociais, que cuidem de pessoas, praças, animais, etc e que possam ser replicadas, promovendo melhorias em toda sociedade. </p>
-            <a class="btn btn-outline-dark btn-md" href="{{url('register')}}" role="button">Saiba mais</a>
+            <a class="btn btn-outline-dark btn-md" href="{{url('aboutus')}}" role="button">Saiba mais</a>
           </div>
     </div>
   </section>
