@@ -142,7 +142,7 @@ a.btn.btn-success {
   position: relative;
   border-radius: 4px;
   margin-right: 10%;
-  height: 70%;
+  height: 75%;
   transition: 1s box-shadow;
 }
 
@@ -259,6 +259,7 @@ a.btn.btn-success {
   position:relative;
   padding: 10px 50px;
 }
+
 .img-hover img:hover {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
