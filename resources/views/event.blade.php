@@ -67,6 +67,7 @@
                 </div>
                 
                 <div class="img-cropper ">
+                    <h4>Participantes</h4>
                     @foreach ($participantesEvento as $participante)
                     @if(isset($participante))
                     <img class="rounded-circle img-profile" height="60" width="60" src="{{ url($participante["imagem"])}}" alt="user-image"> 
