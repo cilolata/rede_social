@@ -74,7 +74,7 @@
 
         <article class="col-3 side-bar d-none d-lg-block d-xl-block">
             <div class="other-events">
-<<<<<<< HEAD
+
                     @foreach ($categorias->eventos as $evento)
                     <div class="other-events-sample d-flex">
                         <ul class="list-unstyled">
@@ -89,8 +89,8 @@
                         </ul>
                     </div>
                     @endforeach
-=======
-                @foreach ($todosEventos as $evento)
+
+                {{-- @foreach ($todosEventos as $evento)
                 @if ($evento->fk_categorias == $eventos->fk_categorias)
                 <div class="other-events-sample d-flex">
                     <ul class="list-unstyled">
@@ -104,9 +104,9 @@
                         </li>
                     </ul>
                     @endif
->>>>>>> e064b79a51622f44a01fc0514ef8e12565427158
+
                 </div>
-                @endforeach
+                @endforeach --}}
             </div>
         </article>
 
