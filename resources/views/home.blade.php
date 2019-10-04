@@ -58,21 +58,5 @@
             @endforeach
     </section>
 
-    <section class="container mt-5">
-            <h4>Eventos Que Vou Participar</h4>
-            <div class="row">
-                @foreach ($participantes as $participante)
-                @if ($participante->fk_users == Auth::user()->id)
-                <div class="card meus-eventos mt-3 mx-3" style="width: 18rem;">
-                    <img src="{{$evento->imagem}}" class="card-img-top w-100" alt="imagem-evento">
-                    <div class="card-body">
-                        <h5 class="card-title">{{$evento->titulo}}</h5>
-                        <p class="card-text">{{$evento->descricao}}</p>
-                        <a href="event/{{$evento->id}}" class="card-link">Acesse</a>
-                    </div>
-                </div>
-                @endif
-                @endforeach
-        </section>
 </main>
 @endsection
