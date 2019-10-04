@@ -13,7 +13,7 @@
         <article class="create-event row col-12 justify-content-center">
 
             <div class="event-form">
-                <h2 class="mt-2">Informações necessárias</h2>
+                <h2 class="mt-5">Informações necessárias</h2>
                 <h3>Insira as seguintes informações para criar seu evento.</h3>
                 <form class="mt-5" method="post" action="/criandoEvento" enctype="multipart/form-data">
                     @csrf

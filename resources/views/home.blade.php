@@ -32,14 +32,9 @@
                             alt="cidadania" title="Cidadania"></a>
                 </div>
                 <h4 class="text-center text-capitalize font-weight-light p-5">Ou crie seu próprio evento!</h4>
-<<<<<<< HEAD
                 <div class=" botao-home d-flex justify-content-center">
                     <button type="button" class="btn btn-home col-12 col-lg-3 mt-2 btn-md w-100 mr-4"> <a
                             href="{{url('/criandoEvento')}}" class="text-secondary">Crie um Evento</a></button>
-=======
-                <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-home btn-warning col-12 col-lg-3 mt-2 btn-md w-100 mr-4"> <a href="{{url('/criandoEvento')}}">Crie um Evento</a></button>
->>>>>>> 08d8026de13f1965f20d0705450c5b7120086d5d
                 </div>
             </div>
     </section>
