@@ -18,7 +18,7 @@ class Participantes extends Migration
             $table->unsignedBigInteger('fk_eventos');
             $table->unsignedBigInteger('fk_users');
             $table->foreign('fk_eventos')->references('id')->on('eventos');
-            $table->foreign('fk_users')->references('id')->on('users');
+            $table->foreign('fk_users')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

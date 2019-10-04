@@ -53,10 +53,11 @@ class ProfileController extends Controller
         $usuario = User::find(auth()->user()->id);
         $eventos = Eventos::where('fk_users', '=', $id)->get();
 
+        $usuario->delete();
+
         foreach($eventos as $evento):
             $evento->delete();
         endforeach;
-        $usuario->delete();
 
         return redirect('/index');
     }

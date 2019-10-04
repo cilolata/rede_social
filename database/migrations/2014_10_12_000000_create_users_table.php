@@ -22,9 +22,9 @@ class CreateUsersTable extends Migration
             $table->string('cidade')->nullable();
             $table->string('estado')->nullable();
             $table->string('CEP')->nullable();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->timestamp('email_verified_at');
             $table->string('password');
-            $table->rememberToken();
+            $table->rememberToken('remember_token');
             $table->timestamps();
         });
     }

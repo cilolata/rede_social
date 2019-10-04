@@ -29,7 +29,7 @@ class Eventos extends Migration
             $table->unsignedBigInteger('fk_users')->nullable();
             $table->timestamps();
             $table->foreign('fk_categorias')->references('id')->on('categorias');
-            $table->foreign('fk_users')->references('id')->on('users');
+            $table->foreign('fk_users')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
